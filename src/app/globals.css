@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body { height: 100%; }
+  body {
+    @apply bg-surface-muted text-ink antialiased;
+    font-feature-settings: "cv11", "ss01";
+  }
+  *:focus-visible {
+    @apply outline-none ring-2 ring-ink/15 ring-offset-1 ring-offset-surface;
+  }
+  button, [role="button"] { @apply select-none; }
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-thumb {
+    background: #e2e8f0; border-radius: 9999px;
+    border: 2px solid transparent; background-clip: padding-box;
+  }
+  ::-webkit-scrollbar-thumb:hover { background: #cbd5e1; background-clip: padding-box; border: 2px solid transparent; }
+}
+
+@layer utilities {
+  .num { font-variant-numeric: tabular-nums; }
+  .no-tap-highlight { -webkit-tap-highlight-color: transparent; }
+}
+
+.dark {
+  color-scheme: dark;
+}
+.dark body {
+  background-color: #0f172a;
+  color: #f1f5f9;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+.dark .bg-surface { background-color: #1e293b; }
+.dark .bg-surface-muted { background-color: #1e293b; }
+.dark .bg-surface-subtle { background-color: #334155; }
+.dark .text-ink { color: #f1f5f9; }
+.dark .text-ink-muted { color: #cbd5e1; }
+.dark .text-ink-soft { color: #94a3b8; }
+.dark .border-line { border-color: #334155; }
+.dark .bg-brand-50 { background-color: #312e81; color: #c7d2fe; }

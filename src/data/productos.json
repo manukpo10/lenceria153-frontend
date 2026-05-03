@@ -1,0 +1,6272 @@
+[
+  {
+    "codigo": "322",
+    "descripcion": "ABROJO 20 MM BCO/COL X10",
+    "rubro": "ABROJOS",
+    "costo": 4.8,
+    "precio": 9.6,
+    "precioUnidad": 0.96,
+    "pack": 10,
+    "stock": 8
+  },
+  {
+    "codigo": "83",
+    "descripcion": "ABROJO 50 MM BCO/COL X10",
+    "rubro": "ABROJOS",
+    "costo": 9.6,
+    "precio": 19.2,
+    "precioUnidad": 1.92,
+    "pack": 10,
+    "stock": 12
+  },
+  {
+    "codigo": "29",
+    "descripcion": "ABROJO 10CM BCO/NEGR X10",
+    "rubro": "ABROJOS",
+    "costo": 18.0,
+    "precio": 36.0,
+    "precioUnidad": 3.6,
+    "pack": 10,
+    "stock": 20
+  },
+  {
+    "codigo": "520",
+    "descripcion": "ACC CORPIÑO A11 X100",
+    "rubro": "ACCESORIOS DE CORPIÑO",
+    "costo": 0.59,
+    "precio": 1.17,
+    "precioUnidad": 0.01,
+    "pack": 100,
+    "stock": 0
+  },
+  {
+    "codigo": "1567",
+    "descripcion": "ACC CORPIÑO A11TX100",
+    "rubro": "ACCESORIOS DE CORPIÑO",
+    "costo": 0.88,
+    "precio": 1.77,
+    "precioUnidad": 0.02,
+    "pack": 100,
+    "stock": 50
+  },
+  {
+    "codigo": "534",
+    "descripcion": "ACC CORPIÑO A13 X100",
+    "rubro": "ACCESORIOS DE CORPIÑO",
+    "costo": 0.61,
+    "precio": 1.23,
+    "precioUnidad": 0.01,
+    "pack": 100,
+    "stock": 8
+  },
+  {
+    "codigo": "891",
+    "descripcion": "ACC CORPIÑO A13TX100",
+    "rubro": "ACCESORIOS DE CORPIÑO",
+    "costo": 1.1,
+    "precio": 2.2,
+    "precioUnidad": 0.02,
+    "pack": 100,
+    "stock": 100
+  },
+  {
+    "codigo": "141",
+    "descripcion": "ACC CORPIÑO A6/C6X100",
+    "rubro": "ACCESORIOS DE CORPIÑO",
+    "costo": 0.59,
+    "precio": 1.17,
+    "precioUnidad": 0.01,
+    "pack": 100,
+    "stock": 20
+  },
+  {
+    "codigo": "12",
+    "descripcion": "ACC CORPIÑO A6T/C6TX100",
+    "rubro": "ACCESORIOS DE CORPIÑO",
+    "costo": 1.03,
+    "precio": 2.05,
+    "precioUnidad": 0.02,
+    "pack": 100,
+    "stock": 12
+  },
+  {
+    "codigo": "1126",
+    "descripcion": "ACC CORPIÑO B1 X100",
+    "rubro": "ACCESORIOS DE CORPIÑO",
+    "costo": 0.7,
+    "precio": 1.41,
+    "precioUnidad": 0.01,
+    "pack": 100,
+    "stock": 3
+  },
+  {
+    "codigo": "542",
+    "descripcion": "ACC CORPIÑO B1T/B2TX100",
+    "rubro": "ACCESORIOS DE CORPIÑO",
+    "costo": 0.82,
+    "precio": 1.64,
+    "precioUnidad": 0.02,
+    "pack": 100,
+    "stock": 12
+  },
+  {
+    "codigo": "518",
+    "descripcion": "ACC CORPIÑO B2 X100",
+    "rubro": "ACCESORIOS DE CORPIÑO",
+    "costo": 0.7,
+    "precio": 1.41,
+    "precioUnidad": 0.01,
+    "pack": 100,
+    "stock": 5
+  },
+  {
+    "codigo": "436",
+    "descripcion": "ACC CORPIÑO B26 X100",
+    "rubro": "ACCESORIOS DE CORPIÑO",
+    "costo": 0.7,
+    "precio": 1.41,
+    "precioUnidad": 0.01,
+    "pack": 100,
+    "stock": 8
+  },
+  {
+    "codigo": "1566",
+    "descripcion": "ACC CORPIÑO B26TX100",
+    "rubro": "ACCESORIOS DE CORPIÑO",
+    "costo": 0.82,
+    "precio": 1.64,
+    "precioUnidad": 0.02,
+    "pack": 100,
+    "stock": 0
+  },
+  {
+    "codigo": "777",
+    "descripcion": "ACC CORPIÑO B5 X100",
+    "rubro": "ACCESORIOS DE CORPIÑO",
+    "costo": 3.47,
+    "precio": 6.94,
+    "precioUnidad": 0.07,
+    "pack": 100,
+    "stock": 2
+  },
+  {
+    "codigo": "438",
+    "descripcion": "ACC CORPIÑO B5T X100",
+    "rubro": "ACCESORIOS DE CORPIÑO",
+    "costo": 3.8,
+    "precio": 7.59,
+    "precioUnidad": 0.08,
+    "pack": 100,
+    "stock": 2
+  },
+  {
+    "codigo": "474",
+    "descripcion": "ACC CORPIÑO C11 X100",
+    "rubro": "ACCESORIOS DE CORPIÑO",
+    "costo": 0.59,
+    "precio": 1.17,
+    "precioUnidad": 0.01,
+    "pack": 100,
+    "stock": 0
+  },
+  {
+    "codigo": "892",
+    "descripcion": "ACC CORPIÑO C11TX100",
+    "rubro": "ACCESORIOS DE CORPIÑO",
+    "costo": 1.03,
+    "precio": 2.05,
+    "precioUnidad": 0.02,
+    "pack": 100,
+    "stock": 2
+  },
+  {
+    "codigo": "535",
+    "descripcion": "ACC CORPIÑO C15 X100",
+    "rubro": "ACCESORIOS DE CORPIÑO",
+    "costo": 0.62,
+    "precio": 1.25,
+    "precioUnidad": 0.01,
+    "pack": 100,
+    "stock": 1
+  },
+  {
+    "codigo": "898",
+    "descripcion": "ACC CORPIÑO C15TX100",
+    "rubro": "ACCESORIOS DE CORPIÑO",
+    "costo": 1.54,
+    "precio": 3.09,
+    "precioUnidad": 0.03,
+    "pack": 100,
+    "stock": 8
+  },
+  {
+    "codigo": "1634",
+    "descripcion": "ACC ZAMAC B15 MALLA X50",
+    "rubro": "ACCESORIOS DE CORPIÑO",
+    "costo": 4.25,
+    "precio": 8.51,
+    "precioUnidad": 0.17,
+    "pack": 50,
+    "stock": 0
+  },
+  {
+    "codigo": "1632",
+    "descripcion": "ACC ZAMAC ZA06 X100",
+    "rubro": "ACCESORIOS DE CORPIÑO",
+    "costo": 3.27,
+    "precio": 6.53,
+    "precioUnidad": 0.07,
+    "pack": 100,
+    "stock": 2
+  },
+  {
+    "codigo": "1633",
+    "descripcion": "ACC ZAMAC ZA11 X100",
+    "rubro": "ACCESORIOS DE CORPIÑO",
+    "costo": 3.97,
+    "precio": 7.94,
+    "precioUnidad": 0.08,
+    "pack": 100,
+    "stock": 20
+  },
+  {
+    "codigo": "1230",
+    "descripcion": "ACC ZAMAC ZA13 X100",
+    "rubro": "ACCESORIOS DE CORPIÑO",
+    "costo": 5.25,
+    "precio": 10.49,
+    "precioUnidad": 0.1,
+    "pack": 100,
+    "stock": 20
+  },
+  {
+    "codigo": "1130",
+    "descripcion": "ACC ZAMAC ZBF FLOR X50",
+    "rubro": "ACCESORIOS DE CORPIÑO",
+    "costo": 7.81,
+    "precio": 15.63,
+    "precioUnidad": 0.31,
+    "pack": 50,
+    "stock": 20
+  },
+  {
+    "codigo": "1629",
+    "descripcion": "ACC ZAMAC ZC06 X100",
+    "rubro": "ACCESORIOS DE CORPIÑO",
+    "costo": 3.27,
+    "precio": 6.53,
+    "precioUnidad": 0.07,
+    "pack": 100,
+    "stock": 50
+  },
+  {
+    "codigo": "1630",
+    "descripcion": "ACC ZAMAC ZC11 X100",
+    "rubro": "ACCESORIOS DE CORPIÑO",
+    "costo": 3.97,
+    "precio": 7.94,
+    "precioUnidad": 0.08,
+    "pack": 100,
+    "stock": 0
+  },
+  {
+    "codigo": "1631",
+    "descripcion": "ACC ZAMAC ZC13 X100",
+    "rubro": "ACCESORIOS DE CORPIÑO",
+    "costo": 5.74,
+    "precio": 11.48,
+    "precioUnidad": 0.11,
+    "pack": 100,
+    "stock": 0
+  },
+  {
+    "codigo": "1628",
+    "descripcion": "ACC ZAMAC ZD06 X100",
+    "rubro": "ACCESORIOS DE CORPIÑO",
+    "costo": 3.98,
+    "precio": 7.97,
+    "precioUnidad": 0.08,
+    "pack": 100,
+    "stock": 0
+  },
+  {
+    "codigo": "1416",
+    "descripcion": "ACC ZAMAC ZD11 X100",
+    "rubro": "ACCESORIOS DE CORPIÑO",
+    "costo": 5.65,
+    "precio": 11.3,
+    "precioUnidad": 0.11,
+    "pack": 100,
+    "stock": 0
+  },
+  {
+    "codigo": "1207",
+    "descripcion": "ACC ZAMAC ZD13 X100",
+    "rubro": "ACCESORIOS DE CORPIÑO",
+    "costo": 6.22,
+    "precio": 12.45,
+    "precioUnidad": 0.12,
+    "pack": 100,
+    "stock": 100
+  },
+  {
+    "codigo": "1488",
+    "descripcion": "ACEITEX ACEITODO MULTIUSO",
+    "rubro": "OTROS",
+    "costo": 1.1,
+    "precio": 2.2,
+    "precioUnidad": 2.2,
+    "pack": 1,
+    "stock": 3
+  },
+  {
+    "codigo": "77",
+    "descripcion": "AGUJA BOLSERA CURVA CH.X25",
+    "rubro": "AGUJAS",
+    "costo": 5.16,
+    "precio": 10.32,
+    "precioUnidad": 0.41,
+    "pack": 25,
+    "stock": 3
+  },
+  {
+    "codigo": "2104",
+    "descripcion": "AGUJA BORDADO CHINO KIT X3",
+    "rubro": "AGUJAS",
+    "costo": 8.63,
+    "precio": 17.25,
+    "precioUnidad": 17.25,
+    "pack": 3,
+    "stock": 1
+  },
+  {
+    "codigo": "2103",
+    "descripcion": "AGUJA BORDADO CHINO X1",
+    "rubro": "AGUJAS",
+    "costo": 1.58,
+    "precio": 3.15,
+    "precioUnidad": 3.15,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "1047",
+    "descripcion": "AGUJA CANASTA CHECA",
+    "rubro": "AGUJAS",
+    "costo": 1.06,
+    "precio": 2.12,
+    "precioUnidad": 2.12,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "255",
+    "descripcion": "AGUJA CBX CIRCULAR N°3 1/2",
+    "rubro": "AGUJAS",
+    "costo": 1.16,
+    "precio": 2.32,
+    "precioUnidad": 2.32,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "138",
+    "descripcion": "AGUJA CBX CIRCULAR N°8",
+    "rubro": "AGUJAS",
+    "costo": 1.82,
+    "precio": 3.64,
+    "precioUnidad": 3.64,
+    "pack": 1,
+    "stock": 2
+  },
+  {
+    "codigo": "667",
+    "descripcion": "AGUJA CBX CIRCULAR No 2 1/2",
+    "rubro": "AGUJAS",
+    "costo": 0.96,
+    "precio": 1.92,
+    "precioUnidad": 1.92,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "7932",
+    "descripcion": "AGUJA CBX CIRCULAR No3",
+    "rubro": "AGUJAS",
+    "costo": 1.1,
+    "precio": 2.21,
+    "precioUnidad": 2.21,
+    "pack": 1,
+    "stock": 2
+  },
+  {
+    "codigo": "1600",
+    "descripcion": "AGUJA CBX CIRCULAR No4",
+    "rubro": "AGUJAS",
+    "costo": 1.18,
+    "precio": 2.36,
+    "precioUnidad": 2.36,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "1327",
+    "descripcion": "AGUJA CBX CIRCULAR No4 1/2",
+    "rubro": "AGUJAS",
+    "costo": 1.28,
+    "precio": 2.56,
+    "precioUnidad": 2.56,
+    "pack": 1,
+    "stock": 2
+  },
+  {
+    "codigo": "1392",
+    "descripcion": "AGUJA CBX CIRCULAR No5",
+    "rubro": "AGUJAS",
+    "costo": 1.36,
+    "precio": 2.72,
+    "precioUnidad": 2.72,
+    "pack": 1,
+    "stock": 3
+  },
+  {
+    "codigo": "1456",
+    "descripcion": "AGUJA CBX CIRCULAR No6",
+    "rubro": "AGUJAS",
+    "costo": 1.53,
+    "precio": 3.06,
+    "precioUnidad": 3.06,
+    "pack": 1,
+    "stock": 12
+  },
+  {
+    "codigo": "5110",
+    "descripcion": "AGUJA CBX CIRCULAR No7",
+    "rubro": "AGUJAS",
+    "costo": 1.68,
+    "precio": 3.35,
+    "precioUnidad": 3.35,
+    "pack": 1,
+    "stock": 3
+  },
+  {
+    "codigo": "1233",
+    "descripcion": "AGUJA CBX CURVA X20",
+    "rubro": "AGUJAS",
+    "costo": 2.36,
+    "precio": 4.73,
+    "precioUnidad": 0.24,
+    "pack": 20,
+    "stock": 5
+  },
+  {
+    "codigo": "1448",
+    "descripcion": "AGUJA CBX FACIL ENHEBRADO X12",
+    "rubro": "AGUJAS",
+    "costo": 1.36,
+    "precio": 2.72,
+    "precioUnidad": 0.23,
+    "pack": 12,
+    "stock": 8
+  },
+  {
+    "codigo": "1455",
+    "descripcion": "AGUJA CBX FIELTRO X4",
+    "rubro": "AGUJAS",
+    "costo": 2.01,
+    "precio": 4.02,
+    "precioUnidad": 1.01,
+    "pack": 4,
+    "stock": 20
+  },
+  {
+    "codigo": "1064",
+    "descripcion": "AGUJA CBX MOSTACILLERA X25",
+    "rubro": "AGUJAS",
+    "costo": 2.99,
+    "precio": 5.98,
+    "precioUnidad": 0.24,
+    "pack": 25,
+    "stock": 2
+  },
+  {
+    "codigo": "1216",
+    "descripcion": "AGUJA CBX PASACINTA METAL X10",
+    "rubro": "AGUJAS",
+    "costo": 7.82,
+    "precio": 15.64,
+    "precioUnidad": 1.56,
+    "pack": 10,
+    "stock": 20
+  },
+  {
+    "codigo": "1145",
+    "descripcion": "AGUJA COLCHON-BOLSERA X25",
+    "rubro": "AGUJAS",
+    "costo": 7.11,
+    "precio": 14.23,
+    "precioUnidad": 0.57,
+    "pack": 25,
+    "stock": 2
+  },
+  {
+    "codigo": "1677",
+    "descripcion": "AGUJA CROCH CJ ACERO X12",
+    "rubro": "AGUJAS",
+    "costo": 3.72,
+    "precio": 7.43,
+    "precioUnidad": 0.62,
+    "pack": 12,
+    "stock": 50
+  },
+  {
+    "codigo": "48",
+    "descripcion": "AGUJA CROCH CJ ALUM 2 AL 3.5 X12",
+    "rubro": "AGUJAS",
+    "costo": 3.82,
+    "precio": 7.64,
+    "precioUnidad": 0.64,
+    "pack": 12,
+    "stock": 20
+  },
+  {
+    "codigo": "174",
+    "descripcion": "AGUJA CROCH CJ ALUM 4 AL 5 X12",
+    "rubro": "AGUJAS",
+    "costo": 5.01,
+    "precio": 10.03,
+    "precioUnidad": 0.84,
+    "pack": 12,
+    "stock": 0
+  },
+  {
+    "codigo": "2133",
+    "descripcion": "AGUJA CROCH CJ DORADA 2 AL 3.5 X12",
+    "rubro": "AGUJAS",
+    "costo": 4.11,
+    "precio": 8.22,
+    "precioUnidad": 0.69,
+    "pack": 12,
+    "stock": 0
+  },
+  {
+    "codigo": "2134",
+    "descripcion": "AGUJA CROCH CJ DORADA 3.75 A 4.5 X12",
+    "rubro": "AGUJAS",
+    "costo": 4.9,
+    "precio": 9.8,
+    "precioUnidad": 0.82,
+    "pack": 12,
+    "stock": 12
+  },
+  {
+    "codigo": "2135",
+    "descripcion": "AGUJA CROCH CJ DORADA 5 A 6 X12",
+    "rubro": "AGUJAS",
+    "costo": 6.5,
+    "precio": 13.0,
+    "precioUnidad": 1.08,
+    "pack": 12,
+    "stock": 50
+  },
+  {
+    "codigo": "1313",
+    "descripcion": "AGUJA CUERO (2/0-3) X25",
+    "rubro": "AGUJAS",
+    "costo": 6.37,
+    "precio": 12.75,
+    "precioUnidad": 0.51,
+    "pack": 25,
+    "stock": 50
+  },
+  {
+    "codigo": "1048",
+    "descripcion": "AGUJA INDIO",
+    "rubro": "AGUJAS",
+    "costo": 2.07,
+    "precio": 4.13,
+    "precioUnidad": 4.13,
+    "pack": 1,
+    "stock": 3
+  },
+  {
+    "codigo": "1310",
+    "descripcion": "AGUJA LANA (13-14/2-16/2)X10",
+    "rubro": "AGUJAS",
+    "costo": 1.46,
+    "precio": 2.91,
+    "precioUnidad": 0.29,
+    "pack": 10,
+    "stock": 2
+  },
+  {
+    "codigo": "1052",
+    "descripcion": "AGUJA LANA (14-16-18-22) X25",
+    "rubro": "AGUJAS",
+    "costo": 1.51,
+    "precio": 3.01,
+    "precioUnidad": 0.12,
+    "pack": 25,
+    "stock": 1
+  },
+  {
+    "codigo": "185",
+    "descripcion": "AGUJA LANA CHINA (18-22) X25",
+    "rubro": "AGUJAS",
+    "costo": 1.01,
+    "precio": 2.02,
+    "precioUnidad": 0.08,
+    "pack": 25,
+    "stock": 0
+  },
+  {
+    "codigo": "177",
+    "descripcion": "AGUJA MANO CBX-ROYAL X25",
+    "rubro": "AGUJAS",
+    "costo": 1.74,
+    "precio": 3.47,
+    "precioUnidad": 0.14,
+    "pack": 25,
+    "stock": 2
+  },
+  {
+    "codigo": "1809",
+    "descripcion": "AGUJA MAQ.BEKA COLLARETA X10",
+    "rubro": "AGUJAS",
+    "costo": 3.41,
+    "precio": 6.81,
+    "precioUnidad": 0.68,
+    "pack": 10,
+    "stock": 3
+  },
+  {
+    "codigo": "1807",
+    "descripcion": "AGUJA MAQ.BEKA INDUS 16X231 X10",
+    "rubro": "AGUJAS",
+    "costo": 1.78,
+    "precio": 3.56,
+    "precioUnidad": 0.36,
+    "pack": 231,
+    "stock": 20
+  },
+  {
+    "codigo": "1808",
+    "descripcion": "AGUJA MAQ.BEKA OVER 81X1 X10",
+    "rubro": "AGUJAS",
+    "costo": 2.9,
+    "precio": 5.81,
+    "precioUnidad": 0.58,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "1998",
+    "descripcion": "AGUJA MAQ.CBX FAMILIAR X 10",
+    "rubro": "AGUJAS",
+    "costo": 1.93,
+    "precio": 3.85,
+    "precioUnidad": 0.39,
+    "pack": 10,
+    "stock": 50
+  },
+  {
+    "codigo": "1043",
+    "descripcion": "AGUJA MAQ.FLIAR / P.BOL X12",
+    "rubro": "AGUJAS",
+    "costo": 1.81,
+    "precio": 3.62,
+    "precioUnidad": 0.3,
+    "pack": 12,
+    "stock": 50
+  },
+  {
+    "codigo": "1102",
+    "descripcion": "AGUJA MAQ.INDUST/ P.BOL X12",
+    "rubro": "AGUJAS",
+    "costo": 2.15,
+    "precio": 4.31,
+    "precioUnidad": 0.36,
+    "pack": 12,
+    "stock": 5
+  },
+  {
+    "codigo": "1231",
+    "descripcion": "AGUJA MAQ.ORANGE INDUSTR X10",
+    "rubro": "AGUJAS",
+    "costo": 1.24,
+    "precio": 2.48,
+    "precioUnidad": 0.25,
+    "pack": 10,
+    "stock": 8
+  },
+  {
+    "codigo": "1228",
+    "descripcion": "AGUJA MAQ.ORANGE P/B-FLIAR X10",
+    "rubro": "AGUJAS",
+    "costo": 1.59,
+    "precio": 3.18,
+    "precioUnidad": 0.32,
+    "pack": 10,
+    "stock": 0
+  },
+  {
+    "codigo": "526",
+    "descripcion": "AGUJA MAQ.OVERLOCK / P.BOL X12",
+    "rubro": "AGUJAS",
+    "costo": 3.51,
+    "precio": 7.02,
+    "precioUnidad": 0.59,
+    "pack": 12,
+    "stock": 1
+  },
+  {
+    "codigo": "1162",
+    "descripcion": "AGUJA MAQ.PTA DOBL COMUN X4",
+    "rubro": "AGUJAS",
+    "costo": 3.9,
+    "precio": 7.8,
+    "precioUnidad": 1.95,
+    "pack": 4,
+    "stock": 12
+  },
+  {
+    "codigo": "1062",
+    "descripcion": "AGUJA MAQ.PTA DOBL SINGER X2",
+    "rubro": "AGUJAS",
+    "costo": 9.48,
+    "precio": 18.97,
+    "precioUnidad": 9.48,
+    "pack": 2,
+    "stock": 0
+  },
+  {
+    "codigo": "1045",
+    "descripcion": "AGUJA MAQ.SINGER 2020 X10",
+    "rubro": "AGUJAS",
+    "costo": 2.05,
+    "precio": 4.1,
+    "precioUnidad": 0.41,
+    "pack": 10,
+    "stock": 100
+  },
+  {
+    "codigo": "1084",
+    "descripcion": "AGUJA MAQ.SINGER 2045 P/BX10",
+    "rubro": "AGUJAS",
+    "costo": 2.15,
+    "precio": 4.31,
+    "precioUnidad": 0.43,
+    "pack": 10,
+    "stock": 100
+  },
+  {
+    "codigo": "2105",
+    "descripcion": "AGUJA PONY TUNECINA X1",
+    "rubro": "AGUJAS",
+    "costo": 1.54,
+    "precio": 3.07,
+    "precioUnidad": 3.07,
+    "pack": 1,
+    "stock": 1
+  },
+  {
+    "codigo": "1505",
+    "descripcion": "AGUJA TEJER CBX N*2.5 X12 PARES",
+    "rubro": "AGUJAS",
+    "costo": 14.0,
+    "precio": 28.01,
+    "precioUnidad": 2.33,
+    "pack": 12,
+    "stock": 0
+  },
+  {
+    "codigo": "1449",
+    "descripcion": "AGUJA TEJER CBX N*3 X 12 PARES",
+    "rubro": "AGUJAS",
+    "costo": 15.5,
+    "precio": 31.0,
+    "precioUnidad": 2.58,
+    "pack": 12,
+    "stock": 0
+  },
+  {
+    "codigo": "278",
+    "descripcion": "AGUJA TEJER CBX N*3.5 X12 PARES",
+    "rubro": "AGUJAS",
+    "costo": 17.02,
+    "precio": 34.03,
+    "precioUnidad": 2.84,
+    "pack": 12,
+    "stock": 3
+  },
+  {
+    "codigo": "279",
+    "descripcion": "AGUJA TEJER CBX N*4 X 12 PARES",
+    "rubro": "AGUJAS",
+    "costo": 17.02,
+    "precio": 34.03,
+    "precioUnidad": 2.84,
+    "pack": 12,
+    "stock": 8
+  },
+  {
+    "codigo": "5200",
+    "descripcion": "AGUJA TEJER CBX N*4.5 X12 PARES",
+    "rubro": "AGUJAS",
+    "costo": 18.53,
+    "precio": 37.06,
+    "precioUnidad": 3.09,
+    "pack": 12,
+    "stock": 50
+  },
+  {
+    "codigo": "1108",
+    "descripcion": "AGUJA TEJER CBX N*5 X 12 PARES",
+    "rubro": "AGUJAS",
+    "costo": 18.53,
+    "precio": 37.06,
+    "precioUnidad": 3.09,
+    "pack": 12,
+    "stock": 2
+  },
+  {
+    "codigo": "5072",
+    "descripcion": "AGUJA TEJER CBX N*5.5 X 12 PARES",
+    "rubro": "AGUJAS",
+    "costo": 19.37,
+    "precio": 38.73,
+    "precioUnidad": 3.23,
+    "pack": 12,
+    "stock": 2
+  },
+  {
+    "codigo": "637",
+    "descripcion": "AGUJA TEJER CBX N*6 X 12 PARES",
+    "rubro": "AGUJAS",
+    "costo": 19.37,
+    "precio": 38.73,
+    "precioUnidad": 3.23,
+    "pack": 12,
+    "stock": 12
+  },
+  {
+    "codigo": "7798",
+    "descripcion": "AGUJA TEJER CBX N*8 X 12 PARES",
+    "rubro": "AGUJAS",
+    "costo": 24.77,
+    "precio": 49.53,
+    "precioUnidad": 4.13,
+    "pack": 12,
+    "stock": 5
+  },
+  {
+    "codigo": "6402",
+    "descripcion": "AGUJA TEJER CBX No7 X 12 PARES",
+    "rubro": "AGUJAS",
+    "costo": 21.55,
+    "precio": 43.11,
+    "precioUnidad": 3.59,
+    "pack": 12,
+    "stock": 8
+  },
+  {
+    "codigo": "2423",
+    "descripcion": "AGUJA TOMAPUNTO CJ 15CM X6",
+    "rubro": "AGUJAS",
+    "costo": 3.0,
+    "precio": 6.0,
+    "precioUnidad": 1.0,
+    "pack": 6,
+    "stock": 2
+  },
+  {
+    "codigo": "639",
+    "descripcion": "ALAMAR MONTG PLAST. X6",
+    "rubro": "OTROS",
+    "costo": 4.6,
+    "precio": 9.2,
+    "precioUnidad": 1.53,
+    "pack": 6,
+    "stock": 50
+  },
+  {
+    "codigo": "351",
+    "descripcion": "ALAMB DOR/PLAT X12 (2.5 MTS)",
+    "rubro": "ALAMBRES",
+    "costo": 7.12,
+    "precio": 14.24,
+    "precioUnidad": 1.19,
+    "pack": 12,
+    "stock": 50
+  },
+  {
+    "codigo": "1152",
+    "descripcion": "ALAMB FOR/BAR(21)X12 MED",
+    "rubro": "ALAMBRES",
+    "costo": 5.29,
+    "precio": 10.59,
+    "precioUnidad": 0.88,
+    "pack": 12,
+    "stock": 50
+  },
+  {
+    "codigo": "1151",
+    "descripcion": "ALAMB FOR/COUL(23)X12 FIN",
+    "rubro": "ALAMBRES",
+    "costo": 4.24,
+    "precio": 8.47,
+    "precioUnidad": 0.71,
+    "pack": 12,
+    "stock": 1
+  },
+  {
+    "codigo": "1153",
+    "descripcion": "ALAMB FOR/LAYT(18)X12 GRS",
+    "rubro": "ALAMBRES",
+    "costo": 11.65,
+    "precio": 23.29,
+    "precioUnidad": 1.94,
+    "pack": 12,
+    "stock": 0
+  },
+  {
+    "codigo": "18",
+    "descripcion": "ALAMB LISO DOR/PLAT X5 MT",
+    "rubro": "ALAMBRES",
+    "costo": 1.38,
+    "precio": 2.75,
+    "precioUnidad": 0.55,
+    "pack": 5,
+    "stock": 1
+  },
+  {
+    "codigo": "137",
+    "descripcion": "ALF.CAB COLOR CBX PACK X10",
+    "rubro": "ALFILERES",
+    "costo": 12.32,
+    "precio": 24.65,
+    "precioUnidad": 2.46,
+    "pack": 10,
+    "stock": 0
+  },
+  {
+    "codigo": "36",
+    "descripcion": "ALF.CAB COLOR CHINA X40",
+    "rubro": "ALFILERES",
+    "costo": 0.25,
+    "precio": 0.49,
+    "precioUnidad": 0.49,
+    "pack": 40,
+    "stock": 5
+  },
+  {
+    "codigo": "402",
+    "descripcion": "CBX PASACINTA METAL X10",
+    "rubro": "OTROS",
+    "costo": 4.44,
+    "precio": 8.87,
+    "precioUnidad": 0.74,
+    "pack": 10,
+    "stock": 12
+  },
+  {
+    "codigo": "827",
+    "descripcion": "ALF.ERIZO CAJA 24X48",
+    "rubro": "ALFILERES",
+    "costo": 8.48,
+    "precio": 16.95,
+    "precioUnidad": 0.71,
+    "pack": 48,
+    "stock": 5
+  },
+  {
+    "codigo": "500",
+    "descripcion": "ALF.GANCH BB DOR-PLAT X144",
+    "rubro": "ALFILERES",
+    "costo": 0.69,
+    "precio": 1.38,
+    "precioUnidad": 0.01,
+    "pack": 144,
+    "stock": 12
+  },
+  {
+    "codigo": "1780",
+    "descripcion": "ALF.GANCH BB DOR-PLAT-NEG X1728",
+    "rubro": "ALFILERES",
+    "costo": 6.03,
+    "precio": 12.07,
+    "precioUnidad": 0.01,
+    "pack": 1728,
+    "stock": 20
+  },
+  {
+    "codigo": "913",
+    "descripcion": "ALF.GANCHO ESTILE 1X72",
+    "rubro": "ALFILERES",
+    "costo": 4.89,
+    "precio": 9.77,
+    "precioUnidad": 0.14,
+    "pack": 72,
+    "stock": 0
+  },
+  {
+    "codigo": "914",
+    "descripcion": "ALF.GANCHO ESTILE 2X72",
+    "rubro": "ALFILERES",
+    "costo": 5.2,
+    "precio": 10.41,
+    "precioUnidad": 0.14,
+    "pack": 72,
+    "stock": 0
+  },
+  {
+    "codigo": "915",
+    "descripcion": "ALF.GANCHO ESTILE 3X72",
+    "rubro": "ALFILERES",
+    "costo": 5.52,
+    "precio": 11.05,
+    "precioUnidad": 0.15,
+    "pack": 72,
+    "stock": 1
+  },
+  {
+    "codigo": "918",
+    "descripcion": "ALF.GANCHO ESTILE 4X72",
+    "rubro": "ALFILERES",
+    "costo": 6.15,
+    "precio": 12.3,
+    "precioUnidad": 0.17,
+    "pack": 72,
+    "stock": 100
+  },
+  {
+    "codigo": "927",
+    "descripcion": "ALF.GANCHO ESTILE 5X72",
+    "rubro": "ALFILERES",
+    "costo": 7.74,
+    "precio": 15.47,
+    "precioUnidad": 0.21,
+    "pack": 72,
+    "stock": 100
+  },
+  {
+    "codigo": "634",
+    "descripcion": "ANILINA COLIBRI FRIA",
+    "rubro": "OTROS",
+    "costo": 1.21,
+    "precio": 2.06,
+    "precioUnidad": 2.06,
+    "pack": 1,
+    "stock": 1
+  },
+  {
+    "codigo": "34",
+    "descripcion": "ANILINA COLIBRI POLIEST",
+    "rubro": "OTROS",
+    "costo": 2.98,
+    "precio": 5.96,
+    "precioUnidad": 5.96,
+    "pack": 1,
+    "stock": 20
+  },
+  {
+    "codigo": "1666",
+    "descripcion": "ANILINA DYLON SOBRE",
+    "rubro": "OTROS",
+    "costo": 1.55,
+    "precio": 3.1,
+    "precioUnidad": 3.1,
+    "pack": 1,
+    "stock": 20
+  },
+  {
+    "codigo": "403",
+    "descripcion": "ARCO CORP ACERO X25 PAR",
+    "rubro": "OTROS",
+    "costo": 5.44,
+    "precio": 10.87,
+    "precioUnidad": 0.43,
+    "pack": 25,
+    "stock": 2
+  },
+  {
+    "codigo": "8850",
+    "descripcion": "ARGO FIBROF 10/20 PACK X6",
+    "rubro": "OTROS",
+    "costo": 1.11,
+    "precio": 2.23,
+    "precioUnidad": 0.37,
+    "pack": 6,
+    "stock": 2
+  },
+  {
+    "codigo": "8851",
+    "descripcion": "ARGO FIBROF 22/30 PACK X5",
+    "rubro": "OTROS",
+    "costo": 2.23,
+    "precio": 4.45,
+    "precioUnidad": 0.89,
+    "pack": 5,
+    "stock": 0
+  },
+  {
+    "codigo": "7340",
+    "descripcion": "ARGO FIBROF ESTRELLA PACK X7",
+    "rubro": "OTROS",
+    "costo": 2.16,
+    "precio": 4.31,
+    "precioUnidad": 0.62,
+    "pack": 7,
+    "stock": 12
+  },
+  {
+    "codigo": "7400",
+    "descripcion": "ARGO FIBROF FLOR 10/30 PACK X12",
+    "rubro": "OTROS",
+    "costo": 3.05,
+    "precio": 6.1,
+    "precioUnidad": 0.51,
+    "pack": 12,
+    "stock": 100
+  },
+  {
+    "codigo": "709",
+    "descripcion": "ARGO LLAVERO C/CADENA X100",
+    "rubro": "OTROS",
+    "costo": 5.31,
+    "precio": 10.63,
+    "precioUnidad": 0.11,
+    "pack": 100,
+    "stock": 20
+  },
+  {
+    "codigo": "2421",
+    "descripcion": "ARGO LLAVERO X100",
+    "rubro": "OTROS",
+    "costo": 3.05,
+    "precio": 6.11,
+    "precioUnidad": 0.06,
+    "pack": 100,
+    "stock": 0
+  },
+  {
+    "codigo": "1974",
+    "descripcion": "ARGO PLAST 3.5 CM X20",
+    "rubro": "OTROS",
+    "costo": 2.23,
+    "precio": 4.45,
+    "precioUnidad": 0.22,
+    "pack": 20,
+    "stock": 0
+  },
+  {
+    "codigo": "1975",
+    "descripcion": "ARGO PLAST 5 CM XUNID",
+    "rubro": "OTROS",
+    "costo": 0.15,
+    "precio": 0.3,
+    "precioUnidad": 0.3,
+    "pack": 1,
+    "stock": 100
+  },
+  {
+    "codigo": "362",
+    "descripcion": "ARGO PLAST 10 CM XUNID",
+    "rubro": "OTROS",
+    "costo": 0.21,
+    "precio": 0.43,
+    "precioUnidad": 0.43,
+    "pack": 1,
+    "stock": 20
+  },
+  {
+    "codigo": "549",
+    "descripcion": "ARGO PLAST 17 CM XUNID",
+    "rubro": "OTROS",
+    "costo": 0.41,
+    "precio": 0.82,
+    "precioUnidad": 0.82,
+    "pack": 1,
+    "stock": 100
+  },
+  {
+    "codigo": "1524",
+    "descripcion": "ARGO PLAST 12 X200",
+    "rubro": "OTROS",
+    "costo": 4.45,
+    "precio": 8.89,
+    "precioUnidad": 0.04,
+    "pack": 200,
+    "stock": 0
+  },
+  {
+    "codigo": "1526",
+    "descripcion": "ARGO PLAST 15 X200",
+    "rubro": "OTROS",
+    "costo": 4.81,
+    "precio": 9.62,
+    "precioUnidad": 0.05,
+    "pack": 200,
+    "stock": 50
+  },
+  {
+    "codigo": "1527",
+    "descripcion": "ARGO PLAST 20 X200",
+    "rubro": "OTROS",
+    "costo": 6.64,
+    "precio": 13.29,
+    "precioUnidad": 0.07,
+    "pack": 200,
+    "stock": 50
+  },
+  {
+    "codigo": "1528",
+    "descripcion": "ARGO PLAST 25 X200",
+    "rubro": "OTROS",
+    "costo": 7.78,
+    "precio": 15.57,
+    "precioUnidad": 0.08,
+    "pack": 200,
+    "stock": 5
+  },
+  {
+    "codigo": "1529",
+    "descripcion": "ARGO PLAST 30 X200",
+    "rubro": "OTROS",
+    "costo": 11.54,
+    "precio": 23.07,
+    "precioUnidad": 0.12,
+    "pack": 200,
+    "stock": 5
+  },
+  {
+    "codigo": "1534",
+    "descripcion": "ARGO PLAST 40 X200",
+    "rubro": "OTROS",
+    "costo": 12.84,
+    "precio": 25.68,
+    "precioUnidad": 0.13,
+    "pack": 200,
+    "stock": 5
+  },
+  {
+    "codigo": "82",
+    "descripcion": "ARPILLERA CRUDA ANCHO 1.00 XMT",
+    "rubro": "OTROS",
+    "costo": 1.5,
+    "precio": 3.0,
+    "precioUnidad": 3.0,
+    "pack": 1,
+    "stock": 1
+  },
+  {
+    "codigo": "1095",
+    "descripcion": "BALLENITA ANCHA X25 MTS",
+    "rubro": "OTROS",
+    "costo": 17.02,
+    "precio": 34.03,
+    "precioUnidad": 1.36,
+    "pack": 25,
+    "stock": 2
+  },
+  {
+    "codigo": "72",
+    "descripcion": "BALLENITA ANGOS X25MT",
+    "rubro": "OTROS",
+    "costo": 6.38,
+    "precio": 12.76,
+    "precioUnidad": 0.51,
+    "pack": 25,
+    "stock": 0
+  },
+  {
+    "codigo": "2404",
+    "descripcion": "BASTIDOR CJ PLASTICO 12CM",
+    "rubro": "OTROS",
+    "costo": 1.21,
+    "precio": 2.42,
+    "precioUnidad": 2.42,
+    "pack": 1,
+    "stock": 8
+  },
+  {
+    "codigo": "2405",
+    "descripcion": "BASTIDOR CJ PLASTICO 15CM",
+    "rubro": "OTROS",
+    "costo": 1.37,
+    "precio": 2.74,
+    "precioUnidad": 2.74,
+    "pack": 1,
+    "stock": 2
+  },
+  {
+    "codigo": "2406",
+    "descripcion": "BASTIDOR CJ PLASTICO 22CM",
+    "rubro": "OTROS",
+    "costo": 1.45,
+    "precio": 2.9,
+    "precioUnidad": 2.9,
+    "pack": 1,
+    "stock": 8
+  },
+  {
+    "codigo": "2407",
+    "descripcion": "BASTIDOR CJ PLASTICO 26CM",
+    "rubro": "OTROS",
+    "costo": 1.53,
+    "precio": 3.07,
+    "precioUnidad": 3.07,
+    "pack": 1,
+    "stock": 8
+  },
+  {
+    "codigo": "6562",
+    "descripcion": "BASTIDOR FIBROF.10-12 CM",
+    "rubro": "OTROS",
+    "costo": 0.7,
+    "precio": 1.4,
+    "precioUnidad": 1.4,
+    "pack": 1,
+    "stock": 50
+  },
+  {
+    "codigo": "607",
+    "descripcion": "BASTIDOR FIBROF.14-16 CM",
+    "rubro": "OTROS",
+    "costo": 1.12,
+    "precio": 2.23,
+    "precioUnidad": 2.23,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "902",
+    "descripcion": "BASTIDOR FIBROF.18-20 CM",
+    "rubro": "OTROS",
+    "costo": 1.48,
+    "precio": 2.97,
+    "precioUnidad": 2.97,
+    "pack": 1,
+    "stock": 3
+  },
+  {
+    "codigo": "794",
+    "descripcion": "BASTIDOR FIBROF.22-24 CM",
+    "rubro": "OTROS",
+    "costo": 1.61,
+    "precio": 3.23,
+    "precioUnidad": 3.23,
+    "pack": 1,
+    "stock": 3
+  },
+  {
+    "codigo": "1278",
+    "descripcion": "BASTIDOR FIBROF.26-28 CM",
+    "rubro": "OTROS",
+    "costo": 1.62,
+    "precio": 3.25,
+    "precioUnidad": 3.25,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "1085",
+    "descripcion": "BOBINA CROCHET PLAST X1",
+    "rubro": "OTROS",
+    "costo": 3.33,
+    "precio": 6.65,
+    "precioUnidad": 6.65,
+    "pack": 1,
+    "stock": 100
+  },
+  {
+    "codigo": "492",
+    "descripcion": "BOBINA MAQ.COMUN X1",
+    "rubro": "OTROS",
+    "costo": 1.57,
+    "precio": 3.15,
+    "precioUnidad": 3.15,
+    "pack": 1,
+    "stock": 50
+  },
+  {
+    "codigo": "115",
+    "descripcion": "BOBINA MAQ.INDUST X1.",
+    "rubro": "OTROS",
+    "costo": 3.15,
+    "precio": 6.29,
+    "precioUnidad": 6.29,
+    "pack": 1,
+    "stock": 3
+  },
+  {
+    "codigo": "1203",
+    "descripcion": "BOLSILLOS PLAN Y LISTO",
+    "rubro": "OTROS",
+    "costo": 2.18,
+    "precio": 4.37,
+    "precioUnidad": 4.37,
+    "pack": 1,
+    "stock": 2
+  },
+  {
+    "codigo": "572",
+    "descripcion": "BOTON BCOXGSA N*14",
+    "rubro": "BOTONES",
+    "costo": 4.05,
+    "precio": 8.1,
+    "precioUnidad": 0.06,
+    "pack": 1,
+    "stock": 2
+  },
+  {
+    "codigo": "573",
+    "descripcion": "BOTON BCOXGSA N*16",
+    "rubro": "BOTONES",
+    "costo": 3.59,
+    "precio": 7.17,
+    "precioUnidad": 0.05,
+    "pack": 1,
+    "stock": 100
+  },
+  {
+    "codigo": "574",
+    "descripcion": "BOTON BCOXGSA N*18",
+    "rubro": "BOTONES",
+    "costo": 3.59,
+    "precio": 7.17,
+    "precioUnidad": 0.05,
+    "pack": 1,
+    "stock": 3
+  },
+  {
+    "codigo": "576",
+    "descripcion": "BOTON BCOXGSA N*22",
+    "rubro": "BOTONES",
+    "costo": 5.12,
+    "precio": 10.25,
+    "precioUnidad": 0.07,
+    "pack": 1,
+    "stock": 100
+  },
+  {
+    "codigo": "577",
+    "descripcion": "BOTON BCOXGSA N*28",
+    "rubro": "BOTONES",
+    "costo": 8.93,
+    "precio": 17.86,
+    "precioUnidad": 0.12,
+    "pack": 1,
+    "stock": 8
+  },
+  {
+    "codigo": "579",
+    "descripcion": "BOTON BCOXGSA N*32",
+    "rubro": "BOTONES",
+    "costo": 13.2,
+    "precio": 26.41,
+    "precioUnidad": 0.18,
+    "pack": 1,
+    "stock": 5
+  },
+  {
+    "codigo": "2202",
+    "descripcion": "BOTON VAQ EBERL 17 X100 BASE MET.",
+    "rubro": "BOTONES",
+    "costo": 8.2,
+    "precio": 16.41,
+    "precioUnidad": 0.16,
+    "pack": 100,
+    "stock": 0
+  },
+  {
+    "codigo": "2200",
+    "descripcion": "BOTON VAQ EBERL 20 FIJO X100",
+    "rubro": "BOTONES",
+    "costo": 11.05,
+    "precio": 22.11,
+    "precioUnidad": 0.22,
+    "pack": 100,
+    "stock": 5
+  },
+  {
+    "codigo": "1109",
+    "descripcion": "BRETEL E-F 11MM ART 211 X6 UNID",
+    "rubro": "OTROS",
+    "costo": 4.05,
+    "precio": 8.1,
+    "precioUnidad": 1.35,
+    "pack": 6,
+    "stock": 8
+  },
+  {
+    "codigo": "1683",
+    "descripcion": "BRETEL E-F 15MM ART 215 X 6",
+    "rubro": "OTROS",
+    "costo": 4.66,
+    "precio": 9.33,
+    "precioUnidad": 1.55,
+    "pack": 6,
+    "stock": 0
+  },
+  {
+    "codigo": "1063",
+    "descripcion": "BRETEL E-F 6MM ART 206 X6 UNID",
+    "rubro": "OTROS",
+    "costo": 3.58,
+    "precio": 7.17,
+    "precioUnidad": 1.19,
+    "pack": 6,
+    "stock": 2
+  },
+  {
+    "codigo": "656",
+    "descripcion": "BRETEL M. 6MM RASAD X6",
+    "rubro": "OTROS",
+    "costo": 3.85,
+    "precio": 7.71,
+    "precioUnidad": 1.28,
+    "pack": 6,
+    "stock": 100
+  },
+  {
+    "codigo": "653",
+    "descripcion": "BRETEL M. 6MM RASAD ZAMAK X6",
+    "rubro": "OTROS",
+    "costo": 4.09,
+    "precio": 8.18,
+    "precioUnidad": 1.36,
+    "pack": 6,
+    "stock": 12
+  },
+  {
+    "codigo": "646",
+    "descripcion": "BRETEL M. 10MM RASA/AFELP X6",
+    "rubro": "OTROS",
+    "costo": 4.09,
+    "precio": 8.18,
+    "precioUnidad": 1.36,
+    "pack": 6,
+    "stock": 50
+  },
+  {
+    "codigo": "1225",
+    "descripcion": "BRETEL M. 10MM RASAD ZAMAK X6",
+    "rubro": "OTROS",
+    "costo": 4.85,
+    "precio": 9.71,
+    "precioUnidad": 1.62,
+    "pack": 6,
+    "stock": 8
+  },
+  {
+    "codigo": "645",
+    "descripcion": "BRETEL M. AFELP 15MM X6",
+    "rubro": "OTROS",
+    "costo": 6.0,
+    "precio": 11.99,
+    "precioUnidad": 2.0,
+    "pack": 6,
+    "stock": 2
+  },
+  {
+    "codigo": "606",
+    "descripcion": "BRETEL M. SILIC 6MM X6",
+    "rubro": "OTROS",
+    "costo": 5.05,
+    "precio": 10.1,
+    "precioUnidad": 1.68,
+    "pack": 6,
+    "stock": 0
+  },
+  {
+    "codigo": "525",
+    "descripcion": "BRETEL M. SILIC 10MM X6",
+    "rubro": "OTROS",
+    "costo": 5.5,
+    "precio": 11.0,
+    "precioUnidad": 1.83,
+    "pack": 6,
+    "stock": 20
+  },
+  {
+    "codigo": "256",
+    "descripcion": "BRETEL M. SILIC ZAMAC 6MM X6",
+    "rubro": "OTROS",
+    "costo": 5.42,
+    "precio": 10.85,
+    "precioUnidad": 1.81,
+    "pack": 6,
+    "stock": 12
+  },
+  {
+    "codigo": "259",
+    "descripcion": "BRETEL M. SILIC ZAMAC 10MM X6",
+    "rubro": "OTROS",
+    "costo": 5.71,
+    "precio": 11.42,
+    "precioUnidad": 1.9,
+    "pack": 6,
+    "stock": 0
+  },
+  {
+    "codigo": "1294",
+    "descripcion": "BROCHE IMAN 18MM X20 UNIDS",
+    "rubro": "OTROS",
+    "costo": 3.17,
+    "precio": 6.34,
+    "precioUnidad": 0.32,
+    "pack": 20,
+    "stock": 5
+  },
+  {
+    "codigo": "332",
+    "descripcion": "BROCHE MADISON CBX X20",
+    "rubro": "OTROS",
+    "costo": 11.28,
+    "precio": 22.55,
+    "precioUnidad": 1.13,
+    "pack": 20,
+    "stock": 2
+  },
+  {
+    "codigo": "1051",
+    "descripcion": "BROCHE PATCHWORK N*27/15 X 24 UNID",
+    "rubro": "OTROS",
+    "costo": 4.23,
+    "precio": 8.46,
+    "precioUnidad": 0.35,
+    "pack": 24,
+    "stock": 0
+  },
+  {
+    "codigo": "875",
+    "descripcion": "BROCHE PATCHWORK N*33/15 X 12 UNID",
+    "rubro": "OTROS",
+    "costo": 4.48,
+    "precio": 8.96,
+    "precioUnidad": 0.75,
+    "pack": 12,
+    "stock": 20
+  },
+  {
+    "codigo": "837",
+    "descripcion": "BROCHE PRESION PULPO 0 X36",
+    "rubro": "OTROS",
+    "costo": 6.01,
+    "precio": 12.02,
+    "precioUnidad": 0.33,
+    "pack": 36,
+    "stock": 20
+  },
+  {
+    "codigo": "267",
+    "descripcion": "BROCHE PRESION PULPO 1 X36",
+    "rubro": "OTROS",
+    "costo": 6.1,
+    "precio": 12.2,
+    "precioUnidad": 0.34,
+    "pack": 36,
+    "stock": 2
+  },
+  {
+    "codigo": "838",
+    "descripcion": "BROCHE PRESION PULPO 2 X36",
+    "rubro": "OTROS",
+    "costo": 7.12,
+    "precio": 14.24,
+    "precioUnidad": 0.4,
+    "pack": 36,
+    "stock": 20
+  },
+  {
+    "codigo": "486",
+    "descripcion": "BROCHE PRESION PULPO 11 X36",
+    "rubro": "OTROS",
+    "costo": 9.16,
+    "precio": 18.33,
+    "precioUnidad": 0.51,
+    "pack": 36,
+    "stock": 1
+  },
+  {
+    "codigo": "1139",
+    "descripcion": "BROCHE PRESION PULPO 3 X36",
+    "rubro": "OTROS",
+    "costo": 12.63,
+    "precio": 25.26,
+    "precioUnidad": 0.7,
+    "pack": 36,
+    "stock": 0
+  },
+  {
+    "codigo": "871",
+    "descripcion": "BROCHE PRESION PULPO 4 X12",
+    "rubro": "OTROS",
+    "costo": 7.16,
+    "precio": 14.31,
+    "precioUnidad": 1.19,
+    "pack": 12,
+    "stock": 5
+  },
+  {
+    "codigo": "505",
+    "descripcion": "BROCHE PRESION PULPO 6 X12",
+    "rubro": "OTROS",
+    "costo": 10.03,
+    "precio": 20.06,
+    "precioUnidad": 1.67,
+    "pack": 12,
+    "stock": 1
+  },
+  {
+    "codigo": "1999",
+    "descripcion": "CARRETEL MAQ.CBX PLASTICO X24",
+    "rubro": "OTROS",
+    "costo": 4.05,
+    "precio": 8.1,
+    "precioUnidad": 0.34,
+    "pack": 24,
+    "stock": 0
+  },
+  {
+    "codigo": "114",
+    "descripcion": "CARRETEL MAQ.INDUST.X12",
+    "rubro": "OTROS",
+    "costo": 1.94,
+    "precio": 3.88,
+    "precioUnidad": 0.32,
+    "pack": 12,
+    "stock": 2
+  },
+  {
+    "codigo": "1211",
+    "descripcion": "CARRETEL MAQ.METAL COMUN X12",
+    "rubro": "OTROS",
+    "costo": 1.43,
+    "precio": 2.86,
+    "precioUnidad": 0.24,
+    "pack": 12,
+    "stock": 3
+  },
+  {
+    "codigo": "1210",
+    "descripcion": "CARRETEL MAQ.PLASTICO X12",
+    "rubro": "OTROS",
+    "costo": 0.85,
+    "precio": 1.7,
+    "precioUnidad": 0.14,
+    "pack": 12,
+    "stock": 0
+  },
+  {
+    "codigo": "5003",
+    "descripcion": "CENTIMETRO AUT. CBX X9",
+    "rubro": "CENTIMETRO",
+    "costo": 16.02,
+    "precio": 32.05,
+    "precioUnidad": 3.56,
+    "pack": 9,
+    "stock": 1
+  },
+  {
+    "codigo": "5210",
+    "descripcion": "CENTIMETRO CBX X 12",
+    "rubro": "CENTIMETRO",
+    "costo": 7.31,
+    "precio": 14.62,
+    "precioUnidad": 1.22,
+    "pack": 12,
+    "stock": 5
+  },
+  {
+    "codigo": "69",
+    "descripcion": "CENTIMETRO CHINO X12",
+    "rubro": "CENTIMETRO",
+    "costo": 4.06,
+    "precio": 8.12,
+    "precioUnidad": 0.68,
+    "pack": 12,
+    "stock": 100
+  },
+  {
+    "codigo": "1834",
+    "descripcion": "CIERRE ALUM 40 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 1.57,
+    "precio": 3.13,
+    "precioUnidad": 3.13,
+    "pack": 1,
+    "stock": 8
+  },
+  {
+    "codigo": "1835",
+    "descripcion": "CIERRE ALUM 45 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 1.63,
+    "precio": 3.27,
+    "precioUnidad": 3.27,
+    "pack": 1,
+    "stock": 100
+  },
+  {
+    "codigo": "931",
+    "descripcion": "CIERRE ALUM 50 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 1.7,
+    "precio": 3.41,
+    "precioUnidad": 3.41,
+    "pack": 1,
+    "stock": 8
+  },
+  {
+    "codigo": "932",
+    "descripcion": "CIERRE ALUM 55 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 1.77,
+    "precio": 3.55,
+    "precioUnidad": 3.55,
+    "pack": 1,
+    "stock": 20
+  },
+  {
+    "codigo": "933",
+    "descripcion": "CIERRE ALUM 60 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 1.84,
+    "precio": 3.69,
+    "precioUnidad": 3.69,
+    "pack": 1,
+    "stock": 20
+  },
+  {
+    "codigo": "934",
+    "descripcion": "CIERRE ALUM 65 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 1.91,
+    "precio": 3.83,
+    "precioUnidad": 3.83,
+    "pack": 1,
+    "stock": 12
+  },
+  {
+    "codigo": "935",
+    "descripcion": "CIERRE ALUM 70 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 1.98,
+    "precio": 3.96,
+    "precioUnidad": 3.96,
+    "pack": 1,
+    "stock": 100
+  },
+  {
+    "codigo": "1140",
+    "descripcion": "CIERRE ALUM 75 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 2.05,
+    "precio": 4.1,
+    "precioUnidad": 4.1,
+    "pack": 1,
+    "stock": 5
+  },
+  {
+    "codigo": "1158",
+    "descripcion": "CIERRE ALUM 80 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 2.12,
+    "precio": 4.24,
+    "precioUnidad": 4.24,
+    "pack": 1,
+    "stock": 3
+  },
+  {
+    "codigo": "1845",
+    "descripcion": "CIERRE ALUM 85 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 2.19,
+    "precio": 4.38,
+    "precioUnidad": 4.38,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "1395",
+    "descripcion": "CIERRE ALUM CL 12 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.5,
+    "precio": 1.01,
+    "precioUnidad": 1.01,
+    "pack": 1,
+    "stock": 100
+  },
+  {
+    "codigo": "906",
+    "descripcion": "CIERRE ALUM CL 14 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.53,
+    "precio": 1.06,
+    "precioUnidad": 1.06,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "907",
+    "descripcion": "CIERRE ALUM CL 16 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.56,
+    "precio": 1.12,
+    "precioUnidad": 1.12,
+    "pack": 1,
+    "stock": 8
+  },
+  {
+    "codigo": "908",
+    "descripcion": "CIERRE ALUM CL 18 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.59,
+    "precio": 1.17,
+    "precioUnidad": 1.17,
+    "pack": 1,
+    "stock": 100
+  },
+  {
+    "codigo": "909",
+    "descripcion": "CIERRE ALUM CL 20 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.61,
+    "precio": 1.23,
+    "precioUnidad": 1.23,
+    "pack": 1,
+    "stock": 2
+  },
+  {
+    "codigo": "41",
+    "descripcion": "CIERRE BRON 10 AUT YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.62,
+    "precio": 1.25,
+    "precioUnidad": 1.25,
+    "pack": 1,
+    "stock": 8
+  },
+  {
+    "codigo": "482",
+    "descripcion": "CIERRE BRON 12 AUT YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.67,
+    "precio": 1.35,
+    "precioUnidad": 1.35,
+    "pack": 1,
+    "stock": 20
+  },
+  {
+    "codigo": "624",
+    "descripcion": "CIERRE BRON 14 AUT YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.72,
+    "precio": 1.45,
+    "precioUnidad": 1.45,
+    "pack": 1,
+    "stock": 2
+  },
+  {
+    "codigo": "625",
+    "descripcion": "CIERRE BRON 16 AUT YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.77,
+    "precio": 1.55,
+    "precioUnidad": 1.55,
+    "pack": 1,
+    "stock": 8
+  },
+  {
+    "codigo": "626",
+    "descripcion": "CIERRE BRON 18 AUT YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.82,
+    "precio": 1.65,
+    "precioUnidad": 1.65,
+    "pack": 1,
+    "stock": 5
+  },
+  {
+    "codigo": "327",
+    "descripcion": "CIERRE BRON 20 AUT YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.87,
+    "precio": 1.74,
+    "precioUnidad": 1.74,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "1548",
+    "descripcion": "CIERRE D.PERRITO 14",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.54,
+    "precio": 1.08,
+    "precioUnidad": 1.08,
+    "pack": 1,
+    "stock": 1
+  },
+  {
+    "codigo": "1432",
+    "descripcion": "CIERRE D.PERRITO 16",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.54,
+    "precio": 1.09,
+    "precioUnidad": 1.09,
+    "pack": 1,
+    "stock": 12
+  },
+  {
+    "codigo": "1549",
+    "descripcion": "CIERRE D.PERRITO 18",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.56,
+    "precio": 1.11,
+    "precioUnidad": 1.11,
+    "pack": 1,
+    "stock": 20
+  },
+  {
+    "codigo": "1433",
+    "descripcion": "CIERRE D.PERRITO 20",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.57,
+    "precio": 1.14,
+    "precioUnidad": 1.14,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "1434",
+    "descripcion": "CIERRE D.PERRITO 25",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.6,
+    "precio": 1.21,
+    "precioUnidad": 1.21,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "1555",
+    "descripcion": "CIERRE D.PERRITO 30",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.77,
+    "precio": 1.55,
+    "precioUnidad": 1.55,
+    "pack": 1,
+    "stock": 5
+  },
+  {
+    "codigo": "1556",
+    "descripcion": "CIERRE D.PERRITO 35",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.8,
+    "precio": 1.59,
+    "precioUnidad": 1.59,
+    "pack": 1,
+    "stock": 5
+  },
+  {
+    "codigo": "1435",
+    "descripcion": "CIERRE D.PERRITO 40",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.82,
+    "precio": 1.64,
+    "precioUnidad": 1.64,
+    "pack": 1,
+    "stock": 3
+  },
+  {
+    "codigo": "1557",
+    "descripcion": "CIERRE D.PERRITO 45",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.84,
+    "precio": 1.69,
+    "precioUnidad": 1.69,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "1436",
+    "descripcion": "CIERRE D.PERRITO 50",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.87,
+    "precio": 1.73,
+    "precioUnidad": 1.73,
+    "pack": 1,
+    "stock": 5
+  },
+  {
+    "codigo": "1437",
+    "descripcion": "CIERRE D.PERRITO 55",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.89,
+    "precio": 1.78,
+    "precioUnidad": 1.78,
+    "pack": 1,
+    "stock": 2
+  },
+  {
+    "codigo": "1438",
+    "descripcion": "CIERRE D.PERRITO 60",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.91,
+    "precio": 1.83,
+    "precioUnidad": 1.83,
+    "pack": 1,
+    "stock": 12
+  },
+  {
+    "codigo": "1439",
+    "descripcion": "CIERRE D.PERRITO 65",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.94,
+    "precio": 1.89,
+    "precioUnidad": 1.89,
+    "pack": 1,
+    "stock": 20
+  },
+  {
+    "codigo": "1440",
+    "descripcion": "CIERRE D.PERRITO 70",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.98,
+    "precio": 1.95,
+    "precioUnidad": 1.95,
+    "pack": 1,
+    "stock": 2
+  },
+  {
+    "codigo": "1441",
+    "descripcion": "CIERRE D.PERRITO 75",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 1.01,
+    "precio": 2.02,
+    "precioUnidad": 2.02,
+    "pack": 1,
+    "stock": 50
+  },
+  {
+    "codigo": "1442",
+    "descripcion": "CIERRE D.PERRITO 80",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 1.05,
+    "precio": 2.1,
+    "precioUnidad": 2.1,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "1838",
+    "descripcion": "CIERRE EMPV 40 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 2.54,
+    "precio": 5.08,
+    "precioUnidad": 5.08,
+    "pack": 1,
+    "stock": 1
+  },
+  {
+    "codigo": "1839",
+    "descripcion": "CIERRE EMPV 45 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 2.71,
+    "precio": 5.43,
+    "precioUnidad": 5.43,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "993",
+    "descripcion": "CIERRE EMPV 50 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 2.89,
+    "precio": 5.78,
+    "precioUnidad": 5.78,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "994",
+    "descripcion": "CIERRE EMPV 55 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 3.06,
+    "precio": 6.13,
+    "precioUnidad": 6.13,
+    "pack": 1,
+    "stock": 1
+  },
+  {
+    "codigo": "995",
+    "descripcion": "CIERRE EMPV 60 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 3.24,
+    "precio": 6.47,
+    "precioUnidad": 6.47,
+    "pack": 1,
+    "stock": 1
+  },
+  {
+    "codigo": "996",
+    "descripcion": "CIERRE EMPV 65 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 3.41,
+    "precio": 6.82,
+    "precioUnidad": 6.82,
+    "pack": 1,
+    "stock": 12
+  },
+  {
+    "codigo": "997",
+    "descripcion": "CIERRE EMPV 70 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 3.59,
+    "precio": 7.17,
+    "precioUnidad": 7.17,
+    "pack": 1,
+    "stock": 12
+  },
+  {
+    "codigo": "1088",
+    "descripcion": "CIERRE EMPV 75 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 3.76,
+    "precio": 7.52,
+    "precioUnidad": 7.52,
+    "pack": 1,
+    "stock": 20
+  },
+  {
+    "codigo": "1115",
+    "descripcion": "CIERRE EMPV 80 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 3.93,
+    "precio": 7.87,
+    "precioUnidad": 7.87,
+    "pack": 1,
+    "stock": 3
+  },
+  {
+    "codigo": "1847",
+    "descripcion": "CIERRE EMPV 85 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 4.11,
+    "precio": 8.23,
+    "precioUnidad": 8.23,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "56",
+    "descripcion": "CIERRE FINO 10 ́YKK ́",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.23,
+    "precio": 0.47,
+    "precioUnidad": 0.47,
+    "pack": 1,
+    "stock": 20
+  },
+  {
+    "codigo": "57",
+    "descripcion": "CIERE FINO 12 ́YKK ́",
+    "rubro": "OTROS",
+    "costo": 0.24,
+    "precio": 0.49,
+    "precioUnidad": 0.49,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "680",
+    "descripcion": "CIERRE FINO 14 ́YKK ́",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.25,
+    "precio": 0.51,
+    "precioUnidad": 0.51,
+    "pack": 1,
+    "stock": 50
+  },
+  {
+    "codigo": "681",
+    "descripcion": "CIERRE FINO 16 ́YKK ́",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.26,
+    "precio": 0.53,
+    "precioUnidad": 0.53,
+    "pack": 1,
+    "stock": 8
+  },
+  {
+    "codigo": "682",
+    "descripcion": "CIERRE FINO 18 ́YKK ́",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.27,
+    "precio": 0.54,
+    "precioUnidad": 0.54,
+    "pack": 1,
+    "stock": 20
+  },
+  {
+    "codigo": "683",
+    "descripcion": "CIERRE FINO 20 ́YKK ́",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.28,
+    "precio": 0.56,
+    "precioUnidad": 0.56,
+    "pack": 1,
+    "stock": 8
+  },
+  {
+    "codigo": "684",
+    "descripcion": "CIERRE FINO 25 ́YKK ́",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.31,
+    "precio": 0.61,
+    "precioUnidad": 0.61,
+    "pack": 1,
+    "stock": 8
+  },
+  {
+    "codigo": "685",
+    "descripcion": "CIERRE FINO 30 ́YKK ́",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.33,
+    "precio": 0.66,
+    "precioUnidad": 0.66,
+    "pack": 1,
+    "stock": 3
+  },
+  {
+    "codigo": "686",
+    "descripcion": "CIERRE FINO 35 ́YKK ́",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.35,
+    "precio": 0.71,
+    "precioUnidad": 0.71,
+    "pack": 1,
+    "stock": 20
+  },
+  {
+    "codigo": "687",
+    "descripcion": "CIERRE FINO 40 ́YKK ́",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.38,
+    "precio": 0.75,
+    "precioUnidad": 0.75,
+    "pack": 1,
+    "stock": 8
+  },
+  {
+    "codigo": "688",
+    "descripcion": "CIERRE FINO 45 ́YKK ́",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.4,
+    "precio": 0.8,
+    "precioUnidad": 0.8,
+    "pack": 1,
+    "stock": 3
+  },
+  {
+    "codigo": "689",
+    "descripcion": "CIERRE FINO 50 ́YKK ́",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.42,
+    "precio": 0.85,
+    "precioUnidad": 0.85,
+    "pack": 1,
+    "stock": 50
+  },
+  {
+    "codigo": "976",
+    "descripcion": "CIERRE FINO 55 ́YKK ́",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.45,
+    "precio": 0.89,
+    "precioUnidad": 0.89,
+    "pack": 1,
+    "stock": 5
+  },
+  {
+    "codigo": "977",
+    "descripcion": "CIERRE FINO 60 ́YKK ́",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.47,
+    "precio": 0.94,
+    "precioUnidad": 0.94,
+    "pack": 1,
+    "stock": 100
+  },
+  {
+    "codigo": "1161",
+    "descripcion": "CIERRE INVIS 16 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.75,
+    "precio": 1.5,
+    "precioUnidad": 1.5,
+    "pack": 1,
+    "stock": 20
+  },
+  {
+    "codigo": "1168",
+    "descripcion": "CIERRE INVIS 18 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.78,
+    "precio": 1.56,
+    "precioUnidad": 1.56,
+    "pack": 1,
+    "stock": 50
+  },
+  {
+    "codigo": "1170",
+    "descripcion": "CIERRE INVIS 20 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.81,
+    "precio": 1.61,
+    "precioUnidad": 1.61,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "1171",
+    "descripcion": "CIERRE INVIS 30 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.94,
+    "precio": 1.89,
+    "precioUnidad": 1.89,
+    "pack": 1,
+    "stock": 8
+  },
+  {
+    "codigo": "1172",
+    "descripcion": "CIERRE INVIS 40 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 1.08,
+    "precio": 2.17,
+    "precioUnidad": 2.17,
+    "pack": 1,
+    "stock": 20
+  },
+  {
+    "codigo": "1173",
+    "descripcion": "CIERRE INVIS 50 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 1.22,
+    "precio": 2.45,
+    "precioUnidad": 2.45,
+    "pack": 1,
+    "stock": 8
+  },
+  {
+    "codigo": "1601",
+    "descripcion": "CIERRE SEP 30 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.93,
+    "precio": 1.86,
+    "precioUnidad": 1.86,
+    "pack": 1,
+    "stock": 8
+  },
+  {
+    "codigo": "1602",
+    "descripcion": "CIERRE SEP 35 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 1.0,
+    "precio": 2.0,
+    "precioUnidad": 2.0,
+    "pack": 1,
+    "stock": 3
+  },
+  {
+    "codigo": "1603",
+    "descripcion": "CIERRE SEP 40 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 1.04,
+    "precio": 2.08,
+    "precioUnidad": 2.08,
+    "pack": 1,
+    "stock": 20
+  },
+  {
+    "codigo": "1604",
+    "descripcion": "CIERRE SEP 45 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 1.07,
+    "precio": 2.14,
+    "precioUnidad": 2.14,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "1605",
+    "descripcion": "CIERRE SEP 50 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 1.14,
+    "precio": 2.28,
+    "precioUnidad": 2.28,
+    "pack": 1,
+    "stock": 1
+  },
+  {
+    "codigo": "1606",
+    "descripcion": "CIERRE SEP 55 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 1.17,
+    "precio": 2.34,
+    "precioUnidad": 2.34,
+    "pack": 1,
+    "stock": 20
+  },
+  {
+    "codigo": "1607",
+    "descripcion": "CIERRE SEP 60 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 1.24,
+    "precio": 2.48,
+    "precioUnidad": 2.48,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "1608",
+    "descripcion": "CIERRE SEP 65 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 1.3,
+    "precio": 2.6,
+    "precioUnidad": 2.6,
+    "pack": 1,
+    "stock": 1
+  },
+  {
+    "codigo": "1609",
+    "descripcion": "CIERRE SEP 70 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 1.33,
+    "precio": 2.66,
+    "precioUnidad": 2.66,
+    "pack": 1,
+    "stock": 8
+  },
+  {
+    "codigo": "1610",
+    "descripcion": "CIERRE SEP 75 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 1.36,
+    "precio": 2.72,
+    "precioUnidad": 2.72,
+    "pack": 1,
+    "stock": 3
+  },
+  {
+    "codigo": "1611",
+    "descripcion": "CIERRE SEP 80 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 1.4,
+    "precio": 2.8,
+    "precioUnidad": 2.8,
+    "pack": 1,
+    "stock": 3
+  },
+  {
+    "codigo": "1612",
+    "descripcion": "CIERRE SEP 85 YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 1.45,
+    "precio": 2.9,
+    "precioUnidad": 2.9,
+    "pack": 1,
+    "stock": 1
+  },
+  {
+    "codigo": "1398",
+    "descripcion": "CIERRE SEP 1 MT YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 1.6,
+    "precio": 3.2,
+    "precioUnidad": 3.2,
+    "pack": 1,
+    "stock": 5
+  },
+  {
+    "codigo": "604",
+    "descripcion": "CIERRE SEP 30 POLY",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.6,
+    "precio": 1.2,
+    "precioUnidad": 1.2,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "693",
+    "descripcion": "CIERRE SEP 35 POLY",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.62,
+    "precio": 1.24,
+    "precioUnidad": 1.24,
+    "pack": 1,
+    "stock": 12
+  },
+  {
+    "codigo": "694",
+    "descripcion": "CIERRE SEP 40 POLY",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.65,
+    "precio": 1.3,
+    "precioUnidad": 1.3,
+    "pack": 1,
+    "stock": 12
+  },
+  {
+    "codigo": "695",
+    "descripcion": "CIERRE SEP 45 POLY",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.68,
+    "precio": 1.36,
+    "precioUnidad": 1.36,
+    "pack": 1,
+    "stock": 5
+  },
+  {
+    "codigo": "696",
+    "descripcion": "CIERRE SEP 50 POLY",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.7,
+    "precio": 1.4,
+    "precioUnidad": 1.4,
+    "pack": 1,
+    "stock": 1
+  },
+  {
+    "codigo": "697",
+    "descripcion": "CIERRE SEP 55 POLY",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.72,
+    "precio": 1.44,
+    "precioUnidad": 1.44,
+    "pack": 1,
+    "stock": 1
+  },
+  {
+    "codigo": "698",
+    "descripcion": "CIERRE SEP 60 POLY",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.74,
+    "precio": 1.48,
+    "precioUnidad": 1.48,
+    "pack": 1,
+    "stock": 5
+  },
+  {
+    "codigo": "699",
+    "descripcion": "CIERRE SEP 65 POLY",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.79,
+    "precio": 1.58,
+    "precioUnidad": 1.58,
+    "pack": 1,
+    "stock": 5
+  },
+  {
+    "codigo": "300",
+    "descripcion": "CIERRE SEP 70 POLY",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.82,
+    "precio": 1.64,
+    "precioUnidad": 1.64,
+    "pack": 1,
+    "stock": 50
+  },
+  {
+    "codigo": "608",
+    "descripcion": "CIERRE SEP 75 POLY",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.86,
+    "precio": 1.72,
+    "precioUnidad": 1.72,
+    "pack": 1,
+    "stock": 1
+  },
+  {
+    "codigo": "789",
+    "descripcion": "CIERRE SEP 80 POLY",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.9,
+    "precio": 1.8,
+    "precioUnidad": 1.8,
+    "pack": 1,
+    "stock": 12
+  },
+  {
+    "codigo": "869",
+    "descripcion": "CIERRE SEP 85 POLY",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.93,
+    "precio": 1.86,
+    "precioUnidad": 1.86,
+    "pack": 1,
+    "stock": 8
+  },
+  {
+    "codigo": "597",
+    "descripcion": "CIERRE SPORT 10/12",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.4,
+    "precio": 0.81,
+    "precioUnidad": 0.81,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "690",
+    "descripcion": "CIERRE SPORT 14",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.42,
+    "precio": 0.84,
+    "precioUnidad": 0.84,
+    "pack": 1,
+    "stock": 5
+  },
+  {
+    "codigo": "691",
+    "descripcion": "CIERRE SPORT 16",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.44,
+    "precio": 0.88,
+    "precioUnidad": 0.88,
+    "pack": 1,
+    "stock": 1
+  },
+  {
+    "codigo": "692",
+    "descripcion": "CIERRE SPORT 18",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.46,
+    "precio": 0.92,
+    "precioUnidad": 0.92,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "80",
+    "descripcion": "CIERRE SPORT 20",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.48,
+    "precio": 0.95,
+    "precioUnidad": 0.95,
+    "pack": 1,
+    "stock": 3
+  },
+  {
+    "codigo": "1179",
+    "descripcion": "CIERRE SPORT 25 ́YKK ́",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.52,
+    "precio": 1.05,
+    "precioUnidad": 1.05,
+    "pack": 1,
+    "stock": 50
+  },
+  {
+    "codigo": "1335",
+    "descripcion": "CIERRE SPORT 30 ́YKK ́",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.57,
+    "precio": 1.14,
+    "precioUnidad": 1.14,
+    "pack": 1,
+    "stock": 20
+  },
+  {
+    "codigo": "1336",
+    "descripcion": "CIERRE SPORT 35 ́YKK ́",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.61,
+    "precio": 1.23,
+    "precioUnidad": 1.23,
+    "pack": 1,
+    "stock": 20
+  },
+  {
+    "codigo": "1337",
+    "descripcion": "CIERRE SPORT 40 ́YKK ́",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.66,
+    "precio": 1.32,
+    "precioUnidad": 1.32,
+    "pack": 1,
+    "stock": 50
+  },
+  {
+    "codigo": "1338",
+    "descripcion": "CIERRE SPORT 45 ́YKK ́",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.7,
+    "precio": 1.41,
+    "precioUnidad": 1.41,
+    "pack": 1,
+    "stock": 5
+  },
+  {
+    "codigo": "1339",
+    "descripcion": "CIERRE SPORT 50 ́YKK ́",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.75,
+    "precio": 1.5,
+    "precioUnidad": 1.5,
+    "pack": 1,
+    "stock": 100
+  },
+  {
+    "codigo": "1340",
+    "descripcion": "CIERRE SPORT 55 ́YKK ́",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.8,
+    "precio": 1.59,
+    "precioUnidad": 1.59,
+    "pack": 1,
+    "stock": 5
+  },
+  {
+    "codigo": "1341",
+    "descripcion": "CIERRE SPORT 60 ́YKK ́",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.84,
+    "precio": 1.68,
+    "precioUnidad": 1.68,
+    "pack": 1,
+    "stock": 12
+  },
+  {
+    "codigo": "1342",
+    "descripcion": "CIERRE SPORT 65 ́YKK ́",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.89,
+    "precio": 1.77,
+    "precioUnidad": 1.77,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "1343",
+    "descripcion": "CIERRE SPORT 70 ́YKK ́",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.93,
+    "precio": 1.87,
+    "precioUnidad": 1.87,
+    "pack": 1,
+    "stock": 5
+  },
+  {
+    "codigo": "1235",
+    "descripcion": "CINTA ARGEN CEREM No 2 X10",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 1.88,
+    "precio": 3.75,
+    "precioUnidad": 0.38,
+    "pack": 10,
+    "stock": 8
+  },
+  {
+    "codigo": "1236",
+    "descripcion": "CINTA ARGEN CEREM No 5 X10",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 2.78,
+    "precio": 5.55,
+    "precioUnidad": 0.56,
+    "pack": 10,
+    "stock": 20
+  },
+  {
+    "codigo": "1239",
+    "descripcion": "CINTA ARGEN CEREM No22 X10",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 8.59,
+    "precio": 17.19,
+    "precioUnidad": 1.72,
+    "pack": 10,
+    "stock": 0
+  },
+  {
+    "codigo": "1120",
+    "descripcion": "CINTA ARGEN N* 1",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 1.19,
+    "precio": 2.39,
+    "precioUnidad": 0.24,
+    "pack": 1,
+    "stock": 50
+  },
+  {
+    "codigo": "1121",
+    "descripcion": "CINTA ARGEN N* 2",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 1.42,
+    "precio": 2.83,
+    "precioUnidad": 0.28,
+    "pack": 1,
+    "stock": 50
+  },
+  {
+    "codigo": "1122",
+    "descripcion": "CINTA ARGEN N* 3",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 1.56,
+    "precio": 3.11,
+    "precioUnidad": 0.31,
+    "pack": 1,
+    "stock": 12
+  },
+  {
+    "codigo": "1123",
+    "descripcion": "CINTA ARGEN N* 5",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 1.91,
+    "precio": 3.81,
+    "precioUnidad": 0.38,
+    "pack": 1,
+    "stock": 3
+  },
+  {
+    "codigo": "1124",
+    "descripcion": "CINTA ARGEN N* 9",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 2.84,
+    "precio": 5.69,
+    "precioUnidad": 0.57,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "1125",
+    "descripcion": "CINTA ARGEN N*12",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 3.74,
+    "precio": 7.48,
+    "precioUnidad": 0.75,
+    "pack": 1,
+    "stock": 1
+  },
+  {
+    "codigo": "610",
+    "descripcion": "CINTA ARGEN N*22 X10",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 6.79,
+    "precio": 13.57,
+    "precioUnidad": 1.36,
+    "pack": 10,
+    "stock": 12
+  },
+  {
+    "codigo": "612",
+    "descripcion": "CINTA ARGEN N*60 X10",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 8.37,
+    "precio": 16.74,
+    "precioUnidad": 1.67,
+    "pack": 10,
+    "stock": 2
+  },
+  {
+    "codigo": "614",
+    "descripcion": "CINTA ARGEN N*80 X10",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 10.9,
+    "precio": 21.79,
+    "precioUnidad": 2.18,
+    "pack": 10,
+    "stock": 3
+  },
+  {
+    "codigo": "222",
+    "descripcion": "CINTA BIES 13X25 COL",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 2.53,
+    "precio": 5.06,
+    "precioUnidad": 0.2,
+    "pack": 25,
+    "stock": 0
+  },
+  {
+    "codigo": "224",
+    "descripcion": "CINTA BIES 20X25 COL",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 3.45,
+    "precio": 6.9,
+    "precioUnidad": 0.28,
+    "pack": 25,
+    "stock": 0
+  },
+  {
+    "codigo": "1202",
+    "descripcion": "CINTA BIES 20X25 FTSIA CLASICA",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 5.76,
+    "precio": 11.51,
+    "precioUnidad": 0.46,
+    "pack": 25,
+    "stock": 3
+  },
+  {
+    "codigo": "225",
+    "descripcion": "CINTA BIES 20X25 RASO LISO",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 9.14,
+    "precio": 18.27,
+    "precioUnidad": 0.73,
+    "pack": 25,
+    "stock": 2
+  },
+  {
+    "codigo": "1951",
+    "descripcion": "CINTA COOPERATIVA X10 1947/03",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 3.29,
+    "precio": 6.58,
+    "precioUnidad": 0.66,
+    "pack": 10,
+    "stock": 1
+  },
+  {
+    "codigo": "1265",
+    "descripcion": "CINTA COOPERATIVA X10 1947/05",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 3.98,
+    "precio": 7.96,
+    "precioUnidad": 0.8,
+    "pack": 10,
+    "stock": 0
+  },
+  {
+    "codigo": "1249",
+    "descripcion": "CINTA COOPERATIVA X10 1947/09",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 5.95,
+    "precio": 11.91,
+    "precioUnidad": 1.19,
+    "pack": 10,
+    "stock": 20
+  },
+  {
+    "codigo": "75",
+    "descripcion": "CINTA DANCER 423005 X18.28 N.º1",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 3.19,
+    "precio": 6.39,
+    "precioUnidad": 0.35,
+    "pack": 18,
+    "stock": 12
+  },
+  {
+    "codigo": "1430",
+    "descripcion": "CINTA DANCER 423008 X18.28 N°2",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 3.48,
+    "precio": 6.97,
+    "precioUnidad": 0.39,
+    "pack": 18,
+    "stock": 3
+  },
+  {
+    "codigo": "1072",
+    "descripcion": "CINTA DANCER 423015 X9.14 N°3",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 2.44,
+    "precio": 4.89,
+    "precioUnidad": 0.54,
+    "pack": 9,
+    "stock": 12
+  },
+  {
+    "codigo": "1279",
+    "descripcion": "CINTA DANCER 423023 X9.14 N°5",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 3.05,
+    "precio": 6.09,
+    "precioUnidad": 0.68,
+    "pack": 9,
+    "stock": 12
+  },
+  {
+    "codigo": "1280",
+    "descripcion": "CINTA DANCER 423035 X9.14 N°9",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 4.03,
+    "precio": 8.06,
+    "precioUnidad": 0.9,
+    "pack": 9,
+    "stock": 5
+  },
+  {
+    "codigo": "1255",
+    "descripcion": "CINTA EXTRAN N2",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 2.37,
+    "precio": 4.74,
+    "precioUnidad": 0.47,
+    "pack": 1,
+    "stock": 8
+  },
+  {
+    "codigo": "1256",
+    "descripcion": "CINTA EXTRAN N3",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 2.63,
+    "precio": 5.25,
+    "precioUnidad": 0.53,
+    "pack": 1,
+    "stock": 20
+  },
+  {
+    "codigo": "1257",
+    "descripcion": "CINTA EXTRAN N5",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 3.06,
+    "precio": 6.12,
+    "precioUnidad": 0.61,
+    "pack": 1,
+    "stock": 20
+  },
+  {
+    "codigo": "1258",
+    "descripcion": "CINTA EXTRAN N9",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 4.39,
+    "precio": 8.79,
+    "precioUnidad": 0.88,
+    "pack": 1,
+    "stock": 1
+  },
+  {
+    "codigo": "1001",
+    "descripcion": "CINTA FALLE 1X10",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 0.6,
+    "precio": 1.2,
+    "precioUnidad": 0.12,
+    "pack": 10,
+    "stock": 0
+  },
+  {
+    "codigo": "1002",
+    "descripcion": "CINTA FALLE 2X10",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 1.1,
+    "precio": 2.2,
+    "precioUnidad": 0.22,
+    "pack": 10,
+    "stock": 20
+  },
+  {
+    "codigo": "1003",
+    "descripcion": "CINTA FALLE 3X10",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 1.38,
+    "precio": 2.76,
+    "precioUnidad": 0.28,
+    "pack": 10,
+    "stock": 12
+  },
+  {
+    "codigo": "1004",
+    "descripcion": "CINTA FALLE 5X10",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 1.87,
+    "precio": 3.74,
+    "precioUnidad": 0.37,
+    "pack": 10,
+    "stock": 8
+  },
+  {
+    "codigo": "1005",
+    "descripcion": "CINTA FALLE 9X10",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 2.62,
+    "precio": 5.24,
+    "precioUnidad": 0.52,
+    "pack": 10,
+    "stock": 12
+  },
+  {
+    "codigo": "1068",
+    "descripcion": "CINTA FALLE12X10",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 3.46,
+    "precio": 6.92,
+    "precioUnidad": 0.69,
+    "pack": 10,
+    "stock": 8
+  },
+  {
+    "codigo": "1426",
+    "descripcion": "CINTA FRANCISCA 4221001 X20",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 3.68,
+    "precio": 7.35,
+    "precioUnidad": 0.37,
+    "pack": 20,
+    "stock": 0
+  },
+  {
+    "codigo": "1861",
+    "descripcion": "CINTA FRANCISCA 4221003 X10",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 3.34,
+    "precio": 6.68,
+    "precioUnidad": 0.67,
+    "pack": 10,
+    "stock": 50
+  },
+  {
+    "codigo": "1862",
+    "descripcion": "CINTA FRANCISCA 4221005 X10",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 3.94,
+    "precio": 7.89,
+    "precioUnidad": 0.79,
+    "pack": 10,
+    "stock": 3
+  },
+  {
+    "codigo": "929",
+    "descripcion": "CINTA GROSS SEDA N*1 X20",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 2.31,
+    "precio": 4.62,
+    "precioUnidad": 0.23,
+    "pack": 20,
+    "stock": 2
+  },
+  {
+    "codigo": "382",
+    "descripcion": "CINTA GROSS SEDA N*3 X10",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 1.97,
+    "precio": 3.93,
+    "precioUnidad": 0.39,
+    "pack": 10,
+    "stock": 0
+  },
+  {
+    "codigo": "1013",
+    "descripcion": "CINTA GROSS SEDA N*5 X10",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 2.38,
+    "precio": 4.75,
+    "precioUnidad": 0.48,
+    "pack": 10,
+    "stock": 12
+  },
+  {
+    "codigo": "1014",
+    "descripcion": "CINTA GROSS SEDA N*9 X10",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 3.28,
+    "precio": 6.56,
+    "precioUnidad": 0.66,
+    "pack": 10,
+    "stock": 20
+  },
+  {
+    "codigo": "61",
+    "descripcion": "CINTA HILERA BLCA 13 X50",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 6.21,
+    "precio": 12.42,
+    "precioUnidad": 0.25,
+    "pack": 50,
+    "stock": 12
+  },
+  {
+    "codigo": "62",
+    "descripcion": "CINTA HILERA BLCA 16 X50",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 6.66,
+    "precio": 13.32,
+    "precioUnidad": 0.27,
+    "pack": 50,
+    "stock": 50
+  },
+  {
+    "codigo": "63",
+    "descripcion": "CINTA HILERA BLCA 20 X50",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 8.11,
+    "precio": 16.22,
+    "precioUnidad": 0.32,
+    "pack": 50,
+    "stock": 12
+  },
+  {
+    "codigo": "197",
+    "descripcion": "CINTA HILERA BLCA 25 X50",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 10.7,
+    "precio": 21.4,
+    "precioUnidad": 0.43,
+    "pack": 50,
+    "stock": 20
+  },
+  {
+    "codigo": "540",
+    "descripcion": "CINTA HILERA BLCA 30 X50",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 14.26,
+    "precio": 28.53,
+    "precioUnidad": 0.57,
+    "pack": 50,
+    "stock": 50
+  },
+  {
+    "codigo": "37",
+    "descripcion": "CINTA LUREX X10 1910/10",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 2.4,
+    "precio": 4.81,
+    "precioUnidad": 0.48,
+    "pack": 10,
+    "stock": 100
+  },
+  {
+    "codigo": "2041",
+    "descripcion": "CINTA LUREX X10 1910/15",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 2.64,
+    "precio": 5.28,
+    "precioUnidad": 0.53,
+    "pack": 10,
+    "stock": 0
+  },
+  {
+    "codigo": "313",
+    "descripcion": "CINTA LUREX X10 1910/25",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 2.55,
+    "precio": 5.1,
+    "precioUnidad": 0.51,
+    "pack": 10,
+    "stock": 50
+  },
+  {
+    "codigo": "1316",
+    "descripcion": "CINTA LUREX X10 1910/40",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 4.72,
+    "precio": 9.44,
+    "precioUnidad": 0.94,
+    "pack": 10,
+    "stock": 2
+  },
+  {
+    "codigo": "2016",
+    "descripcion": "CINTA LUREX X10 1910/50",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 5.45,
+    "precio": 10.89,
+    "precioUnidad": 1.09,
+    "pack": 10,
+    "stock": 12
+  },
+  {
+    "codigo": "1715",
+    "descripcion": "CINTA LUREX X10 1910/80",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 8.71,
+    "precio": 17.41,
+    "precioUnidad": 1.74,
+    "pack": 10,
+    "stock": 20
+  },
+  {
+    "codigo": "1969",
+    "descripcion": "CINTA LUREX X20 1910/05",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 2.9,
+    "precio": 5.79,
+    "precioUnidad": 0.29,
+    "pack": 20,
+    "stock": 8
+  },
+  {
+    "codigo": "490",
+    "descripcion": "CINTA MOCH*POLIP 20MM X50 MTR",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 9.03,
+    "precio": 18.05,
+    "precioUnidad": 0.36,
+    "pack": 50,
+    "stock": 12
+  },
+  {
+    "codigo": "1136",
+    "descripcion": "CINTA MOCH*POLIP 25MM X25 MTR",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 6.68,
+    "precio": 13.36,
+    "precioUnidad": 0.53,
+    "pack": 25,
+    "stock": 0
+  },
+  {
+    "codigo": "8854",
+    "descripcion": "CINTA MOCH*POLIP 25MM X50 MTR",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 13.36,
+    "precio": 26.73,
+    "precioUnidad": 0.53,
+    "pack": 50,
+    "stock": 1
+  },
+  {
+    "codigo": "446",
+    "descripcion": "CINTA MOCH*POLIP 30MM X10 MTR",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 3.93,
+    "precio": 7.85,
+    "precioUnidad": 0.79,
+    "pack": 10,
+    "stock": 12
+  },
+  {
+    "codigo": "1214",
+    "descripcion": "CINTA MOCH*POLIP 30MM X25 MTR",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 7.98,
+    "precio": 15.95,
+    "precioUnidad": 0.64,
+    "pack": 25,
+    "stock": 3
+  },
+  {
+    "codigo": "8852",
+    "descripcion": "CINTA MOCH*POLIP 30MM X50 MTR",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 15.95,
+    "precio": 31.9,
+    "precioUnidad": 0.64,
+    "pack": 50,
+    "stock": 5
+  },
+  {
+    "codigo": "330",
+    "descripcion": "CINTA MOCH*POLIP 40MM X10 MTR",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 5.2,
+    "precio": 10.4,
+    "precioUnidad": 1.04,
+    "pack": 10,
+    "stock": 50
+  },
+  {
+    "codigo": "1215",
+    "descripcion": "CINTA MOCH*POLIP 40MM X25 MTR",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 10.59,
+    "precio": 21.17,
+    "precioUnidad": 0.85,
+    "pack": 25,
+    "stock": 12
+  },
+  {
+    "codigo": "8853",
+    "descripcion": "CINTA MOCH*POLIP 40MM X50 MTR",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 21.17,
+    "precio": 42.35,
+    "precioUnidad": 0.85,
+    "pack": 50,
+    "stock": 0
+  },
+  {
+    "codigo": "956",
+    "descripcion": "CINTA MOCHILA ALGOD 40MM X50 MTR",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 16.6,
+    "precio": 33.21,
+    "precioUnidad": 0.66,
+    "pack": 50,
+    "stock": 100
+  },
+  {
+    "codigo": "1029",
+    "descripcion": "CINTA RASO 0X100",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 6.63,
+    "precio": 13.25,
+    "precioUnidad": 0.13,
+    "pack": 100,
+    "stock": 50
+  },
+  {
+    "codigo": "1031",
+    "descripcion": "CINTA RASO 1X100",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 7.29,
+    "precio": 14.58,
+    "precioUnidad": 0.15,
+    "pack": 100,
+    "stock": 50
+  },
+  {
+    "codigo": "1007",
+    "descripcion": "CINTA RASO 2X10",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 1.36,
+    "precio": 2.72,
+    "precioUnidad": 0.27,
+    "pack": 10,
+    "stock": 0
+  },
+  {
+    "codigo": "1008",
+    "descripcion": "CINTA RASO 3X10",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 1.67,
+    "precio": 3.34,
+    "precioUnidad": 0.33,
+    "pack": 10,
+    "stock": 20
+  },
+  {
+    "codigo": "1009",
+    "descripcion": "CINTA RASO 5 X10",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 2.25,
+    "precio": 4.5,
+    "precioUnidad": 0.45,
+    "pack": 10,
+    "stock": 1
+  },
+  {
+    "codigo": "1010",
+    "descripcion": "CINTA RASO 9X10",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 3.33,
+    "precio": 6.67,
+    "precioUnidad": 0.67,
+    "pack": 10,
+    "stock": 100
+  },
+  {
+    "codigo": "1011",
+    "descripcion": "CINTA RASO 12X10",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 4.46,
+    "precio": 8.92,
+    "precioUnidad": 0.89,
+    "pack": 10,
+    "stock": 5
+  },
+  {
+    "codigo": "1828",
+    "descripcion": "CINTA REFLECTIVA",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 4.0,
+    "precio": 8.0,
+    "precioUnidad": 0.8,
+    "pack": 1,
+    "stock": 100
+  },
+  {
+    "codigo": "835",
+    "descripcion": "CINTA VAINA *700 X 20 MTS",
+    "rubro": "CINTA ‘CJ’",
+    "costo": 4.21,
+    "precio": 8.43,
+    "precioUnidad": 0.42,
+    "pack": 20,
+    "stock": 50
+  },
+  {
+    "codigo": "609",
+    "descripcion": "COLA DE RATA X100 MTRS",
+    "rubro": "OTROS",
+    "costo": 3.32,
+    "precio": 6.64,
+    "precioUnidad": 0.07,
+    "pack": 100,
+    "stock": 100
+  },
+  {
+    "codigo": "1212",
+    "descripcion": "CORD/POLIPROPILENO 5/2 X100",
+    "rubro": "OTROS",
+    "costo": 11.23,
+    "precio": 22.45,
+    "precioUnidad": 0.22,
+    "pack": 100,
+    "stock": 3
+  },
+  {
+    "codigo": "751",
+    "descripcion": "CORD/ROCEL ALG 4304/3/1 CDO X50",
+    "rubro": "OTROS",
+    "costo": 5.23,
+    "precio": 10.47,
+    "precioUnidad": 0.21,
+    "pack": 50,
+    "stock": 20
+  },
+  {
+    "codigo": "752",
+    "descripcion": "CORD/ROCEL ALG 4304/3/1 COL X50",
+    "rubro": "OTROS",
+    "costo": 6.64,
+    "precio": 13.28,
+    "precioUnidad": 0.27,
+    "pack": 50,
+    "stock": 20
+  },
+  {
+    "codigo": "873",
+    "descripcion": "CORD/ROCEL ALG 4304/6/1 CDO X50",
+    "rubro": "OTROS",
+    "costo": 8.8,
+    "precio": 17.6,
+    "precioUnidad": 0.35,
+    "pack": 50,
+    "stock": 1
+  },
+  {
+    "codigo": "877",
+    "descripcion": "CORD/ROCEL ALG 4304/6/1 COL X50",
+    "rubro": "OTROS",
+    "costo": 11.6,
+    "precio": 23.21,
+    "precioUnidad": 0.46,
+    "pack": 50,
+    "stock": 2
+  },
+  {
+    "codigo": "416",
+    "descripcion": "CORDONES \"OFERTA\" 045 A 080",
+    "rubro": "CORDONES",
+    "costo": 1.63,
+    "precio": 3.25,
+    "precioUnidad": 0.27,
+    "pack": 1,
+    "stock": 3
+  },
+  {
+    "codigo": "429",
+    "descripcion": "CORDONES \"OFERTA\" 1.00 A 1.50",
+    "rubro": "CORDONES",
+    "costo": 1.52,
+    "precio": 3.05,
+    "precioUnidad": 0.25,
+    "pack": 1,
+    "stock": 50
+  },
+  {
+    "codigo": "304",
+    "descripcion": "CORDONES RED/FINO 045",
+    "rubro": "CORDONES",
+    "costo": 1.73,
+    "precio": 3.46,
+    "precioUnidad": 0.29,
+    "pack": 1,
+    "stock": 1
+  },
+  {
+    "codigo": "529",
+    "descripcion": "CORDONES RED/FINO 060",
+    "rubro": "CORDONES",
+    "costo": 2.31,
+    "precio": 4.61,
+    "precioUnidad": 0.38,
+    "pack": 1,
+    "stock": 100
+  },
+  {
+    "codigo": "754",
+    "descripcion": "CORDONES RED/FINO 080",
+    "rubro": "CORDONES",
+    "costo": 2.8,
+    "precio": 5.59,
+    "precioUnidad": 0.47,
+    "pack": 1,
+    "stock": 1
+  },
+  {
+    "codigo": "1190",
+    "descripcion": "CORDONES REFORZ/060",
+    "rubro": "CORDONES",
+    "costo": 2.78,
+    "precio": 5.55,
+    "precioUnidad": 0.46,
+    "pack": 1,
+    "stock": 12
+  },
+  {
+    "codigo": "1191",
+    "descripcion": "CORDONES REFORZ/080",
+    "rubro": "CORDONES",
+    "costo": 3.83,
+    "precio": 7.65,
+    "precioUnidad": 0.64,
+    "pack": 1,
+    "stock": 8
+  },
+  {
+    "codigo": "1250",
+    "descripcion": "CORDONES REFORZ/100",
+    "rubro": "CORDONES",
+    "costo": 3.54,
+    "precio": 7.08,
+    "precioUnidad": 0.59,
+    "pack": 1,
+    "stock": 1
+  },
+  {
+    "codigo": "1192",
+    "descripcion": "CORDONES REFORZ/120",
+    "rubro": "CORDONES",
+    "costo": 4.59,
+    "precio": 9.19,
+    "precioUnidad": 0.77,
+    "pack": 1,
+    "stock": 3
+  },
+  {
+    "codigo": "1193",
+    "descripcion": "CORDONES REFORZ/150",
+    "rubro": "CORDONES",
+    "costo": 5.74,
+    "precio": 11.48,
+    "precioUnidad": 0.96,
+    "pack": 1,
+    "stock": 3
+  },
+  {
+    "codigo": "1290",
+    "descripcion": "CORDONES SURTID 080",
+    "rubro": "CORDONES",
+    "costo": 3.12,
+    "precio": 6.23,
+    "precioUnidad": 0.52,
+    "pack": 1,
+    "stock": 5
+  },
+  {
+    "codigo": "1291",
+    "descripcion": "CORDONES SURTID 120",
+    "rubro": "CORDONES",
+    "costo": 4.67,
+    "precio": 9.35,
+    "precioUnidad": 0.78,
+    "pack": 1,
+    "stock": 50
+  },
+  {
+    "codigo": "283",
+    "descripcion": "CORREA MAQ CUERO UNID",
+    "rubro": "OTROS",
+    "costo": 2.42,
+    "precio": 4.85,
+    "precioUnidad": 4.85,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "1086",
+    "descripcion": "CORREA MAQ DENTADA SINGER",
+    "rubro": "OTROS",
+    "costo": 2.53,
+    "precio": 5.07,
+    "precioUnidad": 5.07,
+    "pack": 1,
+    "stock": 50
+  },
+  {
+    "codigo": "494",
+    "descripcion": "CORREA MAQ GOMA UNID",
+    "rubro": "OTROS",
+    "costo": 0.95,
+    "precio": 1.91,
+    "precioUnidad": 1.91,
+    "pack": 1,
+    "stock": 100
+  },
+  {
+    "codigo": "2450",
+    "descripcion": "CORTA UÑAS CHICO X12 IMPORT",
+    "rubro": "OTROS",
+    "costo": 6.64,
+    "precio": 13.29,
+    "precioUnidad": 1.11,
+    "pack": 12,
+    "stock": 12
+  },
+  {
+    "codigo": "950",
+    "descripcion": "CORTA UÑAS GRAND X12 IMPORT",
+    "rubro": "OTROS",
+    "costo": 13.29,
+    "precio": 26.57,
+    "precioUnidad": 2.21,
+    "pack": 12,
+    "stock": 2
+  },
+  {
+    "codigo": "13",
+    "descripcion": "DEDAL METAL COMUN/NIQUEL X12",
+    "rubro": "OTROS",
+    "costo": 2.73,
+    "precio": 5.47,
+    "precioUnidad": 0.46,
+    "pack": 12,
+    "stock": 3
+  },
+  {
+    "codigo": "46",
+    "descripcion": "DEDAL PLASTICO X12",
+    "rubro": "OTROS",
+    "costo": 1.67,
+    "precio": 3.34,
+    "precioUnidad": 0.28,
+    "pack": 12,
+    "stock": 0
+  },
+  {
+    "codigo": "1790",
+    "descripcion": "DESLIZAD AUT D/PERRITO X25",
+    "rubro": "OTROS",
+    "costo": 8.17,
+    "precio": 16.33,
+    "precioUnidad": 0.65,
+    "pack": 25,
+    "stock": 1
+  },
+  {
+    "codigo": "1080",
+    "descripcion": "DESLIZAD AUT STANDAR X25",
+    "rubro": "OTROS",
+    "costo": 5.8,
+    "precio": 11.59,
+    "precioUnidad": 0.46,
+    "pack": 25,
+    "stock": 12
+  },
+  {
+    "codigo": "1776",
+    "descripcion": "DESLIZAD REVERS PERRITO X12",
+    "rubro": "OTROS",
+    "costo": 8.98,
+    "precio": 17.95,
+    "precioUnidad": 1.5,
+    "pack": 12,
+    "stock": 50
+  },
+  {
+    "codigo": "1401",
+    "descripcion": "DESLIZAD REVERS STANDAR X12",
+    "rubro": "OTROS",
+    "costo": 8.98,
+    "precio": 17.95,
+    "precioUnidad": 1.5,
+    "pack": 12,
+    "stock": 12
+  },
+  {
+    "codigo": "148",
+    "descripcion": "DESOJALADOR CHICO X10 UNID",
+    "rubro": "OTROS",
+    "costo": 3.35,
+    "precio": 6.7,
+    "precioUnidad": 0.67,
+    "pack": 10,
+    "stock": 8
+  },
+  {
+    "codigo": "1155",
+    "descripcion": "DESOJALADOR GRAND X 10 UNID",
+    "rubro": "OTROS",
+    "costo": 6.44,
+    "precio": 12.88,
+    "precioUnidad": 1.29,
+    "pack": 10,
+    "stock": 2
+  },
+  {
+    "codigo": "942",
+    "descripcion": "DOBLADILLADOR ́DT ́ CINTA X10",
+    "rubro": "OTROS",
+    "costo": 2.5,
+    "precio": 5.01,
+    "precioUnidad": 0.5,
+    "pack": 10,
+    "stock": 8
+  },
+  {
+    "codigo": "5400",
+    "descripcion": "ELAST. FB E22 ARCO IRIS 40MM X 30MT",
+    "rubro": "OTROS",
+    "costo": 16.54,
+    "precio": 33.08,
+    "precioUnidad": 1.1,
+    "pack": 30,
+    "stock": 50
+  },
+  {
+    "codigo": "266",
+    "descripcion": "ELAST.ALGOD. 10MM X50",
+    "rubro": "OTROS",
+    "costo": 7.43,
+    "precio": 14.85,
+    "precioUnidad": 0.3,
+    "pack": 50,
+    "stock": 0
+  },
+  {
+    "codigo": "226",
+    "descripcion": "ELAST.ALGOD. 15MM X 50",
+    "rubro": "OTROS",
+    "costo": 8.89,
+    "precio": 17.78,
+    "precioUnidad": 0.36,
+    "pack": 50,
+    "stock": 12
+  },
+  {
+    "codigo": "365",
+    "descripcion": "ELAST.ALGOD. 20MM X 25",
+    "rubro": "OTROS",
+    "costo": 5.09,
+    "precio": 10.19,
+    "precioUnidad": 0.41,
+    "pack": 25,
+    "stock": 100
+  },
+  {
+    "codigo": "377",
+    "descripcion": "ELAST.ALGOD. 25MM X 25",
+    "rubro": "OTROS",
+    "costo": 6.32,
+    "precio": 12.63,
+    "precioUnidad": 0.51,
+    "pack": 25,
+    "stock": 2
+  },
+  {
+    "codigo": "257",
+    "descripcion": "ELAST.ALGOD. 30MM X 25",
+    "rubro": "OTROS",
+    "costo": 7.4,
+    "precio": 14.8,
+    "precioUnidad": 0.59,
+    "pack": 25,
+    "stock": 5
+  },
+  {
+    "codigo": "628",
+    "descripcion": "ELAST.ALGOD. 30MM/CORDON X30",
+    "rubro": "OTROS",
+    "costo": 13.59,
+    "precio": 27.19,
+    "precioUnidad": 0.91,
+    "pack": 30,
+    "stock": 8
+  },
+  {
+    "codigo": "335",
+    "descripcion": "ELAST.ALGOD. 35MM X 25",
+    "rubro": "OTROS",
+    "costo": 8.93,
+    "precio": 17.85,
+    "precioUnidad": 0.71,
+    "pack": 25,
+    "stock": 1
+  },
+  {
+    "codigo": "2",
+    "descripcion": "ELAST.ALGOD. 40MM X 25",
+    "rubro": "OTROS",
+    "costo": 10.16,
+    "precio": 20.32,
+    "precioUnidad": 0.81,
+    "pack": 25,
+    "stock": 0
+  },
+  {
+    "codigo": "638",
+    "descripcion": "ELAST.ALGOD. 40MM/CORDON X30",
+    "rubro": "OTROS",
+    "costo": 16.57,
+    "precio": 33.13,
+    "precioUnidad": 1.1,
+    "pack": 30,
+    "stock": 100
+  },
+  {
+    "codigo": "374",
+    "descripcion": "ELAST.ALGOD. 50MM X 25",
+    "rubro": "OTROS",
+    "costo": 13.11,
+    "precio": 26.21,
+    "precioUnidad": 1.05,
+    "pack": 25,
+    "stock": 5
+  },
+  {
+    "codigo": "1931",
+    "descripcion": "ELAST.ALGOD. 60MM X 25",
+    "rubro": "OTROS",
+    "costo": 15.34,
+    "precio": 30.68,
+    "precioUnidad": 1.23,
+    "pack": 25,
+    "stock": 12
+  },
+  {
+    "codigo": "631",
+    "descripcion": "ELAST.BAJO BUSTO 200-11 X 20MTS",
+    "rubro": "OTROS",
+    "costo": 5.45,
+    "precio": 10.9,
+    "precioUnidad": 0.55,
+    "pack": 20,
+    "stock": 3
+  },
+  {
+    "codigo": "1886",
+    "descripcion": "ELAST.BAJO BUSTO 200-16 X 20MTS",
+    "rubro": "OTROS",
+    "costo": 7.8,
+    "precio": 15.6,
+    "precioUnidad": 0.78,
+    "pack": 20,
+    "stock": 0
+  },
+  {
+    "codigo": "462",
+    "descripcion": "ELAST.BENT 4307 X 250 MTS",
+    "rubro": "OTROS",
+    "costo": 15.27,
+    "precio": 30.53,
+    "precioUnidad": 0.12,
+    "pack": 250,
+    "stock": 50
+  },
+  {
+    "codigo": "249",
+    "descripcion": "ELAST.BENT 517 ALGODON",
+    "rubro": "OTROS",
+    "costo": 6.53,
+    "precio": 13.07,
+    "precioUnidad": 0.26,
+    "pack": 1,
+    "stock": 3
+  },
+  {
+    "codigo": "250",
+    "descripcion": "ELAST.BENT 531 ALGODON",
+    "rubro": "OTROS",
+    "costo": 7.64,
+    "precio": 15.27,
+    "precioUnidad": 0.31,
+    "pack": 1,
+    "stock": 8
+  },
+  {
+    "codigo": "251",
+    "descripcion": "ELAST.BENT 548 ALGODON",
+    "rubro": "OTROS",
+    "costo": 8.38,
+    "precio": 16.77,
+    "precioUnidad": 0.34,
+    "pack": 1,
+    "stock": 12
+  },
+  {
+    "codigo": "252",
+    "descripcion": "ELAST.BENT 550 ALGODON",
+    "rubro": "OTROS",
+    "costo": 9.97,
+    "precio": 19.94,
+    "precioUnidad": 0.4,
+    "pack": 1,
+    "stock": 50
+  },
+  {
+    "codigo": "253",
+    "descripcion": "ELAST.BENT 552 ALGODON",
+    "rubro": "OTROS",
+    "costo": 11.56,
+    "precio": 23.12,
+    "precioUnidad": 0.46,
+    "pack": 1,
+    "stock": 20
+  },
+  {
+    "codigo": "1167",
+    "descripcion": "ELAST.BENT 554 ALGODON",
+    "rubro": "OTROS",
+    "costo": 13.2,
+    "precio": 26.39,
+    "precioUnidad": 0.53,
+    "pack": 1,
+    "stock": 2
+  },
+  {
+    "codigo": "1276",
+    "descripcion": "ELAST.BENT 82 BCO RED",
+    "rubro": "OTROS",
+    "costo": 3.43,
+    "precio": 6.86,
+    "precioUnidad": 0.14,
+    "pack": 1,
+    "stock": 2
+  },
+  {
+    "codigo": "299",
+    "descripcion": "ELAST.BENT 82 NEG RED",
+    "rubro": "OTROS",
+    "costo": 4.17,
+    "precio": 8.33,
+    "precioUnidad": 0.17,
+    "pack": 1,
+    "stock": 5
+  },
+  {
+    "codigo": "23",
+    "descripcion": "ELAST.BENT 84 BCO RED",
+    "rubro": "OTROS",
+    "costo": 3.87,
+    "precio": 7.75,
+    "precioUnidad": 0.15,
+    "pack": 1,
+    "stock": 3
+  },
+  {
+    "codigo": "427",
+    "descripcion": "ELAST.BENT 84 NEG RED",
+    "rubro": "OTROS",
+    "costo": 4.84,
+    "precio": 9.67,
+    "precioUnidad": 0.19,
+    "pack": 1,
+    "stock": 1
+  },
+  {
+    "codigo": "26",
+    "descripcion": "ELAST.BENT 86 BCO RED",
+    "rubro": "OTROS",
+    "costo": 4.43,
+    "precio": 8.86,
+    "precioUnidad": 0.18,
+    "pack": 1,
+    "stock": 2
+  },
+  {
+    "codigo": "215",
+    "descripcion": "ELAST.BENT 86 NEG RED",
+    "rubro": "OTROS",
+    "costo": 5.53,
+    "precio": 11.06,
+    "precioUnidad": 0.22,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "158",
+    "descripcion": "ELAST.BENT 9012 X50 RED",
+    "rubro": "OTROS",
+    "costo": 7.39,
+    "precio": 14.79,
+    "precioUnidad": 0.3,
+    "pack": 50,
+    "stock": 100
+  },
+  {
+    "codigo": "230",
+    "descripcion": "ELAST.BENT N*10",
+    "rubro": "OTROS",
+    "costo": 3.95,
+    "precio": 7.89,
+    "precioUnidad": 0.16,
+    "pack": 1,
+    "stock": 1
+  },
+  {
+    "codigo": "239",
+    "descripcion": "ELAST.BENT N*10 ACORD",
+    "rubro": "OTROS",
+    "costo": 5.23,
+    "precio": 10.46,
+    "precioUnidad": 0.21,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "243",
+    "descripcion": "ELAST.BENT N*10 COLOR",
+    "rubro": "OTROS",
+    "costo": 5.56,
+    "precio": 11.13,
+    "precioUnidad": 0.22,
+    "pack": 1,
+    "stock": 20
+  },
+  {
+    "codigo": "231",
+    "descripcion": "ELAST.BENT N*12",
+    "rubro": "OTROS",
+    "costo": 4.53,
+    "precio": 9.07,
+    "precioUnidad": 0.18,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "240",
+    "descripcion": "ELAST.BENT N*12 ACORD",
+    "rubro": "OTROS",
+    "costo": 5.53,
+    "precio": 11.06,
+    "precioUnidad": 0.22,
+    "pack": 1,
+    "stock": 50
+  },
+  {
+    "codigo": "244",
+    "descripcion": "ELAST.BENT N*12 COLOR",
+    "rubro": "OTROS",
+    "costo": 6.38,
+    "precio": 12.76,
+    "precioUnidad": 0.26,
+    "pack": 1,
+    "stock": 100
+  },
+  {
+    "codigo": "232",
+    "descripcion": "ELAST.BENT N*14",
+    "rubro": "OTROS",
+    "costo": 5.23,
+    "precio": 10.46,
+    "precioUnidad": 0.21,
+    "pack": 1,
+    "stock": 3
+  },
+  {
+    "codigo": "241",
+    "descripcion": "ELAST.BENT N*14 ACORD",
+    "rubro": "OTROS",
+    "costo": 6.93,
+    "precio": 13.87,
+    "precioUnidad": 0.28,
+    "pack": 1,
+    "stock": 20
+  },
+  {
+    "codigo": "245",
+    "descripcion": "ELAST.BENT N*14 COLOR",
+    "rubro": "OTROS",
+    "costo": 7.96,
+    "precio": 15.93,
+    "precioUnidad": 0.32,
+    "pack": 1,
+    "stock": 1
+  },
+  {
+    "codigo": "233",
+    "descripcion": "ELAST.BENT N*16",
+    "rubro": "OTROS",
+    "costo": 5.75,
+    "precio": 11.51,
+    "precioUnidad": 0.23,
+    "pack": 1,
+    "stock": 100
+  },
+  {
+    "codigo": "242",
+    "descripcion": "ELAST.BENT N*16 ACORD",
+    "rubro": "OTROS",
+    "costo": 7.52,
+    "precio": 15.04,
+    "precioUnidad": 0.3,
+    "pack": 1,
+    "stock": 5
+  },
+  {
+    "codigo": "246",
+    "descripcion": "ELAST.BENT N*16 COLOR",
+    "rubro": "OTROS",
+    "costo": 8.33,
+    "precio": 16.67,
+    "precioUnidad": 0.33,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "234",
+    "descripcion": "ELAST.BENT N*18",
+    "rubro": "OTROS",
+    "costo": 8.22,
+    "precio": 16.44,
+    "precioUnidad": 0.33,
+    "pack": 1,
+    "stock": 5
+  },
+  {
+    "codigo": "306",
+    "descripcion": "ELAST.BENT N*18 ACORD",
+    "rubro": "OTROS",
+    "costo": 9.63,
+    "precio": 19.25,
+    "precioUnidad": 0.39,
+    "pack": 1,
+    "stock": 8
+  },
+  {
+    "codigo": "760",
+    "descripcion": "ELAST.BENT N*18 COLOR",
+    "rubro": "OTROS",
+    "costo": 11.58,
+    "precio": 23.16,
+    "precioUnidad": 0.46,
+    "pack": 1,
+    "stock": 1
+  },
+  {
+    "codigo": "8",
+    "descripcion": "ELAST.BENT N*20X25",
+    "rubro": "OTROS",
+    "costo": 4.39,
+    "precio": 8.78,
+    "precioUnidad": 0.35,
+    "pack": 25,
+    "stock": 2
+  },
+  {
+    "codigo": "921",
+    "descripcion": "ELAST.BENT N*20X25 COLOR",
+    "rubro": "OTROS",
+    "costo": 6.16,
+    "precio": 12.31,
+    "precioUnidad": 0.49,
+    "pack": 25,
+    "stock": 5
+  },
+  {
+    "codigo": "11",
+    "descripcion": "ELAST.BENT N*22X25",
+    "rubro": "OTROS",
+    "costo": 5.05,
+    "precio": 10.1,
+    "precioUnidad": 0.4,
+    "pack": 25,
+    "stock": 12
+  },
+  {
+    "codigo": "408",
+    "descripcion": "ELAST.BENT N*22X25 COLOR",
+    "rubro": "OTROS",
+    "costo": 7.16,
+    "precio": 14.31,
+    "precioUnidad": 0.57,
+    "pack": 25,
+    "stock": 12
+  },
+  {
+    "codigo": "21",
+    "descripcion": "ELAST.BENT N*24X25",
+    "rubro": "OTROS",
+    "costo": 5.38,
+    "precio": 10.76,
+    "precioUnidad": 0.43,
+    "pack": 25,
+    "stock": 1
+  },
+  {
+    "codigo": "922",
+    "descripcion": "ELAST.BENT N*24X25 COLOR",
+    "rubro": "OTROS",
+    "costo": 7.56,
+    "precio": 15.12,
+    "precioUnidad": 0.6,
+    "pack": 25,
+    "stock": 0
+  },
+  {
+    "codigo": "25",
+    "descripcion": "ELAST.BENT N*28X25",
+    "rubro": "OTROS",
+    "costo": 6.38,
+    "precio": 12.76,
+    "precioUnidad": 0.51,
+    "pack": 25,
+    "stock": 8
+  },
+  {
+    "codigo": "346",
+    "descripcion": "ELAST.BENT N*28X25 COLOR",
+    "rubro": "OTROS",
+    "costo": 8.96,
+    "precio": 17.92,
+    "precioUnidad": 0.72,
+    "pack": 25,
+    "stock": 20
+  },
+  {
+    "codigo": "990",
+    "descripcion": "ELAST.BRETEL AFELP 308-11 X10MTS",
+    "rubro": "OTROS",
+    "costo": 2.72,
+    "precio": 5.43,
+    "precioUnidad": 0.54,
+    "pack": 10,
+    "stock": 20
+  },
+  {
+    "codigo": "633",
+    "descripcion": "ELAST.BRETEL AFELP 308-13 X10MTS",
+    "rubro": "OTROS",
+    "costo": 2.89,
+    "precio": 5.78,
+    "precioUnidad": 0.58,
+    "pack": 10,
+    "stock": 0
+  },
+  {
+    "codigo": "227",
+    "descripcion": "ELAST.BRETEL AFELP 308-18 X10MTS",
+    "rubro": "OTROS",
+    "costo": 3.63,
+    "precio": 7.26,
+    "precioUnidad": 0.73,
+    "pack": 10,
+    "stock": 8
+  },
+  {
+    "codigo": "1328",
+    "descripcion": "ELAST.BRETEL BENTLEY 3363 X20",
+    "rubro": "OTROS",
+    "costo": 5.78,
+    "precio": 11.56,
+    "precioUnidad": 0.58,
+    "pack": 20,
+    "stock": 1
+  },
+  {
+    "codigo": "524",
+    "descripcion": "ELAST.BRETEL BROTEL 310406X20",
+    "rubro": "OTROS",
+    "costo": 6.41,
+    "precio": 12.82,
+    "precioUnidad": 0.64,
+    "pack": 20,
+    "stock": 2
+  },
+  {
+    "codigo": "654",
+    "descripcion": "ELAST.BRETEL BROTEL 310411 X20",
+    "rubro": "OTROS",
+    "costo": 10.86,
+    "precio": 21.71,
+    "precioUnidad": 1.09,
+    "pack": 20,
+    "stock": 100
+  },
+  {
+    "codigo": "1244",
+    "descripcion": "ELAST.BRETEL RASADO 310-07 X 20MTS",
+    "rubro": "OTROS",
+    "costo": 3.83,
+    "precio": 7.66,
+    "precioUnidad": 0.38,
+    "pack": 20,
+    "stock": 3
+  },
+  {
+    "codigo": "797",
+    "descripcion": "ELAST.BRETEL RASADO 310-11 X 10MTS",
+    "rubro": "OTROS",
+    "costo": 2.82,
+    "precio": 5.64,
+    "precioUnidad": 0.28,
+    "pack": 10,
+    "stock": 50
+  },
+  {
+    "codigo": "901",
+    "descripcion": "ELAST.BRETEL RASADO 310-11 X 20MTS",
+    "rubro": "OTROS",
+    "costo": 5.64,
+    "precio": 11.28,
+    "precioUnidad": 0.56,
+    "pack": 20,
+    "stock": 8
+  },
+  {
+    "codigo": "480",
+    "descripcion": "ELAST.CON OJAL 20MM BLNC/NGR X25",
+    "rubro": "OTROS",
+    "costo": 6.53,
+    "precio": 13.06,
+    "precioUnidad": 0.52,
+    "pack": 25,
+    "stock": 8
+  },
+  {
+    "codigo": "2099",
+    "descripcion": "ELAST.CORD/ORO AFELP 30MMX25",
+    "rubro": "OTROS",
+    "costo": 14.17,
+    "precio": 28.34,
+    "precioUnidad": 1.13,
+    "pack": 25,
+    "stock": 8
+  },
+  {
+    "codigo": "738",
+    "descripcion": "ELAST.CORD/ORO AFELP 80MMX25",
+    "rubro": "OTROS",
+    "costo": 32.89,
+    "precio": 65.78,
+    "precioUnidad": 2.63,
+    "pack": 25,
+    "stock": 1
+  },
+  {
+    "codigo": "546",
+    "descripcion": "ELAST.CORD/ORO AFELP LISO/IRIS 30MMX10",
+    "rubro": "OTROS",
+    "costo": 6.59,
+    "precio": 13.18,
+    "precioUnidad": 1.32,
+    "pack": 10,
+    "stock": 0
+  },
+  {
+    "codigo": "770",
+    "descripcion": "ELAST.CORD/ORO ALFA 30MMX10",
+    "rubro": "OTROS",
+    "costo": 4.03,
+    "precio": 8.06,
+    "precioUnidad": 0.81,
+    "pack": 10,
+    "stock": 8
+  },
+  {
+    "codigo": "6173",
+    "descripcion": "ELAST.CORD/ORO ELOISA 10MM X20",
+    "rubro": "OTROS",
+    "costo": 9.17,
+    "precio": 18.35,
+    "precioUnidad": 0.92,
+    "pack": 20,
+    "stock": 0
+  },
+  {
+    "codigo": "746",
+    "descripcion": "ELAST.CORD/ORO FLASH 10MM X100",
+    "rubro": "OTROS",
+    "costo": 14.78,
+    "precio": 29.55,
+    "precioUnidad": 0.3,
+    "pack": 100,
+    "stock": 8
+  },
+  {
+    "codigo": "655",
+    "descripcion": "ELAST.CORD/ORO FLASH 10MM X20",
+    "rubro": "OTROS",
+    "costo": 4.4,
+    "precio": 8.79,
+    "precioUnidad": 0.44,
+    "pack": 20,
+    "stock": 0
+  },
+  {
+    "codigo": "1669",
+    "descripcion": "ELAST.CORD/ORO FLASH 6MM X20",
+    "rubro": "OTROS",
+    "costo": 3.41,
+    "precio": 6.82,
+    "precioUnidad": 0.34,
+    "pack": 20,
+    "stock": 2
+  },
+  {
+    "codigo": "1464",
+    "descripcion": "ELAST.CORD/ORO LIGA 15MMX10",
+    "rubro": "OTROS",
+    "costo": 4.12,
+    "precio": 8.24,
+    "precioUnidad": 0.82,
+    "pack": 10,
+    "stock": 5
+  },
+  {
+    "codigo": "1465",
+    "descripcion": "ELAST.CORD/ORO LIGA 20MMX10",
+    "rubro": "OTROS",
+    "costo": 4.65,
+    "precio": 9.3,
+    "precioUnidad": 0.93,
+    "pack": 10,
+    "stock": 2
+  },
+  {
+    "codigo": "1472",
+    "descripcion": "ELAST.CORD/ORO LIGA 25MMX10",
+    "rubro": "OTROS",
+    "costo": 5.07,
+    "precio": 10.14,
+    "precioUnidad": 1.01,
+    "pack": 10,
+    "stock": 2
+  },
+  {
+    "codigo": "1466",
+    "descripcion": "ELAST.CORD/ORO LIGA 30MMX10",
+    "rubro": "OTROS",
+    "costo": 5.6,
+    "precio": 11.21,
+    "precioUnidad": 1.12,
+    "pack": 10,
+    "stock": 50
+  },
+  {
+    "codigo": "1467",
+    "descripcion": "ELAST.CORD/ORO LIGA 40MMX10",
+    "rubro": "OTROS",
+    "costo": 6.14,
+    "precio": 12.28,
+    "precioUnidad": 1.23,
+    "pack": 10,
+    "stock": 5
+  },
+  {
+    "codigo": "1468",
+    "descripcion": "ELAST.CORD/ORO LIGA 50MMX10",
+    "rubro": "OTROS",
+    "costo": 8.26,
+    "precio": 16.51,
+    "precioUnidad": 1.65,
+    "pack": 10,
+    "stock": 100
+  },
+  {
+    "codigo": "1469",
+    "descripcion": "ELAST.CORD/ORO LIGA 60MMX10",
+    "rubro": "OTROS",
+    "costo": 10.48,
+    "precio": 20.96,
+    "precioUnidad": 2.1,
+    "pack": 10,
+    "stock": 0
+  },
+  {
+    "codigo": "1470",
+    "descripcion": "ELAST.CORD/ORO LIGA 80MMX10",
+    "rubro": "OTROS",
+    "costo": 12.63,
+    "precio": 25.27,
+    "precioUnidad": 2.53,
+    "pack": 10,
+    "stock": 100
+  },
+  {
+    "codigo": "1471",
+    "descripcion": "ELAST.CORD/ORO LIGA 100MMX10",
+    "rubro": "OTROS",
+    "costo": 15.65,
+    "precio": 31.3,
+    "precioUnidad": 3.13,
+    "pack": 10,
+    "stock": 1
+  },
+  {
+    "codigo": "1748",
+    "descripcion": "ELAST.CORD/ORO POLY 5MMX50 BCO/NGR",
+    "rubro": "OTROS",
+    "costo": 5.59,
+    "precio": 11.17,
+    "precioUnidad": 0.22,
+    "pack": 50,
+    "stock": 50
+  },
+  {
+    "codigo": "1749",
+    "descripcion": "ELAST.CORD/ORO POLY 7MMX50 BCO/NGR",
+    "rubro": "OTROS",
+    "costo": 6.55,
+    "precio": 13.1,
+    "precioUnidad": 0.26,
+    "pack": 50,
+    "stock": 2
+  },
+  {
+    "codigo": "1751",
+    "descripcion": "ELAST.CORD/ORO POLY 10MMX50 BCO/NGR",
+    "rubro": "OTROS",
+    "costo": 7.86,
+    "precio": 15.72,
+    "precioUnidad": 0.31,
+    "pack": 50,
+    "stock": 0
+  },
+  {
+    "codigo": "617",
+    "descripcion": "ELAST.ENVIV/L 400387/20 X20",
+    "rubro": "OTROS",
+    "costo": 10.22,
+    "precio": 20.44,
+    "precioUnidad": 1.02,
+    "pack": 20,
+    "stock": 12
+  },
+  {
+    "codigo": "1246",
+    "descripcion": "ELAST.ENVIV/R 101-18 X 20MTS",
+    "rubro": "OTROS",
+    "costo": 7.53,
+    "precio": 15.05,
+    "precioUnidad": 0.75,
+    "pack": 20,
+    "stock": 1
+  },
+  {
+    "codigo": "288",
+    "descripcion": "ELAST.ENVIV/R 390597/20 X20",
+    "rubro": "OTROS",
+    "costo": 12.57,
+    "precio": 25.13,
+    "precioUnidad": 1.26,
+    "pack": 20,
+    "stock": 3
+  },
+  {
+    "codigo": "1164",
+    "descripcion": "ELAST.ENVIVADO ONDINA X25",
+    "rubro": "OTROS",
+    "costo": 10.5,
+    "precio": 21.01,
+    "precioUnidad": 0.84,
+    "pack": 25,
+    "stock": 1
+  },
+  {
+    "codigo": "943",
+    "descripcion": "ELAST.ONDINA ALG. 4MM X50",
+    "rubro": "OTROS",
+    "costo": 6.97,
+    "precio": 13.94,
+    "precioUnidad": 0.28,
+    "pack": 50,
+    "stock": 20
+  },
+  {
+    "codigo": "951",
+    "descripcion": "ELAST.ONDINA ALG. 6MM X50",
+    "rubro": "OTROS",
+    "costo": 7.9,
+    "precio": 15.79,
+    "precioUnidad": 0.32,
+    "pack": 50,
+    "stock": 1
+  },
+  {
+    "codigo": "999",
+    "descripcion": "ELAST.ONDINA ALG. 8MM X50",
+    "rubro": "OTROS",
+    "costo": 8.9,
+    "precio": 17.81,
+    "precioUnidad": 0.36,
+    "pack": 50,
+    "stock": 100
+  },
+  {
+    "codigo": "458",
+    "descripcion": "ELAST.ONDINA ALG. 10MM X40",
+    "rubro": "OTROS",
+    "costo": 8.54,
+    "precio": 17.09,
+    "precioUnidad": 0.43,
+    "pack": 40,
+    "stock": 0
+  },
+  {
+    "codigo": "954",
+    "descripcion": "ELAST.ONDINA ALG. 12MM X40",
+    "rubro": "OTROS",
+    "costo": 9.79,
+    "precio": 19.58,
+    "precioUnidad": 0.49,
+    "pack": 40,
+    "stock": 1
+  },
+  {
+    "codigo": "404",
+    "descripcion": "ELAST.ONDINA CROCHET 5MM X100",
+    "rubro": "OTROS",
+    "costo": 7.85,
+    "precio": 15.7,
+    "precioUnidad": 0.16,
+    "pack": 100,
+    "stock": 0
+  },
+  {
+    "codigo": "460",
+    "descripcion": "ELAST.ONDINA CROCHET 7MM X100",
+    "rubro": "OTROS",
+    "costo": 8.72,
+    "precio": 17.44,
+    "precioUnidad": 0.17,
+    "pack": 100,
+    "stock": 3
+  },
+  {
+    "codigo": "1127",
+    "descripcion": "ELAST.ONDINA LIGA 20MM X 25 MTS",
+    "rubro": "OTROS",
+    "costo": 7.79,
+    "precio": 15.57,
+    "precioUnidad": 0.62,
+    "pack": 25,
+    "stock": 12
+  },
+  {
+    "codigo": "1129",
+    "descripcion": "ELAST.ONDINA LIGA 30MM X 25 MTS",
+    "rubro": "OTROS",
+    "costo": 11.56,
+    "precio": 23.13,
+    "precioUnidad": 0.93,
+    "pack": 25,
+    "stock": 12
+  },
+  {
+    "codigo": "1154",
+    "descripcion": "ELAST.ONDINA LIGA 40MM X 25 MTS",
+    "rubro": "OTROS",
+    "costo": 15.53,
+    "precio": 31.06,
+    "precioUnidad": 1.24,
+    "pack": 25,
+    "stock": 20
+  },
+  {
+    "codigo": "357",
+    "descripcion": "ELAST.PUNTILLA 400012 BROTEL X20",
+    "rubro": "OTROS",
+    "costo": 5.99,
+    "precio": 11.98,
+    "precioUnidad": 0.6,
+    "pack": 20,
+    "stock": 1
+  },
+  {
+    "codigo": "1300",
+    "descripcion": "ENHEBRADOR REP.CHECA X 20",
+    "rubro": "OTROS",
+    "costo": 2.1,
+    "precio": 4.19,
+    "precioUnidad": 0.21,
+    "pack": 20,
+    "stock": 5
+  },
+  {
+    "codigo": "523",
+    "descripcion": "ENTRET COS 243 30MM X100",
+    "rubro": "OTROS",
+    "costo": 5.22,
+    "precio": 10.44,
+    "precioUnidad": 0.1,
+    "pack": 100,
+    "stock": 100
+  },
+  {
+    "codigo": "903",
+    "descripcion": "ENTRET COS 243 40MM X100",
+    "rubro": "OTROS",
+    "costo": 8.49,
+    "precio": 16.98,
+    "precioUnidad": 0.17,
+    "pack": 100,
+    "stock": 0
+  },
+  {
+    "codigo": "476",
+    "descripcion": "ENTRET COS/FIN C2X25",
+    "rubro": "OTROS",
+    "costo": 17.42,
+    "precio": 34.83,
+    "precioUnidad": 1.39,
+    "pack": 25,
+    "stock": 12
+  },
+  {
+    "codigo": "422",
+    "descripcion": "ENTRET COS/GRS 180X100",
+    "rubro": "OTROS",
+    "costo": 170.46,
+    "precio": 340.92,
+    "precioUnidad": 3.41,
+    "pack": 100,
+    "stock": 8
+  },
+  {
+    "codigo": "420",
+    "descripcion": "ENTRET COS/GRS 180X25",
+    "rubro": "OTROS",
+    "costo": 42.61,
+    "precio": 85.23,
+    "precioUnidad": 3.41,
+    "pack": 25,
+    "stock": 0
+  },
+  {
+    "codigo": "1867",
+    "descripcion": "ENTRET COS/GRS 199X25",
+    "rubro": "OTROS",
+    "costo": 47.06,
+    "precio": 94.12,
+    "precioUnidad": 3.76,
+    "pack": 25,
+    "stock": 50
+  },
+  {
+    "codigo": "454",
+    "descripcion": "ENTRET COS/GRS 199X50",
+    "rubro": "OTROS",
+    "costo": 94.12,
+    "precio": 188.25,
+    "precioUnidad": 3.76,
+    "pack": 50,
+    "stock": 3
+  },
+  {
+    "codigo": "519",
+    "descripcion": "ENTRET COS/GRS 273X100",
+    "rubro": "OTROS",
+    "costo": 123.03,
+    "precio": 246.05,
+    "precioUnidad": 2.46,
+    "pack": 100,
+    "stock": 50
+  },
+  {
+    "codigo": "396",
+    "descripcion": "ENTRET COS/GRS 273X25",
+    "rubro": "OTROS",
+    "costo": 30.76,
+    "precio": 61.51,
+    "precioUnidad": 2.46,
+    "pack": 25,
+    "stock": 0
+  },
+  {
+    "codigo": "394",
+    "descripcion": "ENTRET COS/MED 243X25",
+    "rubro": "OTROS",
+    "costo": 30.02,
+    "precio": 60.03,
+    "precioUnidad": 2.4,
+    "pack": 25,
+    "stock": 2
+  },
+  {
+    "codigo": "127",
+    "descripcion": "ENTRET PEG 4930 30MM X100",
+    "rubro": "OTROS",
+    "costo": 5.96,
+    "precio": 11.93,
+    "precioUnidad": 0.12,
+    "pack": 100,
+    "stock": 0
+  },
+  {
+    "codigo": "1106",
+    "descripcion": "ENTRET PEG 4930 40MM X100",
+    "rubro": "OTROS",
+    "costo": 8.13,
+    "precio": 16.26,
+    "precioUnidad": 0.16,
+    "pack": 100,
+    "stock": 12
+  },
+  {
+    "codigo": "447",
+    "descripcion": "ENTRET PEG/FINA 5220X100",
+    "rubro": "OTROS",
+    "costo": 180.83,
+    "precio": 361.67,
+    "precioUnidad": 3.62,
+    "pack": 100,
+    "stock": 8
+  },
+  {
+    "codigo": "405",
+    "descripcion": "ENTRET PEG/FINA 5220X25",
+    "rubro": "OTROS",
+    "costo": 45.21,
+    "precio": 90.42,
+    "precioUnidad": 3.62,
+    "pack": 25,
+    "stock": 0
+  },
+  {
+    "codigo": "475",
+    "descripcion": "ENTRET PEG/FINA 5230X100",
+    "rubro": "OTROS",
+    "costo": 210.48,
+    "precio": 420.96,
+    "precioUnidad": 4.21,
+    "pack": 100,
+    "stock": 0
+  },
+  {
+    "codigo": "409",
+    "descripcion": "ENTRET PEG/FINA 5230X25",
+    "rubro": "OTROS",
+    "costo": 52.62,
+    "precio": 105.24,
+    "precioUnidad": 4.21,
+    "pack": 25,
+    "stock": 20
+  },
+  {
+    "codigo": "1404",
+    "descripcion": "ENTRET PEG/GRS 4840X25",
+    "rubro": "OTROS",
+    "costo": 30.31,
+    "precio": 60.62,
+    "precioUnidad": 2.42,
+    "pack": 25,
+    "stock": 0
+  },
+  {
+    "codigo": "1144",
+    "descripcion": "ENTRET PEG/GRS 4850X100",
+    "rubro": "OTROS",
+    "costo": 135.78,
+    "precio": 271.57,
+    "precioUnidad": 2.72,
+    "pack": 100,
+    "stock": 20
+  },
+  {
+    "codigo": "465",
+    "descripcion": "ENTRET PEG/GRS 4850X25",
+    "rubro": "OTROS",
+    "costo": 35.2,
+    "precio": 70.41,
+    "precioUnidad": 2.82,
+    "pack": 25,
+    "stock": 2
+  },
+  {
+    "codigo": "1536",
+    "descripcion": "ENTRET PEG/MED 4930X100",
+    "rubro": "OTROS",
+    "costo": 123.03,
+    "precio": 246.05,
+    "precioUnidad": 2.46,
+    "pack": 100,
+    "stock": 0
+  },
+  {
+    "codigo": "1111",
+    "descripcion": "ENTRET PEG/MED 4930X25",
+    "rubro": "OTROS",
+    "costo": 30.76,
+    "precio": 61.51,
+    "precioUnidad": 2.46,
+    "pack": 25,
+    "stock": 2
+  },
+  {
+    "codigo": "321",
+    "descripcion": "ESCARAPELA MOÑO X20 UNID",
+    "rubro": "OTROS",
+    "costo": 1.5,
+    "precio": 3.0,
+    "precioUnidad": 0.15,
+    "pack": 20,
+    "stock": 3
+  },
+  {
+    "codigo": "311",
+    "descripcion": "ESCARAPELA REDONDA X20 UNID",
+    "rubro": "OTROS",
+    "costo": 1.72,
+    "precio": 3.44,
+    "precioUnidad": 0.17,
+    "pack": 20,
+    "stock": 3
+  },
+  {
+    "codigo": "536",
+    "descripcion": "ESCUAD F/FACIL CLASICA",
+    "rubro": "OTROS",
+    "costo": 2.08,
+    "precio": 4.16,
+    "precioUnidad": 4.16,
+    "pack": 1,
+    "stock": 2
+  },
+  {
+    "codigo": "1261",
+    "descripcion": "ESCUAD F/FACIL MODISTA",
+    "rubro": "OTROS",
+    "costo": 2.42,
+    "precio": 4.84,
+    "precioUnidad": 4.84,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "581",
+    "descripcion": "ETIQUET MENDAFACIL BLISTER X14",
+    "rubro": "OTROS",
+    "costo": 1.06,
+    "precio": 2.12,
+    "precioUnidad": 0.15,
+    "pack": 14,
+    "stock": 0
+  },
+  {
+    "codigo": "791",
+    "descripcion": "FLECOS ALGOD 261/BLNC 05CM X10",
+    "rubro": "FLECOS",
+    "costo": 6.35,
+    "precio": 12.7,
+    "precioUnidad": 1.27,
+    "pack": 10,
+    "stock": 100
+  },
+  {
+    "codigo": "757",
+    "descripcion": "FLECOS ALGOD 261/CRDO 05CM X10",
+    "rubro": "FLECOS",
+    "costo": 5.01,
+    "precio": 10.02,
+    "precioUnidad": 1.0,
+    "pack": 10,
+    "stock": 8
+  },
+  {
+    "codigo": "419",
+    "descripcion": "FLECOS ALGOD 262/BLNC 03CM X10",
+    "rubro": "FLECOS",
+    "costo": 4.29,
+    "precio": 8.59,
+    "precioUnidad": 0.86,
+    "pack": 10,
+    "stock": 50
+  },
+  {
+    "codigo": "413",
+    "descripcion": "FLECOS ALGOD 262/CRDO 03CM X10",
+    "rubro": "FLECOS",
+    "costo": 3.44,
+    "precio": 6.89,
+    "precioUnidad": 0.69,
+    "pack": 10,
+    "stock": 100
+  },
+  {
+    "codigo": "40",
+    "descripcion": "FLECOS LAME M648/05CM X10",
+    "rubro": "FLECOS",
+    "costo": 5.86,
+    "precio": 11.71,
+    "precioUnidad": 1.17,
+    "pack": 10,
+    "stock": 12
+  },
+  {
+    "codigo": "642",
+    "descripcion": "FLECOS LUREX 648/05CM X10",
+    "rubro": "FLECOS",
+    "costo": 27.56,
+    "precio": 55.11,
+    "precioUnidad": 5.51,
+    "pack": 648,
+    "stock": 100
+  },
+  {
+    "codigo": "785",
+    "descripcion": "FLECOS RAYON 275/05CM X10",
+    "rubro": "FLECOS",
+    "costo": 10.61,
+    "precio": 21.21,
+    "precioUnidad": 2.12,
+    "pack": 10,
+    "stock": 20
+  },
+  {
+    "codigo": "792",
+    "descripcion": "FLECOS RAYON 275/05CM X30",
+    "rubro": "FLECOS",
+    "costo": 29.05,
+    "precio": 58.1,
+    "precioUnidad": 1.94,
+    "pack": 30,
+    "stock": 50
+  },
+  {
+    "codigo": "378",
+    "descripcion": "GALON FB 388 ROCOCO X 10",
+    "rubro": "OTROS",
+    "costo": 3.46,
+    "precio": 6.92,
+    "precioUnidad": 0.69,
+    "pack": 10,
+    "stock": 0
+  },
+  {
+    "codigo": "671",
+    "descripcion": "HILO ALG RUSTICO X500 GRS",
+    "rubro": "HILOS",
+    "costo": 8.63,
+    "precio": 17.25,
+    "precioUnidad": 3.45,
+    "pack": 500,
+    "stock": 50
+  },
+  {
+    "codigo": "461",
+    "descripcion": "HILO CADENA 10X90 MTR",
+    "rubro": "HILOS",
+    "costo": 7.0,
+    "precio": 14.0,
+    "precioUnidad": 1.4,
+    "pack": 90,
+    "stock": 5
+  },
+  {
+    "codigo": "571",
+    "descripcion": "HILO CHORICER GDE X10*33",
+    "rubro": "HILOS",
+    "costo": 3.0,
+    "precio": 6.0,
+    "precioUnidad": 0.6,
+    "pack": 10,
+    "stock": 1
+  },
+  {
+    "codigo": "334",
+    "descripcion": "HILO CORONA MET.NYLON 10X100",
+    "rubro": "HILOS",
+    "costo": 3.5,
+    "precio": 7.0,
+    "precioUnidad": 0.7,
+    "pack": 100,
+    "stock": 2
+  },
+  {
+    "codigo": "441",
+    "descripcion": "HILO DRIMA 10X100 YDS",
+    "rubro": "HILOS",
+    "costo": 3.5,
+    "precio": 7.0,
+    "precioUnidad": 0.7,
+    "pack": 100,
+    "stock": 1
+  },
+  {
+    "codigo": "84",
+    "descripcion": "HILO DRIMA BOB BCO/NEG/COL 20X450",
+    "rubro": "HILOS",
+    "costo": 10.96,
+    "precio": 21.92,
+    "precioUnidad": 1.1,
+    "pack": 450,
+    "stock": 3
+  },
+  {
+    "codigo": "32",
+    "descripcion": "HILO DUCI/CJ POLYESTER 6 X450",
+    "rubro": "HILOS",
+    "costo": 2.09,
+    "precio": 4.17,
+    "precioUnidad": 0.7,
+    "pack": 450,
+    "stock": 0
+  },
+  {
+    "codigo": "778",
+    "descripcion": "HILO ELASTIC/BOLSA BLANC X12",
+    "rubro": "HILOS",
+    "costo": 2580.0,
+    "precio": 5676.0,
+    "precioUnidad": 473.0,
+    "pack": 12,
+    "stock": 0
+  },
+  {
+    "codigo": "780",
+    "descripcion": "HILO ELASTIC/BOLSA COLOR X12",
+    "rubro": "HILOS",
+    "costo": 4.82,
+    "precio": 9.64,
+    "precioUnidad": 0.8,
+    "pack": 12,
+    "stock": 2
+  },
+  {
+    "codigo": "155",
+    "descripcion": "HILO ENCERADO COLOR X70 MT",
+    "rubro": "HILOS",
+    "costo": 1.45,
+    "precio": 2.47,
+    "precioUnidad": 2.47,
+    "pack": 70,
+    "stock": 50
+  },
+  {
+    "codigo": "1803",
+    "descripcion": "HILO LABOR EXTRA FUERTE 10X100",
+    "rubro": "HILOS",
+    "costo": 5.49,
+    "precio": 10.98,
+    "precioUnidad": 1.1,
+    "pack": 100,
+    "stock": 20
+  },
+  {
+    "codigo": "1804",
+    "descripcion": "HILO LABOR JEANS 10X50",
+    "rubro": "HILOS",
+    "costo": 2.48,
+    "precio": 4.96,
+    "precioUnidad": 0.5,
+    "pack": 50,
+    "stock": 100
+  },
+  {
+    "codigo": "508",
+    "descripcion": "HILO LONERO GDE X10*23",
+    "rubro": "HILOS",
+    "costo": 4.14,
+    "precio": 8.27,
+    "precioUnidad": 0.83,
+    "pack": 10,
+    "stock": 20
+  },
+  {
+    "codigo": "198",
+    "descripcion": "HILO CUCITO X 10",
+    "rubro": "HILOS",
+    "costo": 38.0,
+    "precio": 76.0,
+    "precioUnidad": 7.6,
+    "pack": 10,
+    "stock": 0
+  },
+  {
+    "codigo": "209",
+    "descripcion": "HILO MOULINE ANCLA X 12",
+    "rubro": "HILOS",
+    "costo": 4.71,
+    "precio": 9.42,
+    "precioUnidad": 0.79,
+    "pack": 12,
+    "stock": 20
+  },
+  {
+    "codigo": "669",
+    "descripcion": "HILO OVERL LABOR BCO X100 GR",
+    "rubro": "HILOS",
+    "costo": 1.6,
+    "precio": 3.2,
+    "precioUnidad": 3.2,
+    "pack": 100,
+    "stock": 3
+  },
+  {
+    "codigo": "649",
+    "descripcion": "HILO OVERL LABOR COL X100 GR",
+    "rubro": "HILOS",
+    "costo": 2.5,
+    "precio": 5.0,
+    "precioUnidad": 5.0,
+    "pack": 100,
+    "stock": 5
+  },
+  {
+    "codigo": "575",
+    "descripcion": "HILO OVERL LABOR NEG X100 GR",
+    "rubro": "HILOS",
+    "costo": 1.85,
+    "precio": 3.7,
+    "precioUnidad": 3.7,
+    "pack": 100,
+    "stock": 3
+  },
+  {
+    "codigo": "1420",
+    "descripcion": "HILO OVERL SOLTEX COL X100 GR",
+    "rubro": "HILOS",
+    "costo": 1.5,
+    "precio": 3.0,
+    "precioUnidad": 3.0,
+    "pack": 100,
+    "stock": 8
+  },
+  {
+    "codigo": "388",
+    "descripcion": "HILO PESPONTO-JEANS 10X30",
+    "rubro": "HILOS",
+    "costo": 2.3,
+    "precio": 4.61,
+    "precioUnidad": 0.46,
+    "pack": 30,
+    "stock": 5
+  },
+  {
+    "codigo": "293",
+    "descripcion": "HILO POLYEST CONO X4000 MT",
+    "rubro": "HILOS",
+    "costo": 2.34,
+    "precio": 4.69,
+    "precioUnidad": 4.69,
+    "pack": 4000,
+    "stock": 12
+  },
+  {
+    "codigo": "265",
+    "descripcion": "HILO POLYEST/SOL CONO X1828 MT",
+    "rubro": "HILOS",
+    "costo": 1.28,
+    "precio": 2.18,
+    "precioUnidad": 2.18,
+    "pack": 1828,
+    "stock": 8
+  },
+  {
+    "codigo": "314",
+    "descripcion": "HILO SISAL CRUDO FINO 10X30 MTS*341",
+    "rubro": "HILOS",
+    "costo": 14.79,
+    "precio": 29.58,
+    "precioUnidad": 2.96,
+    "pack": 30,
+    "stock": 2
+  },
+  {
+    "codigo": "2424",
+    "descripcion": "HILO TANZA 0.3MM X100 MTS",
+    "rubro": "HILOS",
+    "costo": 0.61,
+    "precio": 1.23,
+    "precioUnidad": 1.23,
+    "pack": 100,
+    "stock": 3
+  },
+  {
+    "codigo": "2425",
+    "descripcion": "HILO TANZA 0.4MM X100 MTS",
+    "rubro": "HILOS",
+    "costo": 0.74,
+    "precio": 1.48,
+    "precioUnidad": 1.48,
+    "pack": 100,
+    "stock": 3
+  },
+  {
+    "codigo": "855",
+    "descripcion": "HILO TANZA ELAST X10",
+    "rubro": "HILOS",
+    "costo": 6.26,
+    "precio": 12.53,
+    "precioUnidad": 1.25,
+    "pack": 10,
+    "stock": 2
+  },
+  {
+    "codigo": "1143",
+    "descripcion": "HILO TEJ SLIM X500 GR",
+    "rubro": "HILOS",
+    "costo": 11.12,
+    "precio": 22.23,
+    "precioUnidad": 4.45,
+    "pack": 500,
+    "stock": 100
+  },
+  {
+    "codigo": "876",
+    "descripcion": "HOMBRERA FORRADA 0-MINI",
+    "rubro": "OTROS",
+    "costo": 8.9,
+    "precio": 17.8,
+    "precioUnidad": 1.48,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "559",
+    "descripcion": "HOMBRERA FORRADA 1-BIS",
+    "rubro": "OTROS",
+    "costo": 10.87,
+    "precio": 21.74,
+    "precioUnidad": 1.81,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "555",
+    "descripcion": "HOMBRERA FORRADA 1-CHICA",
+    "rubro": "OTROS",
+    "costo": 12.19,
+    "precio": 24.39,
+    "precioUnidad": 2.03,
+    "pack": 1,
+    "stock": 2
+  },
+  {
+    "codigo": "666",
+    "descripcion": "HOMBRERA FORRADA 2-BIS",
+    "rubro": "OTROS",
+    "costo": 12.68,
+    "precio": 25.35,
+    "precioUnidad": 2.11,
+    "pack": 1,
+    "stock": 12
+  },
+  {
+    "codigo": "553",
+    "descripcion": "HOMBRERA FORRADA 2-MEDIANA",
+    "rubro": "OTROS",
+    "costo": 14.52,
+    "precio": 29.04,
+    "precioUnidad": 2.42,
+    "pack": 1,
+    "stock": 12
+  },
+  {
+    "codigo": "554",
+    "descripcion": "HOMBRERA FORRADA 4-GRANDE",
+    "rubro": "OTROS",
+    "costo": 14.77,
+    "precio": 29.55,
+    "precioUnidad": 2.46,
+    "pack": 1,
+    "stock": 20
+  },
+  {
+    "codigo": "1511",
+    "descripcion": "HOMBRERA S/FORRAR (0) MINI",
+    "rubro": "OTROS",
+    "costo": 2.58,
+    "precio": 5.15,
+    "precioUnidad": 0.43,
+    "pack": 1,
+    "stock": 1
+  },
+  {
+    "codigo": "527",
+    "descripcion": "HOMBRERA S/FORRAR (1 BIS)FINA",
+    "rubro": "OTROS",
+    "costo": 3.26,
+    "precio": 6.53,
+    "precioUnidad": 0.54,
+    "pack": 1,
+    "stock": 8
+  },
+  {
+    "codigo": "552",
+    "descripcion": "HOMBRERA S/FORRAR (1)CHICA",
+    "rubro": "OTROS",
+    "costo": 5.23,
+    "precio": 10.45,
+    "precioUnidad": 0.87,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "401",
+    "descripcion": "HOMBRERA S/FORRAR (2 BIS)FINA",
+    "rubro": "OTROS",
+    "costo": 4.99,
+    "precio": 9.98,
+    "precioUnidad": 0.83,
+    "pack": 1,
+    "stock": 12
+  },
+  {
+    "codigo": "550",
+    "descripcion": "HOMBRERA S/FORRAR (2)MEDIANA",
+    "rubro": "OTROS",
+    "costo": 6.12,
+    "precio": 12.23,
+    "precioUnidad": 1.02,
+    "pack": 1,
+    "stock": 12
+  },
+  {
+    "codigo": "551",
+    "descripcion": "HOMBRERA S/FORRAR (4)GRANDE",
+    "rubro": "OTROS",
+    "costo": 6.22,
+    "precio": 12.44,
+    "precioUnidad": 1.04,
+    "pack": 1,
+    "stock": 20
+  },
+  {
+    "codigo": "1584",
+    "descripcion": "IMAN REDONDO CBX X50 (14X3MM)",
+    "rubro": "OTROS",
+    "costo": 2.68,
+    "precio": 5.36,
+    "precioUnidad": 0.11,
+    "pack": 50,
+    "stock": 5
+  },
+  {
+    "codigo": "1662",
+    "descripcion": "LIMPIA PIPA COLOR X100 APROX",
+    "rubro": "OTROS",
+    "costo": 4.2,
+    "precio": 8.4,
+    "precioUnidad": 0.08,
+    "pack": 100,
+    "stock": 3
+  },
+  {
+    "codigo": "1663",
+    "descripcion": "LIMPIA PIPA MET. X100",
+    "rubro": "OTROS",
+    "costo": 5.64,
+    "precio": 11.28,
+    "precioUnidad": 0.11,
+    "pack": 100,
+    "stock": 100
+  },
+  {
+    "codigo": "2127",
+    "descripcion": "MARCADOR DE PUNTOS X200",
+    "rubro": "OTROS",
+    "costo": 4.15,
+    "precio": 8.3,
+    "precioUnidad": 0.04,
+    "pack": 200,
+    "stock": 0
+  },
+  {
+    "codigo": "87",
+    "descripcion": "MENDAFACIL GRANDE UNIDAD",
+    "rubro": "OTROS",
+    "costo": 0.73,
+    "precio": 1.46,
+    "precioUnidad": 1.46,
+    "pack": 1,
+    "stock": 1
+  },
+  {
+    "codigo": "407",
+    "descripcion": "MENDAFACIL JEAN*S-ROPA TRABAJO",
+    "rubro": "OTROS",
+    "costo": 0.69,
+    "precio": 1.39,
+    "precioUnidad": 1.39,
+    "pack": 1,
+    "stock": 100
+  },
+  {
+    "codigo": "1962",
+    "descripcion": "OJOS MOVILES 8MM X100",
+    "rubro": "OTROS",
+    "costo": 1.36,
+    "precio": 2.72,
+    "precioUnidad": 0.03,
+    "pack": 100,
+    "stock": 1
+  },
+  {
+    "codigo": "1963",
+    "descripcion": "OJOS MOVIBLES 10MM X100",
+    "rubro": "OTROS",
+    "costo": 1.45,
+    "precio": 2.91,
+    "precioUnidad": 0.03,
+    "pack": 100,
+    "stock": 20
+  },
+  {
+    "codigo": "1964",
+    "descripcion": "OJOS MOVIBLES 12MM X100",
+    "rubro": "OTROS",
+    "costo": 2.14,
+    "precio": 4.28,
+    "precioUnidad": 0.04,
+    "pack": 100,
+    "stock": 100
+  },
+  {
+    "codigo": "1965",
+    "descripcion": "OJOS MOVIBLES 15MM X100",
+    "rubro": "OTROS",
+    "costo": 2.28,
+    "precio": 4.57,
+    "precioUnidad": 0.05,
+    "pack": 100,
+    "stock": 100
+  },
+  {
+    "codigo": "1966",
+    "descripcion": "OJOS MOVIBLES 20MM X50",
+    "rubro": "OTROS",
+    "costo": 2.85,
+    "precio": 5.69,
+    "precioUnidad": 0.11,
+    "pack": 50,
+    "stock": 0
+  },
+  {
+    "codigo": "1970",
+    "descripcion": "OJOS SEGURIDAD 8MM X50",
+    "rubro": "OTROS",
+    "costo": 3.63,
+    "precio": 7.26,
+    "precioUnidad": 0.15,
+    "pack": 50,
+    "stock": 1
+  },
+  {
+    "codigo": "1971",
+    "descripcion": "OJOS SEGURIDAD 10MM X50",
+    "rubro": "OTROS",
+    "costo": 3.69,
+    "precio": 7.38,
+    "precioUnidad": 0.15,
+    "pack": 50,
+    "stock": 2
+  },
+  {
+    "codigo": "1972",
+    "descripcion": "OJOS SEGURIDAD 12MM X50",
+    "rubro": "OTROS",
+    "costo": 3.94,
+    "precio": 7.88,
+    "precioUnidad": 0.16,
+    "pack": 50,
+    "stock": 100
+  },
+  {
+    "codigo": "1973",
+    "descripcion": "OJOS SEGURIDAD 16MM X50",
+    "rubro": "OTROS",
+    "costo": 5.6,
+    "precio": 11.21,
+    "precioUnidad": 0.22,
+    "pack": 50,
+    "stock": 1
+  },
+  {
+    "codigo": "140",
+    "descripcion": "PAPEL MOLDE X20 UNID",
+    "rubro": "OTROS",
+    "costo": 8.31,
+    "precio": 16.62,
+    "precioUnidad": 0.83,
+    "pack": 20,
+    "stock": 0
+  },
+  {
+    "codigo": "123",
+    "descripcion": "PEGAMENTO BARRA/SILIC*119 X500 GRS",
+    "rubro": "OTROS",
+    "costo": 8.48,
+    "precio": 16.96,
+    "precioUnidad": 0.42,
+    "pack": 500,
+    "stock": 0
+  },
+  {
+    "codigo": "2455",
+    "descripcion": "PEGAMENTO ECCOLE X9 GRS",
+    "rubro": "OTROS",
+    "costo": 3.16,
+    "precio": 6.33,
+    "precioUnidad": 6.33,
+    "pack": 9,
+    "stock": 12
+  },
+  {
+    "codigo": "212",
+    "descripcion": "PEGAMENTO LA GOTITA POXIP X1",
+    "rubro": "OTROS",
+    "costo": 1.23,
+    "precio": 2.46,
+    "precioUnidad": 2.46,
+    "pack": 1,
+    "stock": 8
+  },
+  {
+    "codigo": "600",
+    "descripcion": "PEGAMENTO PEGAMIL PEGATELA X1",
+    "rubro": "OTROS",
+    "costo": 1.27,
+    "precio": 2.54,
+    "precioUnidad": 2.54,
+    "pack": 1,
+    "stock": 3
+  },
+  {
+    "codigo": "1928",
+    "descripcion": "PEGAMENTO SILIC LIQUID X 30ML",
+    "rubro": "OTROS",
+    "costo": 0.75,
+    "precio": 1.5,
+    "precioUnidad": 1.5,
+    "pack": 30,
+    "stock": 1
+  },
+  {
+    "codigo": "1929",
+    "descripcion": "PEGAMENTO SILIC LIQUID X100ML",
+    "rubro": "OTROS",
+    "costo": 2.4,
+    "precio": 4.08,
+    "precioUnidad": 4.08,
+    "pack": 100,
+    "stock": 20
+  },
+  {
+    "codigo": "103",
+    "descripcion": "PEGAMENTO UHU UNIVERS X1",
+    "rubro": "OTROS",
+    "costo": 1.33,
+    "precio": 2.65,
+    "precioUnidad": 2.65,
+    "pack": 1,
+    "stock": 12
+  },
+  {
+    "codigo": "213",
+    "descripcion": "PEGAMENTO UNIPOX X100ML X1",
+    "rubro": "OTROS",
+    "costo": 3.92,
+    "precio": 7.85,
+    "precioUnidad": 7.85,
+    "pack": 100,
+    "stock": 1
+  },
+  {
+    "codigo": "8857",
+    "descripcion": "PINZA DEPILAR DECOR STUTTGART",
+    "rubro": "OTROS",
+    "costo": 11.86,
+    "precio": 23.71,
+    "precioUnidad": 1.98,
+    "pack": 1,
+    "stock": 12
+  },
+  {
+    "codigo": "8856",
+    "descripcion": "PINZA DEPILAR NEGRA STUTTGART",
+    "rubro": "OTROS",
+    "costo": 11.86,
+    "precio": 23.71,
+    "precioUnidad": 1.98,
+    "pack": 1,
+    "stock": 5
+  },
+  {
+    "codigo": "298",
+    "descripcion": "PITUCONES DT PL.Y LISTO",
+    "rubro": "OTROS",
+    "costo": 0.77,
+    "precio": 1.55,
+    "precioUnidad": 1.55,
+    "pack": 1,
+    "stock": 2
+  },
+  {
+    "codigo": "411",
+    "descripcion": "PLANTILLA SIN ARCO TOALLA CLASICA",
+    "rubro": "OTROS",
+    "costo": 1.31,
+    "precio": 2.63,
+    "precioUnidad": 2.63,
+    "pack": 1,
+    "stock": 2
+  },
+  {
+    "codigo": "179",
+    "descripcion": "PLUMAS GALLO TOPTIONS X50",
+    "rubro": "OTROS",
+    "costo": 3.75,
+    "precio": 7.49,
+    "precioUnidad": 0.15,
+    "pack": 50,
+    "stock": 2
+  },
+  {
+    "codigo": "449",
+    "descripcion": "POMPON SURT X50",
+    "rubro": "OTROS",
+    "costo": 1.53,
+    "precio": 3.06,
+    "precioUnidad": 0.06,
+    "pack": 50,
+    "stock": 2
+  },
+  {
+    "codigo": "8861",
+    "descripcion": "REGLA FIBROFACIL 1 MT",
+    "rubro": "OTROS",
+    "costo": 1.92,
+    "precio": 3.84,
+    "precioUnidad": 3.84,
+    "pack": 1,
+    "stock": 3
+  },
+  {
+    "codigo": "1863",
+    "descripcion": "REGLA FIBROFACIL 60 CM",
+    "rubro": "OTROS",
+    "costo": 1.16,
+    "precio": 2.33,
+    "precioUnidad": 2.33,
+    "pack": 1,
+    "stock": 8
+  },
+  {
+    "codigo": "598",
+    "descripcion": "REPUEST/CORPIÑO 568 ANCHO DOC",
+    "rubro": "OTROS",
+    "costo": 5.8,
+    "precio": 11.59,
+    "precioUnidad": 0.97,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "919",
+    "descripcion": "REPUEST/CORPIÑO 569 SUP/ANCHO",
+    "rubro": "OTROS",
+    "costo": 8.47,
+    "precio": 16.94,
+    "precioUnidad": 1.41,
+    "pack": 1,
+    "stock": 100
+  },
+  {
+    "codigo": "591",
+    "descripcion": "REPUEST/CORPIÑO 592 MEDIAN DOC",
+    "rubro": "OTROS",
+    "costo": 5.03,
+    "precio": 10.07,
+    "precioUnidad": 0.84,
+    "pack": 1,
+    "stock": 20
+  },
+  {
+    "codigo": "359",
+    "descripcion": "REPUEST/CORPIÑO 902 PROLONG DOC",
+    "rubro": "OTROS",
+    "costo": 5.22,
+    "precio": 10.44,
+    "precioUnidad": 0.87,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "668",
+    "descripcion": "REPUEST/CORPIÑO 903 PROLONG DOC",
+    "rubro": "OTROS",
+    "costo": 8.81,
+    "precio": 17.61,
+    "precioUnidad": 1.47,
+    "pack": 1,
+    "stock": 12
+  },
+  {
+    "codigo": "478",
+    "descripcion": "REPUEST/CORPIÑO 968 PROLONG DOC",
+    "rubro": "OTROS",
+    "costo": 6.03,
+    "precio": 12.06,
+    "precioUnidad": 1.0,
+    "pack": 1,
+    "stock": 5
+  },
+  {
+    "codigo": "775",
+    "descripcion": "RULETA MARCAR PLASTIC X10 UNID",
+    "rubro": "OTROS",
+    "costo": 4.19,
+    "precio": 8.38,
+    "precioUnidad": 0.84,
+    "pack": 10,
+    "stock": 12
+  },
+  {
+    "codigo": "845",
+    "descripcion": "TANKA DOBLE GRANDE X50",
+    "rubro": "OTROS",
+    "costo": 3.5,
+    "precio": 7.0,
+    "precioUnidad": 0.14,
+    "pack": 50,
+    "stock": 0
+  },
+  {
+    "codigo": "844",
+    "descripcion": "TANKA MINI X50",
+    "rubro": "OTROS",
+    "costo": 3.0,
+    "precio": 6.0,
+    "precioUnidad": 0.12,
+    "pack": 50,
+    "stock": 100
+  },
+  {
+    "codigo": "217",
+    "descripcion": "TANKA REDONDA CONDAL X 50 *85",
+    "rubro": "OTROS",
+    "costo": 10.3,
+    "precio": 20.6,
+    "precioUnidad": 0.41,
+    "pack": 50,
+    "stock": 3
+  },
+  {
+    "codigo": "635",
+    "descripcion": "TAZA CORP SOFT BANANA NEW",
+    "rubro": "OTROS",
+    "costo": 1.4,
+    "precio": 2.8,
+    "precioUnidad": 2.8,
+    "pack": 1,
+    "stock": 5
+  },
+  {
+    "codigo": "364",
+    "descripcion": "TAZA CORP SOFT CLASICA",
+    "rubro": "OTROS",
+    "costo": 1.4,
+    "precio": 2.8,
+    "precioUnidad": 2.8,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "1573",
+    "descripcion": "TAZA CORP SOFT TRIANGULO",
+    "rubro": "OTROS",
+    "costo": 1.4,
+    "precio": 2.8,
+    "precioUnidad": 2.8,
+    "pack": 1,
+    "stock": 100
+  },
+  {
+    "codigo": "807",
+    "descripcion": "TERMINALES C/TAPA X50 UNID",
+    "rubro": "OTROS",
+    "costo": 2.5,
+    "precio": 5.0,
+    "precioUnidad": 0.1,
+    "pack": 50,
+    "stock": 5
+  },
+  {
+    "codigo": "888",
+    "descripcion": "TERMINALES COCODRILO X50",
+    "rubro": "OTROS",
+    "costo": 2.0,
+    "precio": 4.0,
+    "precioUnidad": 0.08,
+    "pack": 50,
+    "stock": 0
+  },
+  {
+    "codigo": "392",
+    "descripcion": "TIJERA CORTAHIL. REFORZ. X DOC",
+    "rubro": "OTROS",
+    "costo": 8.4,
+    "precio": 16.8,
+    "precioUnidad": 1.4,
+    "pack": 1,
+    "stock": 50
+  },
+  {
+    "codigo": "665",
+    "descripcion": "TIJERA STUTTGART 1296 COSTUR",
+    "rubro": "OTROS",
+    "costo": 1.94,
+    "precio": 3.49,
+    "precioUnidad": 3.49,
+    "pack": 1,
+    "stock": 20
+  },
+  {
+    "codigo": "2300",
+    "descripcion": "TIJERA VELVET 788/5 COSTURA",
+    "rubro": "OTROS",
+    "costo": 3.19,
+    "precio": 6.39,
+    "precioUnidad": 6.39,
+    "pack": 1,
+    "stock": 12
+  },
+  {
+    "codigo": "2301",
+    "descripcion": "TIJERA VELVET 788/6 COSTURA",
+    "rubro": "OTROS",
+    "costo": 3.7,
+    "precio": 7.4,
+    "precioUnidad": 7.4,
+    "pack": 1,
+    "stock": 3
+  },
+  {
+    "codigo": "2302",
+    "descripcion": "TIJERA VELVET 788/7 COSTURA",
+    "rubro": "OTROS",
+    "costo": 4.6,
+    "precio": 9.2,
+    "precioUnidad": 9.2,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "2303",
+    "descripcion": "TIJERA VELVET 788/8 COSTURA",
+    "rubro": "OTROS",
+    "costo": 5.93,
+    "precio": 11.86,
+    "precioUnidad": 11.86,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "2304",
+    "descripcion": "TIJERA VELVET 791/6 MODISTA",
+    "rubro": "OTROS",
+    "costo": 4.0,
+    "precio": 8.0,
+    "precioUnidad": 8.0,
+    "pack": 1,
+    "stock": 20
+  },
+  {
+    "codigo": "2305",
+    "descripcion": "TIJERA VELVET 791/7 MODISTA",
+    "rubro": "OTROS",
+    "costo": 4.5,
+    "precio": 9.0,
+    "precioUnidad": 9.0,
+    "pack": 1,
+    "stock": 1
+  },
+  {
+    "codigo": "2306",
+    "descripcion": "TIJERA VELVET 791/8 MODISTA",
+    "rubro": "OTROS",
+    "costo": 6.23,
+    "precio": 12.46,
+    "precioUnidad": 12.46,
+    "pack": 1,
+    "stock": 12
+  },
+  {
+    "codigo": "2311",
+    "descripcion": "TIJERA VELVET 839/7 PELUQUERO",
+    "rubro": "OTROS",
+    "costo": 4.0,
+    "precio": 8.0,
+    "precioUnidad": 8.0,
+    "pack": 1,
+    "stock": 1
+  },
+  {
+    "codigo": "2309",
+    "descripcion": "TIJERA VELVET 843/6 ENTRESACAR",
+    "rubro": "OTROS",
+    "costo": 4.6,
+    "precio": 9.2,
+    "precioUnidad": 9.2,
+    "pack": 1,
+    "stock": 100
+  },
+  {
+    "codigo": "2310",
+    "descripcion": "TIJERA VELVET 851 AL 858 BORDAR",
+    "rubro": "OTROS",
+    "costo": 2.3,
+    "precio": 4.6,
+    "precioUnidad": 4.6,
+    "pack": 1,
+    "stock": 3
+  },
+  {
+    "codigo": "1675",
+    "descripcion": "TIJERA VELVET PLASTICA 7.5 ́ ́",
+    "rubro": "OTROS",
+    "costo": 1.91,
+    "precio": 3.81,
+    "precioUnidad": 3.81,
+    "pack": 1,
+    "stock": 3
+  },
+  {
+    "codigo": "1676",
+    "descripcion": "TIJERA VELVET PLASTICA 8.5 ́ ́",
+    "rubro": "OTROS",
+    "costo": 2.29,
+    "precio": 4.58,
+    "precioUnidad": 4.58,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "1269",
+    "descripcion": "TIZA SASTRE GRANDE X10",
+    "rubro": "OTROS",
+    "costo": 2.11,
+    "precio": 4.22,
+    "precioUnidad": 0.42,
+    "pack": 10,
+    "stock": 5
+  },
+  {
+    "codigo": "260",
+    "descripcion": "ZIG-ZAG 320 BENTLEY X20",
+    "rubro": "OTROS",
+    "costo": 0.2,
+    "precio": 0.4,
+    "precioUnidad": 0.4,
+    "pack": 20,
+    "stock": 2
+  },
+  {
+    "codigo": "1",
+    "descripcion": "CIERRE X METRO 5MM",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.25,
+    "precio": 0.5,
+    "precioUnidad": 0.5,
+    "pack": 1,
+    "stock": 1
+  },
+  {
+    "codigo": "2",
+    "descripcion": "CIERRE X METRO 3MM",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.2,
+    "precio": 0.4,
+    "precioUnidad": 0.4,
+    "pack": 1,
+    "stock": 0
+  },
+  {
+    "codigo": "3",
+    "descripcion": "CIERRE X METRO 6MM YKK",
+    "rubro": "CIERRE DESMONTABLE COMUN",
+    "costo": 0.35,
+    "precio": 0.7,
+    "precioUnidad": 0.7,
+    "pack": 1,
+    "stock": 2
+  }
+]
