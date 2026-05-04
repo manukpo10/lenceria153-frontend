@@ -94,7 +94,7 @@ export default function VentasPage() {
           }
         />
 
-        <div className="px-5 py-4 border-b border-line flex flex-wrap items-center gap-3">
+        <div className="px-4 sm:px-5 py-3 sm:py-4 border-b border-line flex flex-col sm:flex-row flex-wrap items-start sm:items-center gap-3">
           <div className="inline-flex p-0.5 bg-surface-muted rounded-lg border border-line">
             {(["hoy", "7d", "30d"] as const).map((p) => (
               <button

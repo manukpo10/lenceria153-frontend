@@ -4,7 +4,7 @@ import { useMemo, useState, useEffect, useCallback } from "react";
 import { api } from "@/lib/api";
 import { apiClient } from "@/lib/apiClient";
 import { fmtARS } from "@/lib/format";
-import { Search, Plus, Pencil, AlertTriangle, CheckCircle2, XCircle, X, FileUp, Download, Upload, Minus, TrendingUp, RotateCcw } from "lucide-react";
+import { Search, Plus, Pencil, AlertTriangle, CheckCircle2, XCircle, X, FileUp, Download, Upload, Minus, TrendingUp, RotateCcw, Eye, EyeOff, Trash2 } from "lucide-react";
 import {
   Card,
   CardHeader,
@@ -575,10 +575,11 @@ export default function ProductosPage() {
           title="Productos"
           subtitle={`${filtrados.length} de ${productos.length}${showInactive ? ' (incluye inactivos)' : ''}`}
           action={
-            <div className="flex gap-2">
-              <label className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-line text-xs font-medium text-ink-muted hover:text-ink hover:border-line-strong cursor-pointer transition-colors">
-                <FileUp size={14} />
-                Importar PDF
+            <div className="flex flex-wrap gap-1.5">
+              <label className="inline-flex items-center gap-2 px-2.5 py-1.5 rounded-lg border border-line text-xs font-medium text-ink-muted hover:text-ink hover:border-line-strong cursor-pointer transition-colors">
+                <FileUp size={13} />
+                <span className="hidden sm:inline">Importar PDF</span>
+                <span className="sm:hidden">PDF</span>
                 <input
                   type="file"
                   accept="application/pdf"
@@ -588,14 +589,14 @@ export default function ProductosPage() {
                 />
               </label>
               <Button variant="outline" size="sm" onClick={handleExportStockCsv} title="Descargar CSV con codigo,descripcion,stock">
-                <Download size={14} /> Exportar stock
+                <Download size={13} /> <span className="hidden sm:inline">Exportar stock</span>
               </Button>
               <Button variant="outline" size="sm" onClick={() => setShowCalcPrecios(true)} title="Calcular precios de venta">
-                <TrendingUp size={14} /> Calcular precios
+                <TrendingUp size={13} /> <span className="hidden sm:inline">Calcular precios</span>
               </Button>
-              <label className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-line text-xs font-medium text-ink-muted hover:text-ink hover:border-line-strong cursor-pointer transition-colors" title="Subir CSV con codigo,stock">
-                <Upload size={14} />
-                Importar stock
+              <label className="inline-flex items-center gap-2 px-2.5 py-1.5 rounded-lg border border-line text-xs font-medium text-ink-muted hover:text-ink hover:border-line-strong cursor-pointer transition-colors" title="Subir CSV con codigo,stock">
+                <Upload size={13} />
+                <span className="hidden sm:inline">Importar stock</span>
                 <input
                   type="file"
                   accept=".csv,text/csv"
@@ -608,7 +609,8 @@ export default function ProductosPage() {
                 size="sm"
                 onClick={() => setShowInactive(!showInactive)}
               >
-                {showInactive ? "Ocultar inactivos" : "Ver inactivos"}
+                {showInactive ? <EyeOff size={13} /> : <Eye size={13} />}
+                <span className="hidden sm:inline">{showInactive ? "Ocultar inactivos" : "Ver inactivos"}</span>
               </Button>
               {showInactive && (
                 <Button
@@ -616,7 +618,7 @@ export default function ProductosPage() {
                   size="sm"
                   onClick={handleCleanup}
                 >
-                  Limpiar inactivos
+                  <Trash2 size={13} />
                 </Button>
               )}
               <Button
@@ -625,9 +627,9 @@ export default function ProductosPage() {
                 onClick={handleResetStock}
                 title="Resetear stock a 999 en todos los productos"
               >
-                <RotateCcw size={14} /> Reset stock
+                <RotateCcw size={13} />
               </Button>
-              <Button onClick={handleNew}><Plus size={16} /> Nuevo</Button>
+              <Button onClick={handleNew} size="sm"><Plus size={14} /><span className="hidden sm:inline">Nuevo</span></Button>
             </div>
           }
         />
@@ -662,17 +664,18 @@ export default function ProductosPage() {
         </div>
 
         <div className="overflow-x-auto">
+          <div className="min-w-[700px]">
           <Table>
             <THead>
               <TR>
                 <TH>Código</TH>
                 <TH>Descripción</TH>
-                <TH>Rubro</TH>
-                <TH className="text-right">Precio de lista</TH>
-                <TH className="text-right">Precio de venta</TH>
-                <TH className="text-right">P.U. lista</TH>
-                <TH className="text-right">P.U. venta</TH>
-                <TH className="text-center">Pack</TH>
+                <TH className="hidden sm:table-cell">Rubro</TH>
+                <TH className="text-right">P. lista</TH>
+                <TH className="text-right">P. venta</TH>
+                <TH className="hidden md:table-cell text-right">P.U. lista</TH>
+                <TH className="hidden md:table-cell text-right">P.U. venta</TH>
+                <TH className="hidden sm:table-cell text-center">Pack</TH>
                 <TH>Stock</TH>
                 <TH></TH>
               </TR>
@@ -685,8 +688,10 @@ export default function ProductosPage() {
                 return (
                   <TR key={p.id ?? p.codigo}>
                     <TD className="font-mono text-xs text-ink-muted">{p.codigo}</TD>
-                    <TD className="text-ink">{p.descripcion}</TD>
-                    <TD>
+                    <TD className="text-ink max-w-[160px] sm:max-w-none">
+                      <span className="truncate block">{p.descripcion}</span>
+                    </TD>
+                    <TD className="hidden sm:table-cell">
                       <span className={cn("inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-xs font-medium", bg, txt)}>
                         <span className={cn("w-1.5 h-1.5 rounded-full", dot)} />
                         {p.rubro}
@@ -694,9 +699,9 @@ export default function ProductosPage() {
                     </TD>
                     <TD className="text-right font-medium text-ink num">{fmtARS(p.precio)}</TD>
                     <TD className="text-right text-ink num">{p.precioVenta != null ? fmtARS(p.precioVenta) : "—"}</TD>
-                    <TD className="text-right text-ink-soft text-xs">{p.precioUnidadLista ? fmtARS(p.precioUnidadLista) : "—"}</TD>
-                    <TD className="text-right text-ink-soft text-xs">{p.precioUnidadVenta ? fmtARS(p.precioUnidadVenta) : "—"}</TD>
-                    <TD className="text-center text-ink-soft text-xs">{p.pack && p.pack > 1 ? `x${p.pack}` : "—"}</TD>
+                    <TD className="hidden md:table-cell text-right text-ink-soft text-xs">{p.precioUnidadLista ? fmtARS(p.precioUnidadLista) : "—"}</TD>
+                    <TD className="hidden md:table-cell text-right text-ink-soft text-xs">{p.precioUnidadVenta ? fmtARS(p.precioUnidadVenta) : "—"}</TD>
+                    <TD className="hidden sm:table-cell text-center text-ink-soft text-xs">{p.pack && p.pack > 1 ? `x${p.pack}` : "—"}</TD>
                     <TD>
                       {p.id ? (
                         <StockCell producto={p} onSet={handleSetStock} />
@@ -736,6 +741,7 @@ export default function ProductosPage() {
               })}
             </TBody>
           </Table>
+          </div>
         </div>
 
         <div className="px-5 py-3 border-t border-line flex items-center justify-between text-sm">

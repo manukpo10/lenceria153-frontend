@@ -251,7 +251,7 @@ export default function CajaPage() {
       {/* Action buttons */}
       <Card>
         <CardHeader title="Operaciones de caja" subtitle="Control de efectivo" />
-        <div className="p-5 pt-0 flex flex-wrap gap-3">
+        <div className="p-5 sm:pt-0 flex flex-wrap gap-2 sm:gap-3">
           {estado.estado === "cerrada" ? (
             <div className="flex items-end gap-3 flex-wrap">
               <div className="flex-1 min-w-[200px]">
@@ -280,20 +280,22 @@ export default function CajaPage() {
             </div>
           ) : (
             <>
+              <div className="flex flex-wrap gap-2">
               <Button variant="outline" onClick={() => { setMovimientoTipo("ingreso"); setShowMovimiento(true); }}>
-                <Plus size={14} /> Ingreso
+                <Plus size={15} /> Ingreso
               </Button>
               <Button variant="outline" onClick={() => { setMovimientoTipo("retiro"); setShowMovimiento(true); }}>
-                <Minus size={14} /> Retiro
+                <Minus size={15} /> Retiro
               </Button>
               <Button variant="outline" onClick={() => { setMovimientoTipo("gasto"); setShowMovimiento(true); }}>
-                <Minus size={14} /> Gasto
+                <Minus size={15} /> Gasto
               </Button>
               <Button variant="outline" onClick={handleArqueo} disabled={loading}>
-                <TrendingUp size={14} /> Ver arqueo
+                <TrendingUp size={15} /> Arqueo
               </Button>
-              <div className="flex items-end gap-3 ml-auto">
-                <div className="flex-1 min-w-[200px]">
+            </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full">
+                <div className="flex-1 min-w-[160px]">
                   <label className="text-xs font-medium text-ink-muted mb-1.5 block">Monto real en caja</label>
                   <Input
                     type="number"
@@ -302,9 +304,11 @@ export default function CajaPage() {
                     onChange={(e) => setCierreMonto(e.target.value)}
                   />
                 </div>
-                <Button variant="danger" onClick={handleCerrar} disabled={loading || !cierreMonto}>
-                  <Lock size={14} /> Cerrar caja
-                </Button>
+                <div className="flex items-end">
+                  <Button variant="danger" onClick={handleCerrar} disabled={loading || !cierreMonto} full className="h-10">
+                    <Lock size={14} /> Cerrar caja
+                  </Button>
+                </div>
               </div>
             </>
           )}
@@ -419,7 +423,7 @@ export default function CajaPage() {
             {/* Day summary */}
             <div className="bg-surface-subtle rounded-xl p-4">
               <div className="text-xs font-semibold uppercase text-ink-soft tracking-wider mb-3">Resumen del día</div>
-              <div className="grid grid-cols-4 gap-3">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 <div className="text-center">
                   <div className="text-[10px] uppercase text-ink-soft mb-2">Apertura</div>
                   <div className="text-lg font-bold text-ink num">{fmtARS(arqueoData.resumen.apertura)}</div>
@@ -465,13 +469,13 @@ export default function CajaPage() {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-4 sm:grid-cols-2">
               <div className="bg-surface rounded-xl p-4 text-center border border-line">
-                <div className="text-4xl font-bold text-ink mb-1">{arqueoData.cantidadVentas}</div>
+                <div className="text-3xl sm:text-4xl font-bold text-ink mb-1">{arqueoData.cantidadVentas}</div>
                 <div className="text-xs text-ink-soft uppercase tracking-wider">Ventas</div>
               </div>
               <div className="bg-surface rounded-xl p-4 text-center border border-line">
-                <div className="text-4xl font-bold text-ink mb-1">{arqueoData.itemsVendidos}</div>
+                <div className="text-3xl sm:text-4xl font-bold text-ink mb-1">{arqueoData.itemsVendidos}</div>
                 <div className="text-xs text-ink-soft uppercase tracking-wider">Productos</div>
               </div>
             </div>
@@ -545,7 +549,7 @@ export default function CajaPage() {
             {/* Day summary */}
             <div className="bg-surface-subtle rounded-xl p-4">
               <div className="text-xs font-semibold uppercase text-ink-soft tracking-wider mb-3">Resumen del día</div>
-              <div className="grid grid-cols-4 gap-3">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 <div className="text-center">
                   <div className="text-[10px] uppercase text-ink-soft mb-2">Apertura</div>
                   <div className="text-lg font-bold text-ink num">{fmtARS(cierreData.resumen.apertura)}</div>
@@ -591,13 +595,13 @@ export default function CajaPage() {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-4 sm:grid-cols-2">
               <div className="bg-surface rounded-xl p-4 text-center border border-line">
-                <div className="text-4xl font-bold text-ink mb-1">{cierreData.cantidadVentas}</div>
+                <div className="text-3xl sm:text-4xl font-bold text-ink mb-1">{cierreData.cantidadVentas}</div>
                 <div className="text-xs text-ink-soft uppercase tracking-wider">Ventas</div>
               </div>
               <div className="bg-surface rounded-xl p-4 text-center border border-line">
-                <div className="text-4xl font-bold text-ink mb-1">{cierreData.itemsVendidos}</div>
+                <div className="text-3xl sm:text-4xl font-bold text-ink mb-1">{cierreData.itemsVendidos}</div>
                 <div className="text-xs text-ink-soft uppercase tracking-wider">Productos</div>
               </div>
             </div>

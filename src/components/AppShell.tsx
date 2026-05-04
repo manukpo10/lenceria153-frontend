@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import Sidebar from "./Sidebar";
 import Topbar from "./Topbar";
+import MobileNav from "./MobileNav";
 
 export default function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
@@ -17,6 +18,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
         <Topbar />
         <main className="flex-1 min-w-0">{children}</main>
       </div>
+      <MobileNav />
     </div>
   );
 }

@@ -4,13 +4,14 @@ import { cn } from "@/lib/utils";
 interface Props extends InputHTMLAttributes<HTMLInputElement> {
   leading?: ReactNode;
   trailing?: ReactNode;
-  sizeVariant?: "md" | "lg" | "xl";
+  sizeVariant?: "sm" | "md" | "lg" | "xl";
 }
 
 const sizes = {
+  sm: "h-9 text-sm",
   md: "h-10 text-sm",
   lg: "h-12 text-base",
-  xl: "h-14 text-lg",
+  xl: "h-12 sm:h-14 text-base sm:text-lg",
 };
 
 export const Input = forwardRef<HTMLInputElement, Props>(function Input(

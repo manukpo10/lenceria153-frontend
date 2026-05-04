@@ -159,208 +159,211 @@ export default function POSPage() {
   }, [finalizar, resultados, active]);
 
   return (
-    <div className="p-4 md:p-6 grid grid-cols-1 lg:grid-cols-12 gap-4 md:gap-6 h-[calc(100vh-3.5rem)]">
-      <section className="lg:col-span-8 flex flex-col min-h-0">
-        <div className="mb-4">
-          <div className="flex items-center justify-between mb-2">
-            <Input
-              id="pos-search"
-              ref={searchRef}
-              sizeVariant="xl"
-              autoFocus
-              value={q}
-              onChange={(e) => setQ(e.target.value)}
-              placeholder="Buscar por código o descripción…"
-              leading={<Search size={20} />}
-              trailing={
-                q ? (
-                  <button onClick={() => setQ("")} className="p-1 rounded text-ink-soft hover:text-ink">
-                    <X size={14} />
-                  </button>
-                ) : <Kbd>/</Kbd>
-              }
-            />
-            <button onClick={loadProductos} className="ml-2 p-2 rounded-lg text-ink-muted hover:bg-surface-muted">
-              <RefreshCw size={16} />
-            </button>
+    <div className="flex flex-col h-[calc(100vh-3.5rem)]">
+      <div className="p-3 sm:p-4 flex items-center justify-between gap-2">
+        <Input
+          id="pos-search"
+          ref={searchRef}
+          sizeVariant="lg"
+          autoFocus
+          value={q}
+          onChange={(e) => setQ(e.target.value)}
+          placeholder="Buscar producto…"
+          leading={<Search size={18} />}
+          trailing={
+            q ? (
+              <button onClick={() => setQ("")} className="p-1 rounded text-ink-soft hover:text-ink">
+                <X size={16} />
+              </button>
+            ) : null
+          }
+        />
+        <button onClick={loadProductos} className="p-2.5 rounded-xl text-ink-muted hover:bg-surface-muted bg-surface border border-line shrink-0">
+          <RefreshCw size={16} />
+        </button>
+      </div>
+
+      <div className="px-3 pb-1.5 flex items-center gap-2 text-[10px] text-ink-soft sm:hidden">
+        <span className="flex items-center gap-0.5"><Kbd>↑↓</Kbd> navegar</span>
+        <span className="flex items-center gap-0.5"><Kbd>↵</Kbd> agregar</span>
+        <span className="flex items-center gap-0.5"><Kbd>F9</Kbd> cobrar</span>
+      </div>
+      <div className="hidden sm:flex px-4 pb-2 items-center gap-3 text-xs text-ink-soft">
+        <span className="flex items-center gap-1"><Kbd>↑</Kbd><Kbd>↓</Kbd> navegar</span>
+        <span className="flex items-center gap-1"><Kbd>↵</Kbd> agregar</span>
+        <span className="flex items-center gap-1"><Kbd>Esc</Kbd> limpiar</span>
+        <span className="flex items-center gap-1 ml-auto"><Kbd>F9</Kbd> cobrar</span>
+      </div>
+
+      <Card className="flex-1 mx-3 sm:mx-4 overflow-hidden flex flex-col">
+        {resultados.length === 0 ? (
+          <div className="flex-1 grid place-items-center text-center p-8 sm:p-10">
+            <div>
+              <div className="w-12 h-12 rounded-2xl bg-surface-subtle grid place-items-center mx-auto mb-3 text-ink-soft">
+                <Search size={20} />
+              </div>
+              <p className="text-sm text-ink-muted">Sin resultados para "{q}"</p>
+            </div>
           </div>
-          <div className="flex items-center gap-3 text-xs text-ink-soft">
-            <span className="flex items-center gap-1"><Kbd>↑</Kbd><Kbd>↓</Kbd> navegar</span>
-            <span className="flex items-center gap-1"><Kbd>↵</Kbd> agregar</span>
-            <span className="flex items-center gap-1"><Kbd>Esc</Kbd> limpiar</span>
-            <span className="flex items-center gap-1 ml-auto"><Kbd>F9</Kbd> cobrar</span>
+        ) : (
+          <ul ref={listRef} className="flex-1 overflow-y-auto divide-y divide-line">
+            {resultados.map((p, idx) => {
+              const isActive = idx === active;
+              const stockTone = p.stock === 0 ? "danger" : p.stock <= 3 ? "warning" : "success";
+              return (
+                <li
+                  key={p.id}
+                  data-idx={idx}
+                  onMouseEnter={() => setActive(idx)}
+                  onClick={() => agregar(p)}
+                  className={cn(
+                    "px-4 py-3.5 sm:py-3 flex items-center gap-3 cursor-pointer transition-colors relative min-h-[4rem]",
+                    isActive ? "bg-brand-50" : "hover:bg-surface-muted"
+                  )}
+                >
+                  {isActive && (
+                    <span className="absolute left-0 top-2.5 bottom-2.5 w-1 bg-brand-600 rounded-r-full" />
+                  )}
+                  <div className="w-12 shrink-0 font-mono text-[11px] text-ink-soft">{p.codigo}</div>
+                  <div className="flex-1 min-w-0">
+                    <div className="text-sm text-ink truncate">{p.descripcion}</div>
+                    <div className="mt-1 flex flex-wrap items-center gap-1.5">
+                      <span className="text-[10px] px-1.5 py-0.5 rounded bg-surface-subtle text-ink-muted">{p.rubro}</span>
+                      <Badge tone={stockTone} dot>
+                        {p.stock === 0 ? "Sin stock" : `${p.stock}`}
+                      </Badge>
+                    </div>
+                  </div>
+                  <div className="text-right shrink-0">
+                    <div className="font-semibold text-ink num text-sm">{p.precioUnidadVenta != null ? fmtARS(p.precioUnidadVenta) : p.precioVenta != null ? fmtARS(p.precioVenta) : fmtARS(p.precio)}</div>
+                    {p.precioUnidadVenta != null && p.pack > 1 && (
+                      <div className="text-[10px] text-ink-soft num">x{p.pack} · {fmtARS(p.precioUnidadVenta)}/u</div>
+                    )}
+                  </div>
+                  <div className={cn(
+                    "shrink-0 w-10 h-10 sm:w-9 sm:h-9 rounded-xl sm:rounded-lg grid place-items-center transition-all",
+                    isActive ? "bg-brand-600 text-white shadow-brand" : "bg-surface-subtle text-ink-muted"
+                  )}>
+                    {isActive ? <CornerDownLeft size={16} /> : <Plus size={16} />}
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+        )}
+      </Card>
+
+      <aside className="border-t border-line bg-surface mt-auto">
+        <div className="flex items-center justify-between px-4 py-2.5 border-b border-line">
+          <div className="flex items-center gap-2.5">
+            <div className="w-8 h-8 rounded-lg bg-surface-subtle grid place-items-center">
+              <ShoppingCart size={16} className="text-ink-muted" />
+            </div>
+            <div>
+              <h2 className="text-sm font-semibold text-ink">Carrito</h2>
+              <p className="text-[11px] text-ink-soft">{cantidadTotal} {cantidadTotal === 1 ? "producto" : "productos"}</p>
+            </div>
           </div>
+          {items.length > 0 && (
+            <Button variant="ghost" size="sm" onClick={() => setItems([])} className="text-ink-muted">
+              <Trash2 size={14} /> <span className="hidden sm:inline">Vaciar</span>
+            </Button>
+          )}
         </div>
 
-        <Card className="flex-1 overflow-hidden flex flex-col">
-          {resultados.length === 0 ? (
-            <div className="flex-1 grid place-items-center text-center p-10">
+        <div className="h-32 sm:h-40 overflow-y-auto">
+          {items.length === 0 ? (
+            <div className="h-full grid place-items-center p-6 text-center">
               <div>
-                <div className="w-12 h-12 rounded-2xl bg-surface-subtle grid place-items-center mx-auto mb-3 text-ink-soft">
-                  <Search size={20} />
-                </div>
-                <p className="text-sm text-ink-muted">Sin resultados para "{q}"</p>
+                <ShoppingCart size={20} className="text-ink-soft mx-auto mb-2" />
+                <p className="text-xs text-ink-muted">Carrito vacío</p>
               </div>
             </div>
           ) : (
-            <ul ref={listRef} className="flex-1 overflow-y-auto divide-y divide-line">
-              {resultados.map((p, idx) => {
-                const isActive = idx === active;
-                const stockTone = p.stock === 0 ? "danger" : p.stock <= 3 ? "warning" : "success";
-                return (
-                  <li
-                    key={p.id}
-                    data-idx={idx}
-                    onMouseEnter={() => setActive(idx)}
-                    onClick={() => agregar(p)}
-                    className={cn(
-                      "px-4 py-3 flex items-center gap-4 cursor-pointer transition-colors relative",
-                      isActive ? "bg-brand-50" : "hover:bg-surface-muted"
-                    )}
-                  >
-                    {isActive && (
-                      <span className="absolute left-0 top-2 bottom-2 w-1 bg-brand-600 rounded-r-full" />
-                    )}
-                    <div className="w-14 shrink-0 font-mono text-[11px] text-ink-soft">{p.codigo}</div>
-                    <div className="flex-1 min-w-0">
-                      <div className="text-sm text-ink truncate">{p.descripcion}</div>
-                      <div className="mt-1 flex items-center gap-2">
-                        <Badge tone="neutral">{p.rubro}</Badge>
-                        <Badge tone={stockTone} dot>
-                          {p.stock === 0 ? "Sin stock" : `Stock ${p.stock}`}
-                        </Badge>
-                      </div>
+            <ul className="divide-y divide-line">
+              {items.map((it) => (
+                <li key={it.p.id} className="px-4 py-3">
+                  <div className="flex justify-between items-start gap-3">
+                    <div className="min-w-0 flex-1">
+                      <div className="text-sm text-ink line-clamp-2">{it.p.descripcion}</div>
+                      <div className="text-[11px] text-ink-soft mt-0.5 num">{fmtARS(it.p.precioUnidadVenta ?? it.p.precioVenta ?? it.p.precio)} c/u</div>
                     </div>
-                    <div className="text-right shrink-0">
-                      <div className="font-semibold text-ink num">{p.precioUnidadVenta != null ? fmtARS(p.precioUnidadVenta) : p.precioVenta != null ? fmtARS(p.precioVenta) : fmtARS(p.precio)}</div>
-                      {p.precioUnidadVenta != null && p.pack > 1 && (
-                        <div className="text-[11px] text-ink-soft num">{fmtARS(p.precioUnidadVenta)} c/u</div>
-                      )}
-                    </div>
-                    <div className={cn(
-                      "shrink-0 w-9 h-9 rounded-lg grid place-items-center transition-all",
-                      isActive ? "bg-brand-600 text-white shadow-brand" : "bg-surface-subtle text-ink-muted"
-                    )}>
-                      {isActive ? <CornerDownLeft size={16} /> : <Plus size={16} />}
-                    </div>
-                  </li>
-                );
-              })}
-            </ul>
-          )}
-        </Card>
-      </section>
-
-      <aside className="lg:col-span-4 flex flex-col min-h-0">
-        <Card className="flex-1 flex flex-col overflow-hidden">
-          <div className="px-5 py-4 border-b border-line flex items-center justify-between">
-            <div className="flex items-center gap-2.5">
-              <div className="w-8 h-8 rounded-lg bg-surface-subtle grid place-items-center">
-                <ShoppingCart size={16} className="text-ink-muted" />
-              </div>
-              <div>
-                <h2 className="text-sm font-semibold text-ink">Carrito</h2>
-                <p className="text-[11px] text-ink-soft">{cantidadTotal} {cantidadTotal === 1 ? "producto" : "productos"}</p>
-              </div>
-            </div>
-            {items.length > 0 && (
-              <Button variant="ghost" size="sm" onClick={() => setItems([])}>
-                <Trash2 size={14} /> Vaciar
-              </Button>
-            )}
-          </div>
-
-          <div className="flex-1 overflow-y-auto">
-            {items.length === 0 ? (
-              <div className="h-full grid place-items-center p-10 text-center">
-                <div>
-                  <div className="w-12 h-12 rounded-2xl bg-surface-subtle grid place-items-center mx-auto mb-3 text-ink-soft">
-                    <ShoppingCart size={20} />
+                    <button onClick={() => setCant(it.p.id, 0)} className="p-1.5 rounded text-ink-soft hover:text-red-600 hover:bg-red-50 shrink-0">
+                      <X size={14} />
+                    </button>
                   </div>
-                  <p className="text-sm text-ink-muted">El carrito está vacío</p>
-                  <p className="text-xs text-ink-soft mt-1">Usá <Kbd>/</Kbd> para buscar</p>
-                </div>
-              </div>
-            ) : (
-              <ul className="divide-y divide-line">
-                {items.map((it) => (
-                  <li key={it.p.id} className="p-4">
-                    <div className="flex justify-between items-start gap-3">
-                      <div className="min-w-0">
-                        <div className="text-sm text-ink line-clamp-2">{it.p.descripcion}</div>
-                        <div className="text-[11px] text-ink-soft mt-0.5 num">{fmtARS(it.p.precioUnidadVenta ?? it.p.precioVenta ?? it.p.precio)} c/u</div>
-                      </div>
-                      <button onClick={() => setCant(it.p.id, 0)} className="p-1 rounded text-ink-soft hover:text-red-600 hover:bg-red-50">
-                        <X size={14} />
+                  <div className="mt-2.5 flex items-center justify-between">
+                    <div className="inline-flex items-center bg-surface-muted rounded-xl p-1 gap-0.5">
+                      <button
+                        onClick={() => setCant(it.p.id, it.cant - 1)}
+                        className="w-10 h-10 sm:w-8 sm:h-8 grid place-items-center rounded-lg text-ink-muted hover:bg-surface hover:text-ink transition-colors text-base"
+                      >
+                        <Minus size={16} />
+                      </button>
+                      <input
+                        type="number"
+                        min={1}
+                        value={it.cant}
+                        onChange={(e) => setCant(it.p.id, parseInt(e.target.value) || 0)}
+                        className="w-12 bg-transparent text-center text-base font-semibold num outline-none"
+                      />
+                      <button
+                        onClick={() => setCant(it.p.id, it.cant + 1)}
+                        className="w-10 h-10 sm:w-8 sm:h-8 grid place-items-center rounded-lg text-ink-muted hover:bg-surface hover:text-ink transition-colors text-base"
+                      >
+                        <Plus size={16} />
                       </button>
                     </div>
-                    <div className="mt-3 flex items-center justify-between">
-                      <div className="inline-flex items-center bg-surface-muted rounded-lg p-0.5">
-                        <button onClick={() => setCant(it.p.id, it.cant - 1)} className="w-7 h-7 grid place-items-center rounded-md text-ink-muted hover:bg-surface hover:text-ink">
-                          <Minus size={14} />
-                        </button>
-                        <input
-                          type="number"
-                          min={1}
-                          value={it.cant}
-                          onChange={(e) => setCant(it.p.id, parseInt(e.target.value) || 0)}
-                          className="w-10 bg-transparent text-center text-sm font-medium num outline-none"
-                        />
-                        <button onClick={() => setCant(it.p.id, it.cant + 1)} className="w-7 h-7 grid place-items-center rounded-md text-ink-muted hover:bg-surface hover:text-ink">
-                          <Plus size={14} />
-                        </button>
-                      </div>
-                      <div className="font-semibold text-ink num">{fmtARS((it.p.precioUnidadVenta ?? it.p.precioVenta ?? it.p.precio) * it.cant)}</div>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            )}
+                    <div className="font-bold text-ink num text-base">{fmtARS((it.p.precioUnidadVenta ?? it.p.precioVenta ?? it.p.precio) * it.cant)}</div>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+
+        <div className="p-3 sm:p-4 space-y-3 bg-surface-muted/40 border-t border-line">
+          <div>
+            <div className="flex items-center justify-between mb-1.5 sm:mb-2">
+              <span className="text-[10px] sm:text-[11px] font-semibold uppercase tracking-wide text-ink-soft">Medio de pago</span>
+              <Wallet size={13} className="text-ink-soft" />
+            </div>
+            <div className="grid grid-cols-5 gap-1.5">
+              {medios.map((m) => (
+                <button
+                  key={m.id}
+                  onClick={() => setMedio(m.id)}
+                  className={cn(
+                    "flex flex-col items-center gap-1 px-1.5 py-2 sm:py-2 rounded-xl border text-[10px] sm:text-[11px] font-medium transition-colors",
+                    medio === m.id
+                      ? "bg-brand-600 text-white border-brand-600 shadow-brand"
+                      : "bg-surface border-line text-ink-muted hover:text-ink hover:border-brand-400"
+                  )}
+                >
+                  <span className="text-base sm:text-sm">{m.icon}</span>
+                  <span className="leading-none">{labelMedio[m.id]}</span>
+                </button>
+              ))}
+            </div>
           </div>
 
-          <div className="border-t border-line p-4 space-y-4 bg-surface-muted/40">
-            <div>
-              <div className="flex items-center justify-between mb-2">
-                <span className="text-[11px] font-semibold uppercase tracking-wide text-ink-soft">Medio de pago</span>
-                <Wallet size={14} className="text-ink-soft" />
-              </div>
-              <div className="grid grid-cols-3 gap-1.5">
-                {medios.map((m) => (
-                  <button
-                    key={m.id}
-                    onClick={() => setMedio(m.id)}
-                    className={cn(
-                      "flex flex-col items-center gap-1 px-2 py-2 rounded-lg border text-[11px] font-medium transition-colors",
-                      medio === m.id
-                        ? "bg-brand-600 text-white border-brand-600 shadow-brand"
-                        : "bg-surface border-line text-ink-muted hover:text-ink hover:border-brand-400"
-                    )}
-                  >
-                    {m.icon}
-                    <span className="leading-none">{labelMedio[m.id]}</span>
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            <div className="flex items-end justify-between">
-              <span className="text-sm text-ink-muted">Total</span>
-              <span className="text-3xl font-bold text-ink num tracking-tight">{fmtARS(total)}</span>
-            </div>
-
-            <Button
-              variant="accent"
-              size="xl"
-              full
-              onClick={finalizar}
-              disabled={items.length === 0 || loading}
-              className="text-base"
-            >
-              {loading ? "Guardando…" : "Cobrar"}
-              <Kbd className="bg-white/15 border-white/30 text-white ml-1">F9</Kbd>
-            </Button>
+          <div className="flex items-end justify-between">
+            <span className="text-sm text-ink-muted">Total</span>
+            <span className="text-2xl sm:text-3xl font-bold text-ink num tracking-tight">{fmtARS(total)}</span>
           </div>
-        </Card>
+
+          <Button
+            variant="accent"
+            size="xl"
+            full
+            onClick={finalizar}
+            disabled={items.length === 0 || loading}
+            className="text-base h-14"
+          >
+            {loading ? "Guardando…" : "Cobrar"}
+            <Kbd className="bg-white/15 border-white/30 text-white ml-1 hidden sm:inline">F9</Kbd>
+          </Button>
+        </div>
       </aside>
 
       <Toast
