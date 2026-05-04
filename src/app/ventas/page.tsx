@@ -4,7 +4,7 @@ import { useMemo, useState, useEffect } from "react";
 import { api } from "@/lib/api";
 import { fmtARS, fmtFecha } from "@/lib/format";
 import { labelMedio, MedioPago } from "@/lib/mockVentas";
-import { Eye, Download } from "lucide-react";
+import { Eye, Download, Trash2 } from "lucide-react";
 import {
   Card,
   CardHeader,
@@ -28,12 +28,15 @@ export default function VentasPage() {
   const [ventas, setVentas] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
+  const reload = () => {
+    setLoading(true);
     api.ventas.list().catch(() => []).then((data) => {
       setVentas(data);
       setLoading(false);
     });
-  }, []);
+  };
+
+  useEffect(() => { reload(); }, []);
 
   const desde = useMemo(() => {
     const d = new Date();
@@ -59,6 +62,17 @@ export default function VentasPage() {
     0
   );
   const ticketProm = lista.length ? total / lista.length : 0;
+
+  const handleDelete = async (venta: any) => {
+    if (!venta.id) return;
+    if (!confirm(`¿Eliminar la venta #${venta.numeroVenta ? String(venta.numeroVenta).padStart(4, '0') : venta.id.slice(0, 8)}? Se revertirá el stock.`)) return;
+    try {
+      await api.ventas.delete(venta.id);
+      reload();
+    } catch (err: any) {
+      alert("Error al eliminar: " + (err.message ?? "verifique"));
+    }
+  };
 
   if (loading) return <div className="p-6 text-ink-muted">Cargando…</div>;
 
@@ -163,9 +177,14 @@ export default function VentasPage() {
                     {fmtARS(v.total)}
                   </TD>
                   <TD className="text-right">
-                    <Button variant="ghost" size="sm" onClick={() => setSel(v)}>
-                      <Eye size={14} />
-                    </Button>
+                    <div className="flex justify-end gap-1">
+                      <Button variant="ghost" size="sm" onClick={() => setSel(v)}>
+                        <Eye size={14} />
+                      </Button>
+                      <Button variant="ghost" size="sm" className="text-red-500 hover:text-red-600" onClick={() => handleDelete(v)}>
+                        <Trash2 size={14} />
+                      </Button>
+                    </div>
                   </TD>
                 </TR>
               ))}

@@ -101,6 +101,8 @@ export const apiClient = {
     },
     create: (data: { items: Array<{ productoId: string; cantidad: number }>; medioPago: string; descuento?: number }) =>
       request<any>("/ventas", { method: "POST", body: JSON.stringify(data) }),
+    delete: (id: string) =>
+      request<any>(`/ventas/${id}`, { method: "DELETE" }),
     stats: () => request<any>("/ventas/stats/resumen"),
   },
   caja: {

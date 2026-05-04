@@ -122,6 +122,12 @@ exportStockCsv: async () => {
       const id = `V${Math.floor(Math.random() * 90000 + 10000)}`;
       return { id, ...data, total: data.items.reduce((s: number, i: any) => s + i.cantidad * 100, 0) };
     },
+    delete: async (id: string) => {
+      if (!getMockFlag()) {
+        return apiClient.ventas.delete(id);
+      }
+      return { success: true };
+    },
     stats: async () => {
       if (!getMockFlag()) {
         return apiClient.ventas.stats();

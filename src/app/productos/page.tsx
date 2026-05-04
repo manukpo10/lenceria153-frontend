@@ -549,6 +549,36 @@ export default function ProductosPage() {
 
   if (loading) return <div className="p-6 text-ink-muted">Cargando…</div>;
 
+  if (importing) return (
+    <div className="min-h-[60vh] flex items-center justify-center">
+      <div className="flex flex-col items-center gap-4 text-center">
+        <div className="relative">
+          <div className="h-12 w-12 rounded-full border-4 border-line"></div>
+          <div className="absolute inset-0 h-12 w-12 rounded-full border-4 border-accent border-t-transparent animate-spin"></div>
+        </div>
+        <div>
+          <p className="text-base font-medium text-ink">Importando productos</p>
+          <p className="text-sm text-ink-muted mt-1">Esto puede tardar unos segundos…</p>
+        </div>
+      </div>
+    </div>
+  );
+
+  if (calcLoading) return (
+    <div className="min-h-[60vh] flex items-center justify-center">
+      <div className="flex flex-col items-center gap-4 text-center">
+        <div className="relative">
+          <div className="h-12 w-12 rounded-full border-4 border-line"></div>
+          <div className="absolute inset-0 h-12 w-12 rounded-full border-4 border-accent border-t-transparent animate-spin"></div>
+        </div>
+        <div>
+          <p className="text-base font-medium text-ink">Calculando precios de venta</p>
+          <p className="text-sm text-ink-muted mt-1">Esto puede tardar unos segundos…</p>
+        </div>
+      </div>
+    </div>
+  );
+
   return (
     <div className="p-6 space-y-6">
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
