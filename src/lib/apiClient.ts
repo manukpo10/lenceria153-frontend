@@ -1,4 +1,4 @@
-const BASE = "http://localhost:3001/api";
+const BASE = process.env.NEXT_PUBLIC_API_URL ? `${process.env.NEXT_PUBLIC_API_URL}/api` : "http://localhost:3001/api";
 
 function getToken(): string | null {
   if (typeof window === "undefined") return null;
@@ -67,7 +67,7 @@ export const apiClient = {
     seed: () => request<any>("/productos/seed", { method: "POST" }),
     getRubros: () => request<string[]>("/productos/rubros"),
     importPdf: (formData: FormData) =>
-      fetch("http://localhost:3001/api/productos/import-pdf", {
+      fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001"}/api/productos/import-pdf`, {
         method: "POST",
         headers: { "Authorization": `Bearer ${getToken()}` },
         body: formData,
@@ -77,11 +77,11 @@ export const apiClient = {
     setStock: (id: string, stock: number) =>
       request<any>(`/productos/${id}/stock`, { method: "PATCH", body: JSON.stringify({ stock }) }),
     exportStockCsv: () =>
-      fetch("http://localhost:3001/api/productos/export-stock-csv", {
+      fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001"}/api/productos/export-stock-csv`, {
         headers: { "Authorization": `Bearer ${getToken()}` },
       }).then(r => r.blob()),
     importStockCsv: (formData: FormData) =>
-      fetch("http://localhost:3001/api/productos/import-stock-csv", {
+      fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001"}/api/productos/import-stock-csv`, {
         method: "POST",
         headers: { "Authorization": `Bearer ${getToken()}` },
         body: formData,
