@@ -4,7 +4,7 @@ import { useMemo, useState, useEffect, useCallback } from "react";
 import { api } from "@/lib/api";
 import { apiClient } from "@/lib/apiClient";
 import { fmtARS } from "@/lib/format";
-import { Search, Plus, Pencil, AlertTriangle, CheckCircle2, XCircle, X, FileUp, Download, Upload, Minus, TrendingUp, RotateCcw, Eye, EyeOff, Trash2 } from "lucide-react";
+import { Search, Plus, Pencil, AlertTriangle, CheckCircle2, XCircle, X, FileUp, Download, Upload, Minus, TrendingUp, RotateCcw, Eye, EyeOff, Trash2, ChevronUp, ChevronDown, ChevronsUpDown } from "lucide-react";
 import {
   Card,
   CardHeader,
@@ -65,6 +65,8 @@ function ProductoModal({
     costo: 0,
     precio: 0,
     precioVenta: undefined,
+    precioUnidadLista: undefined,
+    precioUnidadVenta: undefined,
     unidad: 1,
     pack: 1,
     stock: 0,
@@ -81,13 +83,15 @@ function ProductoModal({
         costo: producto.costo ?? 0,
         precio: producto.precio ?? 0,
         precioVenta: producto.precioVenta,
+        precioUnidadLista: producto.precioUnidadLista,
+        precioUnidadVenta: producto.precioUnidadVenta,
         unidad: producto.unidad ?? 1,
         pack: producto.pack ?? 1,
         stock: producto.stock ?? 0,
         activo: producto.activo ?? true,
       });
     } else {
-      setValues({ codigo: "", descripcion: "", rubro: "ABROJOS", costo: 0, precio: 0, precioVenta: undefined, unidad: 1, pack: 1, stock: 0, activo: true });
+      setValues({ codigo: "", descripcion: "", rubro: "ABROJOS", costo: 0, precio: 0, precioVenta: undefined, precioUnidadLista: undefined, precioUnidadVenta: undefined, unidad: 1, pack: 1, stock: 0, activo: true });
     }
     setErrors({});
   }, [producto]);
@@ -112,7 +116,23 @@ function ProductoModal({
   }
 
   function set(field: keyof Producto, value: any) {
-    setValues((v) => ({ ...v, [field]: value }));
+    setValues((v) => {
+      const next = { ...v, [field]: value };
+      const pack = field === "pack" ? value : next.pack;
+      const precio = field === "precio" ? value : next.precio;
+      const precioVenta = field === "precioVenta" ? value : next.precioVenta;
+      if (field === "pack" || field === "precio") {
+        if (typeof precio === "number" && precio > 0 && typeof pack === "number" && pack > 0) {
+          next.precioUnidadLista = Math.round((precio / pack) * 100) / 100;
+        }
+      }
+      if (field === "pack" || field === "precioVenta") {
+        if (typeof precioVenta === "number" && precioVenta > 0 && typeof pack === "number" && pack > 0) {
+          next.precioUnidadVenta = Math.round((precioVenta / pack) * 100) / 100;
+        }
+      }
+      return next;
+    });
     if (errors[field]) setErrors((e) => ({ ...e, [field]: undefined }));
   }
 
@@ -130,10 +150,13 @@ function ProductoModal({
     { key: "codigo", label: "Código", type: "text", placeholder: "Ej: 322", col: "sm:col-span-2" },
     { key: "rubro", label: "Rubro", type: "select", options: RUBROS, col: "sm:col-span-2" },
     { key: "descripcion", label: "Descripción", type: "text", placeholder: "Nombre del producto", col: "col-span-4" },
-    { key: "precio", label: "Precio ($)", type: "number", step: "0.01", col: "sm:col-span-2" },
-    { key: "precioVenta", label: "Venta ($)", type: "number", step: "0.01", col: "sm:col-span-2" },
-    { key: "unidad", label: "Unidades", type: "number", step: "1", col: "sm:col-span-2" },
+    { key: "costo", label: "Costo ($)", type: "number", step: "0.01", col: "sm:col-span-2" },
+    { key: "precio", label: "P. lista ($)", type: "number", step: "0.01", col: "sm:col-span-2" },
+    { key: "precioVenta", label: "P. venta ($)", type: "number", step: "0.01", col: "sm:col-span-2" },
+    { key: "precioUnidadLista", label: "P.U. lista ($)", type: "number", step: "0.01", col: "sm:col-span-2" },
+    { key: "precioUnidadVenta", label: "P.U. venta ($)", type: "number", step: "0.01", col: "sm:col-span-2" },
     { key: "pack", label: "Pack", type: "number", step: "1", col: "sm:col-span-2" },
+    { key: "unidad", label: "Unidades", type: "number", step: "1", col: "sm:col-span-2" },
     { key: "stock", label: "Stock", type: "number", step: "1", col: "sm:col-span-2" },
     { key: "activo", label: "Activo", type: "checkbox", col: "col-span-4" },
   ];
@@ -197,8 +220,8 @@ function ProductoModal({
                   <input
                     type={f.type}
                     step={f.step}
-                    value={values[f.key] as string | number}
-                    onChange={(e) => set(f.key, f.type === "number" ? parseFloat(e.target.value) || 0 : e.target.value)}
+                    value={values[f.key] == null ? "" : (values[f.key] as string | number)}
+                    onChange={(e) => set(f.key, f.type === "number" ? (e.target.value === "" ? undefined : parseFloat(e.target.value)) : e.target.value)}
                     placeholder={f.placeholder}
                     className="bg-[#334155]/60 border border-[#475569]/60 rounded-xl px-3 py-2.5 text-sm text-[#f1f5f9] placeholder-[#64748b] focus:outline-none focus:ring-2 focus:ring-indigo-500/50 transition-all"
                   />
@@ -282,12 +305,68 @@ function StockCell({ producto, onSet }: { producto: Producto; onSet: (p: Product
   );
 }
 
+function SortableTH({
+  label,
+  sortKey,
+  current,
+  dir,
+  onClick,
+  align,
+  className,
+}: {
+  label: string;
+  sortKey: keyof Producto;
+  current: keyof Producto | null;
+  dir: "asc" | "desc";
+  onClick: (k: keyof Producto) => void;
+  align?: "left" | "right" | "center";
+  className?: string;
+}) {
+  const active = current === sortKey;
+  const alignClass = align === "right" ? "text-right" : align === "center" ? "text-center" : "";
+  const justifyClass = align === "right" ? "justify-end" : align === "center" ? "justify-center" : "justify-start";
+  return (
+    <TH className={cn(alignClass, className)}>
+      <button
+        type="button"
+        onClick={() => onClick(sortKey)}
+        className={cn(
+          "inline-flex items-center gap-1 select-none hover:text-ink transition-colors w-full",
+          justifyClass,
+          active ? "text-ink" : "text-ink-muted"
+        )}
+      >
+        <span>{label}</span>
+        {active ? (
+          dir === "asc" ? <ChevronUp className="h-3.5 w-3.5" /> : <ChevronDown className="h-3.5 w-3.5" />
+        ) : (
+          <ChevronsUpDown className="h-3.5 w-3.5 opacity-40" />
+        )}
+      </button>
+    </TH>
+  );
+}
+
 export default function ProductosPage() {
   const [productos, setProductos] = useState<Producto[]>([]);
   const [loading, setLoading] = useState(true);
   const [q, setQ] = useState("");
   const [rubro, setRubro] = useState<string>("TODOS");
   const [page, setPage] = useState(1);
+  const [sortKey, setSortKey] = useState<keyof Producto | null>(null);
+  const [sortDir, setSortDir] = useState<"asc" | "desc">("asc");
+  const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
+  const [bulkDeleting, setBulkDeleting] = useState(false);
+  const toggleSort = (key: keyof Producto) => {
+    if (sortKey === key) {
+      if (sortDir === "asc") setSortDir("desc");
+      else { setSortKey(null); setSortDir("asc"); }
+    } else {
+      setSortKey(key);
+      setSortDir("asc");
+    }
+    setPage(1);
+  };
   const [showInactive, setShowInactive] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
   const [editProducto, setEditProducto] = useState<Producto | null>(null);
@@ -326,14 +405,13 @@ export default function ProductosPage() {
     setSaving(true);
     try {
       if (editProducto?.id) {
-        const updated = await api.productos.update(editProducto.id, values);
-        setProductos((prev) => prev.map((p) => (p.id === updated.id ? updated : p)));
+        await api.productos.update(editProducto.id, values);
       } else {
-        const created = await api.productos.create(values);
-        setProductos((prev) => [created, ...prev]);
+        await api.productos.create(values);
       }
       setModalOpen(false);
       setEditProducto(null);
+      reload();
     } finally {
       setSaving(false);
     }
@@ -357,6 +435,46 @@ export default function ProductosPage() {
     } catch (err: any) {
       alert("Error al eliminar: " + (err.message ?? "verifique"));
     }
+  };
+
+  const handleBulkDelete = async () => {
+    const ids = Array.from(selectedIds);
+    if (ids.length === 0) return;
+    if (!confirm(`Eliminar ${ids.length} producto${ids.length === 1 ? "" : "s"}? Esta acción no se puede deshacer.`)) return;
+    setBulkDeleting(true);
+    try {
+      const results = await Promise.allSettled(ids.map((id) => api.productos.delete(id)));
+      const failed = results.filter((r) => r.status === "rejected").length;
+      if (failed > 0) alert(`${ids.length - failed} eliminados, ${failed} con error.`);
+      setSelectedIds(new Set());
+      reload();
+    } finally {
+      setBulkDeleting(false);
+    }
+  };
+
+  const toggleSelect = (id: string) => {
+    setSelectedIds((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id); else next.add(id);
+      return next;
+    });
+  };
+
+  const toggleSelectPage = (visibles: Producto[]) => {
+    const ids = visibles.map((p) => p.id).filter((x): x is string => !!x);
+    const allSelected = ids.every((id) => selectedIds.has(id));
+    setSelectedIds((prev) => {
+      const next = new Set(prev);
+      if (allSelected) ids.forEach((id) => next.delete(id));
+      else ids.forEach((id) => next.add(id));
+      return next;
+    });
+  };
+
+  const selectAllFiltered = (filtrados: Producto[]) => {
+    const ids = filtrados.map((p) => p.id).filter((x): x is string => !!x);
+    setSelectedIds(new Set(ids));
   };
 
   const handleReactivate = async (producto: Producto) => {
@@ -517,8 +635,20 @@ export default function ProductosPage() {
       const term = q.toLowerCase();
       res = res.filter((p) => p.codigo.includes(term) || p.descripcion.toLowerCase().includes(term));
     }
+    if (sortKey) {
+      const dir = sortDir === "asc" ? 1 : -1;
+      res = [...res].sort((a, b) => {
+        const av = a[sortKey];
+        const bv = b[sortKey];
+        if (av == null && bv == null) return 0;
+        if (av == null) return 1;
+        if (bv == null) return -1;
+        if (typeof av === "number" && typeof bv === "number") return (av - bv) * dir;
+        return String(av).localeCompare(String(bv), "es", { numeric: true }) * dir;
+      });
+    }
     return res;
-  }, [productos, q, rubro]);
+  }, [productos, q, rubro, sortKey, sortDir]);
 
   const totalPages = Math.max(1, Math.ceil(filtrados.length / PAGE_SIZE));
   const visibles = filtrados.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
@@ -693,20 +823,66 @@ export default function ProductosPage() {
           </div>
         </div>
 
+        {selectedIds.size > 0 && (
+          <div className="px-5 py-2.5 border-b border-line bg-amber-50 dark:bg-amber-900/10 flex items-center justify-between gap-3 flex-wrap">
+            <div className="flex items-center gap-3 text-sm">
+              <span className="text-ink font-medium">{selectedIds.size} seleccionado{selectedIds.size === 1 ? "" : "s"}</span>
+              {selectedIds.size < filtrados.filter((p) => p.id).length && (
+                <button
+                  type="button"
+                  onClick={() => selectAllFiltered(filtrados)}
+                  className="text-accent hover:underline"
+                >
+                  Seleccionar todos los {filtrados.filter((p) => p.id).length} filtrados
+                </button>
+              )}
+              <button
+                type="button"
+                onClick={() => setSelectedIds(new Set())}
+                className="text-ink-muted hover:text-ink hover:underline"
+              >
+                Limpiar selección
+              </button>
+            </div>
+            <Button variant="danger" size="sm" onClick={handleBulkDelete} disabled={bulkDeleting}>
+              <Trash2 size={13} />
+              {bulkDeleting ? "Eliminando..." : `Eliminar ${selectedIds.size}`}
+            </Button>
+          </div>
+        )}
+
         <div className="overflow-x-auto">
           <div className="min-w-[700px]">
           <Table>
             <THead>
               <TR>
-                <TH>Código</TH>
-                <TH>Descripción</TH>
-                <TH className="hidden sm:table-cell">Rubro</TH>
-                <TH className="text-right">P. lista</TH>
-                <TH className="text-right">P. venta</TH>
-                <TH className="hidden md:table-cell text-right">P.U. lista</TH>
-                <TH className="hidden md:table-cell text-right">P.U. venta</TH>
-                <TH className="hidden sm:table-cell text-center">Pack</TH>
-                <TH>Stock</TH>
+                <TH className="w-8">
+                  <input
+                    type="checkbox"
+                    aria-label="Seleccionar todos los filtrados"
+                    title="Seleccionar todos los filtrados"
+                    checked={(() => {
+                      const ids = filtrados.map((p) => p.id).filter((x): x is string => !!x);
+                      return ids.length > 0 && ids.every((id) => selectedIds.has(id));
+                    })()}
+                    onChange={() => {
+                      const ids = filtrados.map((p) => p.id).filter((x): x is string => !!x);
+                      const allSelected = ids.length > 0 && ids.every((id) => selectedIds.has(id));
+                      if (allSelected) setSelectedIds(new Set());
+                      else setSelectedIds(new Set(ids));
+                    }}
+                    className="w-4 h-4 rounded border-line cursor-pointer"
+                  />
+                </TH>
+                <SortableTH label="Código" sortKey="codigo" current={sortKey} dir={sortDir} onClick={toggleSort} />
+                <SortableTH label="Descripción" sortKey="descripcion" current={sortKey} dir={sortDir} onClick={toggleSort} />
+                <SortableTH label="Rubro" sortKey="rubro" current={sortKey} dir={sortDir} onClick={toggleSort} className="hidden sm:table-cell" />
+                <SortableTH label="P. lista" sortKey="precio" current={sortKey} dir={sortDir} onClick={toggleSort} align="right" />
+                <SortableTH label="P. venta" sortKey="precioVenta" current={sortKey} dir={sortDir} onClick={toggleSort} align="right" />
+                <SortableTH label="P.U. lista" sortKey="precioUnidadLista" current={sortKey} dir={sortDir} onClick={toggleSort} align="right" className="hidden md:table-cell" />
+                <SortableTH label="P.U. venta" sortKey="precioUnidadVenta" current={sortKey} dir={sortDir} onClick={toggleSort} align="right" className="hidden md:table-cell" />
+                <SortableTH label="Pack" sortKey="pack" current={sortKey} dir={sortDir} onClick={toggleSort} align="center" className="hidden sm:table-cell" />
+                <SortableTH label="Stock" sortKey="stock" current={sortKey} dir={sortDir} onClick={toggleSort} />
                 <TH></TH>
               </TR>
             </THead>
@@ -716,7 +892,18 @@ export default function ProductosPage() {
                 const dot = rubroDotColors[p.rubro] ?? "bg-slate-400";
                 const txt = rubroTextColors[p.rubro] ?? "text-slate-700";
                 return (
-                  <TR key={p.id ?? p.codigo}>
+                  <TR key={p.id ?? p.codigo} className={cn(p.id && selectedIds.has(p.id) && "bg-amber-50/40 dark:bg-amber-900/5")}>
+                    <TD className="w-8">
+                      {p.id && (
+                        <input
+                          type="checkbox"
+                          aria-label={`Seleccionar ${p.descripcion}`}
+                          checked={selectedIds.has(p.id)}
+                          onChange={() => toggleSelect(p.id!)}
+                          className="w-4 h-4 rounded border-line cursor-pointer"
+                        />
+                      )}
+                    </TD>
                     <TD className="font-mono text-xs text-ink-muted">{p.codigo}</TD>
                     <TD className="text-ink max-w-[160px] sm:max-w-none">
                       <span className="truncate block">{p.descripcion}</span>
