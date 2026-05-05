@@ -88,6 +88,8 @@ export const apiClient = {
       }).then(r => r.json()),
     calcularPreciosVenta: (porcentaje: number) =>
       request<any>("/productos/calcular-precios-venta", { method: "POST", body: JSON.stringify({ porcentaje }) }),
+    calcularPrecioVenta: (productoId: string, porcentaje: number) =>
+      request<any>(`/productos/calcular-precio-venta/${productoId}`, { method: "POST", body: JSON.stringify({ porcentaje }) }),
     resetStock: (stock: number = 999) =>
       request<any>("/productos/reset-stock", { method: "POST", body: JSON.stringify({ stock }) }),
   },

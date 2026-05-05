@@ -73,6 +73,8 @@ function ProductoModal({
     activo: true,
   });
   const [errors, setErrors] = useState<ProductoErrors>({});
+  const [calcPercent, setCalcPercent] = useState("");
+  const [calcLoading, setCalcLoading] = useState(false);
 
   useEffect(() => {
     if (producto) {
@@ -113,6 +115,29 @@ function ProductoModal({
     e.preventDefault();
     if (!validate()) return;
     await onSave(values);
+  }
+
+  async function handleCalcularPrecio() {
+    if (!producto?.id || !calcPercent) return;
+    const pct = parseFloat(calcPercent);
+    if (isNaN(pct) || pct <= 0) return;
+    setCalcLoading(true);
+    try {
+      const result: any = await api.productos.calcularPrecioVenta(producto.id, pct);
+      if (result.precioVenta) {
+        setValues((v) => ({
+          ...v,
+          precioVenta: result.precioVenta,
+          precioUnidadVenta: result.precioUnidadVenta,
+        }));
+        setCalcPercent("");
+      }
+    } catch (err: any) {
+      console.error(err);
+      alert("Error al calcular: " + (err.message ?? "verifique"));
+    } finally {
+      setCalcLoading(false);
+    }
   }
 
   function set(field: keyof Producto, value: any) {
@@ -230,6 +255,32 @@ function ProductoModal({
               );
             })}
           </div>
+
+          {producto?.id && (
+            <div className="px-6 py-3 border-t border-[#334155] bg-[#0f172a]/30">
+              <div className="flex items-center gap-3">
+                <span className="text-sm text-[#94a3b8]">Calcular precio de venta:</span>
+                <input
+                  type="number"
+                  step="0.1"
+                  min="0"
+                  value={calcPercent}
+                  onChange={(e) => setCalcPercent(e.target.value)}
+                  placeholder="%"
+                  className="w-20 bg-[#334155]/60 border border-[#475569]/60 rounded-lg px-2 py-1.5 text-sm text-[#f1f5f9] placeholder-[#64748b] focus:outline-none focus:ring-2 focus:ring-indigo-500/50"
+                />
+                <span className="text-sm text-[#64748b]">%</span>
+                <button
+                  type="button"
+                  onClick={handleCalcularPrecio}
+                  disabled={calcLoading || !calcPercent || parseFloat(calcPercent) <= 0}
+                  className="px-3 py-1.5 rounded-lg bg-[#6366f1]/20 text-[#818cf8] text-sm font-medium hover:bg-[#6366f1]/30 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                >
+                  {calcLoading ? "Calculando..." : "Aplicar"}
+                </button>
+              </div>
+            </div>
+          )}
 
           <div className="px-6 py-4 border-t border-[#334155] flex justify-end gap-3">
             <Button type="button" variant="secondary" onClick={onClose} disabled={loading} className="border-[#475569] text-[#94a3b8] hover:text-[#f1f5f9]">

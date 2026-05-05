@@ -100,6 +100,32 @@ exportStockCsv: async () => {
       mockProductos.forEach((p: any) => { p.stock = stock; });
       return { actualizados: mockProductos.length, stock };
     },
+    calcularPreciosVenta: async (porcentaje: number) => {
+      if (!getMockFlag()) {
+        return apiClient.productos.calcularPreciosVenta(porcentaje);
+      }
+      mockProductos.forEach((p: any) => {
+        if (p.precio && p.precio > 0) {
+          p.precioVenta = p.precio * (1 + porcentaje / 100);
+          const pack = p.pack || 1;
+          p.precioUnidadVenta = Math.round((p.precioVenta / pack) * 100) / 100;
+        }
+      });
+      return { actualizados: mockProductos.length, porcentaje };
+    },
+    calcularPrecioVenta: async (productoId: string, porcentaje: number) => {
+      if (!getMockFlag()) {
+        return apiClient.productos.calcularPrecioVenta(productoId, porcentaje);
+      }
+      const p = mockProductos.find((x: any) => x.id === productoId);
+      if (p && p.precio && p.precio > 0) {
+        p.precioVenta = p.precio * (1 + porcentaje / 100);
+        const pack = p.pack || 1;
+        p.precioUnidadVenta = Math.round((p.precioVenta / pack) * 100) / 100;
+        return { actualizados: 1, productoId, precioVenta: p.precioVenta, precioUnidadVenta: p.precioUnidadVenta, porcentaje };
+      }
+      return { error: "El producto no tiene precio base definido" };
+    },
     importStockCsv: async (formData: FormData) => {
       if (!getMockFlag()) {
         return apiClient.productos.importStockCsv(formData);
