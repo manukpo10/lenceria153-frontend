@@ -969,7 +969,7 @@ export default function ProductosPage() {
                     <TD className="text-right font-medium text-ink num">{p.precioVenta != null ? fmtARS(p.precioVenta) : "—"}</TD>
                     <TD className="hidden md:table-cell text-right text-ink num font-medium">{p.precioUnidadLista ? fmtARS(p.precioUnidadLista) : "—"}</TD>
                     <TD className="hidden md:table-cell text-right text-ink num font-medium">{p.precioUnidadVenta ? fmtARS(p.precioUnidadVenta) : "—"}</TD>
-                    <TD className="hidden sm:table-cell text-center text-ink-soft text-xs">{p.pack && p.pack > 1 ? `x${p.pack}` : "—"}</TD>
+                    <TD className="hidden sm:table-cell text-center font-medium text-ink text-xs">{p.pack && p.pack > 1 ? `x${p.pack}` : "—"}</TD>
                     <TD>
                       {p.id ? (
                         <StockCell producto={p} onSet={handleSetStock} />
@@ -1117,7 +1117,7 @@ export default function ProductosPage() {
                           <td className="py-2 px-1"><span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium bg-slate-100 text-slate-700">{p.rubro || "OTROS"}</span></td>
                           <td className="py-2 px-1 text-right text-ink-muted">{p.costo ? fmtARS(p.costo) : "—"}</td>
                           <td className="py-2 px-1 text-right font-medium text-ink">{p.precio ? fmtARS(p.precio) : "—"}</td>
-                          <td className="py-2 px-1 text-center text-ink-soft">{p.pack && p.pack > 1 ? `x${p.pack}` : "—"}</td>
+                          <td className="py-2 px-1 text-center font-medium text-ink">{p.pack && p.pack > 1 ? `x${p.pack}` : "—"}</td>
                           <td className="py-2 px-1 text-right text-ink-soft">{p.precioUnidadLista ? fmtARS(p.precioUnidadLista) : "—"}</td>
                           <td className="py-2 px-1 text-right text-ink-soft">{p.precioUnidadVenta ? fmtARS(p.precioUnidadVenta) : "—"}</td>
                           <td className="py-2 px-1 text-center text-ink-soft">{p.stock ?? 0}</td>
