@@ -28,7 +28,6 @@ type Producto = {
   codigo: string;
   descripcion: string;
   rubro: string;
-  costo: number;
   precio: number;
   precioUnidad?: number;
   precioVenta?: number;
@@ -62,7 +61,6 @@ function ProductoModal({
     codigo: "",
     descripcion: "",
     rubro: "ABROJOS",
-    costo: 0,
     precio: 0,
     precioVenta: undefined,
     precioUnidadLista: undefined,
@@ -82,7 +80,6 @@ function ProductoModal({
         codigo: producto.codigo ?? "",
         descripcion: producto.descripcion ?? "",
         rubro: producto.rubro ?? "ABROJOS",
-        costo: producto.costo ?? 0,
         precio: producto.precio ?? 0,
         precioVenta: producto.precioVenta,
         precioUnidadLista: producto.precioUnidadLista,
@@ -93,7 +90,7 @@ function ProductoModal({
         activo: producto.activo ?? true,
       });
     } else {
-      setValues({ codigo: "", descripcion: "", rubro: "ABROJOS", costo: 0, precio: 0, precioVenta: undefined, precioUnidadLista: undefined, precioUnidadVenta: undefined, unidad: 1, pack: 1, stock: 0, activo: true });
+      setValues({ codigo: "", descripcion: "", rubro: "ABROJOS", precio: 0, precioVenta: undefined, precioUnidadLista: undefined, precioUnidadVenta: undefined, unidad: 1, pack: 1, stock: 0, activo: true });
     }
     setErrors({});
   }, [producto]);
@@ -103,7 +100,6 @@ function ProductoModal({
     if (!values.codigo.trim()) e.codigo = "Requerido";
     if (!values.descripcion.trim()) e.descripcion = "Requerido";
     if (!values.rubro) e.rubro = "Requerido";
-    if (values.costo < 0) e.costo = "No puede ser negativo";
     if (values.precio <= 0) e.precio = "Debe ser mayor a 0";
     if (values.pack < 1) e.pack = "Mínimo 1";
     if (values.stock < 0) e.stock = "No puede ser negativo";
@@ -118,20 +114,33 @@ function ProductoModal({
   }
 
   async function handleCalcularPrecio() {
-    if (!producto?.id || !calcPercent) return;
+    if (!calcPercent) return;
     const pct = parseFloat(calcPercent);
     if (isNaN(pct) || pct <= 0) return;
     setCalcLoading(true);
     try {
-      const result: any = await api.productos.calcularPrecioVenta(producto.id, pct);
-      if (result.precioVenta) {
-        setValues((v) => ({
-          ...v,
-          precioVenta: result.precioVenta,
-          precioUnidadVenta: result.precioUnidadVenta,
-        }));
-        setCalcPercent("");
+      if (producto?.id) {
+        const result: any = await api.productos.calcularPrecioVenta(producto.id, pct);
+        if (result.precioVenta) {
+          setValues((v) => ({
+            ...v,
+            precioVenta: result.precioVenta,
+            precioUnidadVenta: result.precioUnidadVenta,
+          }));
+        }
+      } else {
+        const currentPrecio = values.precio || 0;
+        if (currentPrecio > 0) {
+          const nuevoPrecioVenta = Math.round(currentPrecio * (1 + pct / 100) * 100) / 100;
+          const pack = values.pack || 1;
+          setValues((v) => ({
+            ...v,
+            precioVenta: nuevoPrecioVenta,
+            precioUnidadVenta: Math.round((nuevoPrecioVenta / pack) * 100) / 100,
+          }));
+        }
       }
+      setCalcPercent("");
     } catch (err: any) {
       console.error(err);
       alert("Error al calcular: " + (err.message ?? "verifique"));
@@ -149,6 +158,9 @@ function ProductoModal({
       if (field === "pack" || field === "precio") {
         if (typeof precio === "number" && precio > 0 && typeof pack === "number" && pack > 0) {
           next.precioUnidadLista = Math.round((precio / pack) * 100) / 100;
+          if (!next.precioVenta || next.precioVenta === 0) {
+            next.precioVenta = precio;
+          }
         }
       }
       if (field === "pack" || field === "precioVenta") {
@@ -175,7 +187,6 @@ function ProductoModal({
     { key: "codigo", label: "Código", type: "text", placeholder: "Ej: 322", col: "sm:col-span-2" },
     { key: "rubro", label: "Rubro", type: "select", options: RUBROS, col: "sm:col-span-2" },
     { key: "descripcion", label: "Descripción", type: "text", placeholder: "Nombre del producto", col: "col-span-4" },
-    { key: "costo", label: "Costo ($)", type: "number", step: "0.01", col: "sm:col-span-2" },
     { key: "precio", label: "P. lista ($)", type: "number", step: "0.01", col: "sm:col-span-2" },
     { key: "precioVenta", label: "P. venta ($)", type: "number", step: "0.01", col: "sm:col-span-2" },
     { key: "precioUnidadLista", label: "P.U. lista ($)", type: "number", step: "0.01", col: "sm:col-span-2" },
@@ -256,8 +267,7 @@ function ProductoModal({
             })}
           </div>
 
-          {producto?.id && (
-            <div className="px-6 py-3 border-t border-[#334155] bg-[#0f172a]/30">
+          <div className="px-6 py-3 border-t border-[#334155] bg-[#0f172a]/30">
               <div className="flex items-center gap-3">
                 <span className="text-sm text-[#94a3b8]">Calcular precio de venta:</span>
                 <input
@@ -273,14 +283,13 @@ function ProductoModal({
                 <button
                   type="button"
                   onClick={handleCalcularPrecio}
-                  disabled={calcLoading || !calcPercent || parseFloat(calcPercent) <= 0}
+                  disabled={calcLoading || !calcPercent || parseFloat(calcPercent) <= 0 || !values.precio}
                   className="px-3 py-1.5 rounded-lg bg-[#6366f1]/20 text-[#818cf8] text-sm font-medium hover:bg-[#6366f1]/30 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
                 >
                   {calcLoading ? "Calculando..." : "Aplicar"}
                 </button>
               </div>
             </div>
-          )}
 
           <div className="px-6 py-4 border-t border-[#334155] flex justify-end gap-3">
             <Button type="button" variant="secondary" onClick={onClose} disabled={loading} className="border-[#475569] text-[#94a3b8] hover:text-[#f1f5f9]">
