@@ -966,9 +966,9 @@ export default function ProductosPage() {
                       </span>
                     </TD>
                     <TD className="text-right font-medium text-ink num">{fmtARS(p.precio)}</TD>
-                    <TD className="text-right text-ink num">{p.precioVenta != null ? fmtARS(p.precioVenta) : "—"}</TD>
-                    <TD className="hidden md:table-cell text-right text-ink-soft text-xs">{p.precioUnidadLista ? fmtARS(p.precioUnidadLista) : "—"}</TD>
-                    <TD className="hidden md:table-cell text-right text-ink-soft text-xs">{p.precioUnidadVenta ? fmtARS(p.precioUnidadVenta) : "—"}</TD>
+                    <TD className="text-right font-medium text-ink num">{p.precioVenta != null ? fmtARS(p.precioVenta) : "—"}</TD>
+                    <TD className="hidden md:table-cell text-right text-ink num font-medium">{p.precioUnidadLista ? fmtARS(p.precioUnidadLista) : "—"}</TD>
+                    <TD className="hidden md:table-cell text-right text-ink num font-medium">{p.precioUnidadVenta ? fmtARS(p.precioUnidadVenta) : "—"}</TD>
                     <TD className="hidden sm:table-cell text-center text-ink-soft text-xs">{p.pack && p.pack > 1 ? `x${p.pack}` : "—"}</TD>
                     <TD>
                       {p.id ? (
