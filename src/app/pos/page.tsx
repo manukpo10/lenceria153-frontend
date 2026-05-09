@@ -22,7 +22,7 @@ import { labelMedio, MedioPago } from "@/lib/mockVentas";
 import { Button, Card, Input, Badge, Kbd, Toast } from "@/components/ui";
 import { cn } from "@/lib/utils";
 
-type Item = { p: any; cant: number };
+type Item = { p: any; cant: number; rawCant?: string };
 
 const medios: { id: MedioPago; icon: React.ReactNode }[] = [
   { id: "efectivo", icon: <Banknote size={16} /> },
@@ -80,18 +80,18 @@ export default function POSPage() {
       const idx = prev.findIndex((i) => i.p.id === producto.id);
       if (idx >= 0) {
         const next = [...prev];
-        next[idx] = { ...next[idx], cant: next[idx].cant + 1 };
+        next[idx] = { ...next[idx], cant: next[idx].cant + 1, rawCant: String(next[idx].cant + 1) };
         return next;
       }
-      return [...prev, { p: producto, cant: 1 }];
+      return [...prev, { p: producto, cant: 1, rawCant: "1" }];
     });
   }
 
-  function setCant(productoId: string, cant: number) {
+  function setCant(productoId: string, cant: number, rawCant?: string) {
     setItems((prev) =>
       cant <= 0
         ? prev.filter((i) => i.p.id !== productoId)
-        : prev.map((i) => (i.p.id === productoId ? { ...i, cant } : i))
+        : prev.map((i) => (i.p.id === productoId ? { ...i, cant, rawCant } : i))
     );
   }
 
@@ -295,20 +295,24 @@ export default function POSPage() {
                   <div className="mt-2.5 flex items-center justify-between">
                     <div className="inline-flex items-center bg-surface-muted rounded-xl p-1 gap-0.5">
                       <button
-                        onClick={() => setCant(it.p.id, it.cant - 1)}
+                        onClick={() => setCant(it.p.id, it.cant - 1, String(it.cant - 1))}
                         className="w-10 h-10 sm:w-8 sm:h-8 grid place-items-center rounded-lg text-ink-muted hover:bg-surface hover:text-ink transition-colors text-base"
                       >
                         <Minus size={16} />
                       </button>
                       <input
-                        type="number"
-                        min={1}
-                        value={it.cant}
-                        onChange={(e) => setCant(it.p.id, parseInt(e.target.value) || 0)}
-                        className="w-12 bg-transparent text-center text-base font-semibold num outline-none"
+                        type="text"
+                        inputMode="decimal"
+                        value={it.rawCant ?? it.cant}
+                        onChange={(e) => {
+                          const raw = e.target.value;
+                          const parsed = parseFloat(raw.replace(",", ".")) || 0;
+                          setCant(it.p.id, parsed, raw);
+                        }}
+                        className="w-16 bg-transparent text-center text-base font-semibold num outline-none"
                       />
                       <button
-                        onClick={() => setCant(it.p.id, it.cant + 1)}
+                        onClick={() => setCant(it.p.id, it.cant + 1, String(it.cant + 1))}
                         className="w-10 h-10 sm:w-8 sm:h-8 grid place-items-center rounded-lg text-ink-muted hover:bg-surface hover:text-ink transition-colors text-base"
                       >
                         <Plus size={16} />
