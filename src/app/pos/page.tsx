@@ -46,6 +46,9 @@ export default function POSPage() {
 
   useEffect(() => {
     loadProductos();
+    const onFocus = () => loadProductos();
+    window.addEventListener("focus", onFocus);
+    return () => window.removeEventListener("focus", onFocus);
   }, []);
 
   async function loadProductos() {
