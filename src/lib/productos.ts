@@ -35,7 +35,7 @@ export function buscarProductos(q: string, rubro?: string, limit = 50): Producto
   if (term) {
     res = res.filter(
       (p) =>
-        p.codigo.includes(term) ||
+        p.codigo.toLowerCase().includes(term) ||
         p.descripcion.toLowerCase().includes(term)
     );
   }

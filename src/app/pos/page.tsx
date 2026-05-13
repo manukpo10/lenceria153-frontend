@@ -64,7 +64,7 @@ export default function POSPage() {
     const term = q.trim().toLowerCase();
     if (!term) return productos.slice(0, 30);
     return productos
-      .filter((p) => p.codigo.includes(term) || p.descripcion.toLowerCase().includes(term))
+      .filter((p) => p.codigo.toLowerCase().includes(term) || p.descripcion.toLowerCase().includes(term))
       .slice(0, 30);
   }, [q, productos]);
 

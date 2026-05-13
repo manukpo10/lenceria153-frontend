@@ -693,7 +693,7 @@ export default function ProductosPage() {
     if (rubro !== "TODOS") res = res.filter((p) => p.rubro === rubro);
     if (q.trim()) {
       const term = q.toLowerCase();
-      res = res.filter((p) => p.codigo.includes(term) || p.descripcion.toLowerCase().includes(term));
+      res = res.filter((p) => p.codigo.toLowerCase().includes(term) || p.descripcion.toLowerCase().includes(term));
     }
     if (sortKey) {
       const dir = sortDir === "asc" ? 1 : -1;
