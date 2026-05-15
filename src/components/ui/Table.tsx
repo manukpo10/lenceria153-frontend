@@ -2,14 +2,14 @@ import { HTMLAttributes, TdHTMLAttributes, ThHTMLAttributes } from "react";
 import { cn } from "@/lib/utils";
 
 export function Table({ className, ...rest }: HTMLAttributes<HTMLTableElement>) {
-  return <table className={cn("w-full text-sm", className)} {...rest} />;
+  return <table className={cn("w-full text-base", className)} {...rest} />;
 }
 
 export function THead({ className, ...rest }: HTMLAttributes<HTMLTableSectionElement>) {
   return (
     <thead
       className={cn(
-        "bg-surface-muted text-xs uppercase tracking-wide text-ink-muted font-medium",
+        "bg-surface-muted text-sm uppercase tracking-wide text-ink-muted font-medium",
         className
       )}
       {...rest}
@@ -31,9 +31,9 @@ export function TR({ className, ...rest }: HTMLAttributes<HTMLTableRowElement>) 
 }
 
 export function TH({ className, ...rest }: ThHTMLAttributes<HTMLTableCellElement>) {
-  return <th className={cn("text-left px-4 py-3 font-medium", className)} {...rest} />;
+  return <th className={cn("text-left px-4 py-3.5 font-medium", className)} {...rest} />;
 }
 
 export function TD({ className, ...rest }: TdHTMLAttributes<HTMLTableCellElement>) {
-  return <td className={cn("px-4 py-3 align-middle", className)} {...rest} />;
+  return <td className={cn("px-4 py-3.5 align-middle", className)} {...rest} />;
 }
