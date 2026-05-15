@@ -441,6 +441,13 @@ export default function ProductosPage() {
   const [showCalcPrecios, setShowCalcPrecios] = useState(false);
   const [calcPorcentaje, setCalcPorcentaje] = useState("50");
   const [calcLoading, setCalcLoading] = useState(false);
+  const [vistaCompleta, setVistaCompleta] = useState(() => {
+    if (typeof window === "undefined") return false;
+    return localStorage.getItem("productosVistaCompleta") === "true";
+  });
+  useEffect(() => {
+    localStorage.setItem("productosVistaCompleta", String(vistaCompleta));
+  }, [vistaCompleta]);
 
   useEffect(() => {
     const params = showInactive ? { activo: false } : {};
@@ -849,6 +856,15 @@ export default function ProductosPage() {
               >
                 <RotateCcw size={13} />
               </Button>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => setVistaCompleta((v) => !v)}
+                title={vistaCompleta ? "Vista simplificada" : "Vista completa"}
+              >
+                {vistaCompleta ? <EyeOff size={13} /> : <Eye size={13} />}
+                <span className="hidden sm:inline">{vistaCompleta ? "Simple" : "Completo"}</span>
+              </Button>
               <Button onClick={handleNew} size="sm"><Plus size={14} /><span className="hidden sm:inline">Nuevo</span></Button>
             </div>
           }
@@ -911,8 +927,8 @@ export default function ProductosPage() {
           </div>
         )}
 
-        <div className="overflow-x-auto">
-          <div className="min-w-[700px]">
+        <div className={cn(vistaCompleta && "overflow-x-auto")}>
+          <div className={cn(vistaCompleta && "min-w-[700px]")}>
           <Table>
             <THead>
               <TR>
@@ -936,13 +952,21 @@ export default function ProductosPage() {
                 </TH>
                 <SortableTH label="Código" sortKey="codigo" current={sortKey} dir={sortDir} onClick={toggleSort} />
                 <SortableTH label="Descripción" sortKey="descripcion" current={sortKey} dir={sortDir} onClick={toggleSort} />
-                <SortableTH label="Rubro" sortKey="rubro" current={sortKey} dir={sortDir} onClick={toggleSort} className="hidden sm:table-cell" />
-                <SortableTH label="P. lista" sortKey="precio" current={sortKey} dir={sortDir} onClick={toggleSort} align="right" />
-                <SortableTH label="P. venta" sortKey="precioVenta" current={sortKey} dir={sortDir} onClick={toggleSort} align="right" />
-                <SortableTH label="P.U. lista" sortKey="precioUnidadLista" current={sortKey} dir={sortDir} onClick={toggleSort} align="right" className="hidden md:table-cell" />
-                <SortableTH label="P.U. venta" sortKey="precioUnidadVenta" current={sortKey} dir={sortDir} onClick={toggleSort} align="right" className="hidden md:table-cell" />
-                <SortableTH label="Pack" sortKey="pack" current={sortKey} dir={sortDir} onClick={toggleSort} align="center" className="hidden sm:table-cell" />
-                <SortableTH label="Stock" sortKey="stock" current={sortKey} dir={sortDir} onClick={toggleSort} />
+                <SortableTH label="Rubro" sortKey="rubro" current={sortKey} dir={sortDir} onClick={toggleSort} />
+                {vistaCompleta && (
+                  <>
+                    <SortableTH label="P. lista" sortKey="precio" current={sortKey} dir={sortDir} onClick={toggleSort} align="right" />
+                    <SortableTH label="P. venta" sortKey="precioVenta" current={sortKey} dir={sortDir} onClick={toggleSort} align="right" />
+                    <SortableTH label="P.U. lista" sortKey="precioUnidadLista" current={sortKey} dir={sortDir} onClick={toggleSort} align="right" />
+                  </>
+                )}
+                <SortableTH label="P.U. venta" sortKey="precioUnidadVenta" current={sortKey} dir={sortDir} onClick={toggleSort} align="right" />
+                {vistaCompleta && (
+                  <>
+                    <SortableTH label="Pack" sortKey="pack" current={sortKey} dir={sortDir} onClick={toggleSort} align="center" />
+                    <SortableTH label="Stock" sortKey="stock" current={sortKey} dir={sortDir} onClick={toggleSort} />
+                  </>
+                )}
                 <TH></TH>
               </TR>
             </THead>
@@ -968,28 +992,36 @@ export default function ProductosPage() {
                     <TD className="text-ink max-w-[160px] sm:max-w-none">
                       <span className="truncate block">{p.descripcion}</span>
                     </TD>
-                    <TD className="hidden sm:table-cell">
+                    <TD>
                       <span className={cn("inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-xs font-medium", bg, txt)}>
                         <span className={cn("w-1.5 h-1.5 rounded-full", dot)} />
                         {p.rubro}
                       </span>
                     </TD>
-                    <TD className="text-right font-medium text-ink num">{fmtARS(p.precio)}</TD>
-                    <TD className="text-right font-medium text-ink num">{p.precioVenta != null ? fmtARS(p.precioVenta) : "—"}</TD>
-                    <TD className="hidden md:table-cell text-right text-ink num font-medium">{p.precioUnidadLista ? fmtARS(p.precioUnidadLista) : "—"}</TD>
-                    <TD className="hidden md:table-cell text-right text-ink num font-medium">{p.precioUnidadVenta ? fmtARS(p.precioUnidadVenta) : "—"}</TD>
-                    <TD className="hidden sm:table-cell text-center font-medium text-ink">{p.pack && p.pack > 1 ? `x${p.pack}` : "—"}</TD>
-                    <TD>
-                      {p.id ? (
-                        <StockCell producto={p} onSet={handleSetStock} />
-                      ) : p.stock === 0 ? (
-                        <Badge tone="danger" dot><XCircle size={11} />Sin stock</Badge>
-                      ) : p.stock <= 3 ? (
-                        <Badge tone="warning" dot><AlertTriangle size={11} />{p.stock} u.</Badge>
-                      ) : (
-                        <Badge tone="success" dot><CheckCircle2 size={11} />{p.stock} u.</Badge>
-                      )}
-                    </TD>
+                    {vistaCompleta && (
+                      <>
+                        <TD className="text-right font-medium text-ink num">{fmtARS(p.precio)}</TD>
+                        <TD className="text-right font-medium text-ink num">{p.precioVenta != null ? fmtARS(p.precioVenta) : "—"}</TD>
+                        <TD className="text-right text-ink num font-medium">{p.precioUnidadLista ? fmtARS(p.precioUnidadLista) : "—"}</TD>
+                      </>
+                    )}
+                    <TD className="text-right text-ink num font-medium">{p.precioUnidadVenta ? fmtARS(p.precioUnidadVenta) : "—"}</TD>
+                    {vistaCompleta && (
+                      <>
+                        <TD className="text-center font-medium text-ink">{p.pack && p.pack > 1 ? `x${p.pack}` : "—"}</TD>
+                        <TD>
+                          {p.id ? (
+                            <StockCell producto={p} onSet={handleSetStock} />
+                          ) : p.stock === 0 ? (
+                            <Badge tone="danger" dot><XCircle size={11} />Sin stock</Badge>
+                          ) : p.stock <= 3 ? (
+                            <Badge tone="warning" dot><AlertTriangle size={11} />{p.stock} u.</Badge>
+                          ) : (
+                            <Badge tone="success" dot><CheckCircle2 size={11} />{p.stock} u.</Badge>
+                          )}
+                        </TD>
+                      </>
+                    )}
                     <TD className="text-right">
                       <div className="flex items-center justify-end gap-1">
                         {p.activo === false && (
