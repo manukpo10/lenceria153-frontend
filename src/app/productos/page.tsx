@@ -988,12 +988,12 @@ export default function ProductosPage() {
                         />
                       )}
                     </TD>
-                    <TD className="font-mono text-xs text-ink-muted">{p.codigo}</TD>
+                    <TD className="font-mono text-sm text-ink-muted">{p.codigo}</TD>
                     <TD className="text-ink max-w-[160px] sm:max-w-none">
                       <span className="truncate block">{p.descripcion}</span>
                     </TD>
                     <TD>
-                      <span className={cn("inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-xs font-medium", bg, txt)}>
+                      <span className={cn("inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-sm font-medium", bg, txt)}>
                         <span className={cn("w-1.5 h-1.5 rounded-full", dot)} />
                         {p.rubro}
                       </span>
@@ -1013,11 +1013,11 @@ export default function ProductosPage() {
                           {p.id ? (
                             <StockCell producto={p} onSet={handleSetStock} />
                           ) : p.stock === 0 ? (
-                            <Badge tone="danger" dot><XCircle size={11} />Sin stock</Badge>
+                            <Badge tone="danger" dot><XCircle size={13} />Sin stock</Badge>
                           ) : p.stock <= 3 ? (
-                            <Badge tone="warning" dot><AlertTriangle size={11} />{p.stock} u.</Badge>
+                            <Badge tone="warning" dot><AlertTriangle size={13} />{p.stock} u.</Badge>
                           ) : (
-                            <Badge tone="success" dot><CheckCircle2 size={11} />{p.stock} u.</Badge>
+                            <Badge tone="success" dot><CheckCircle2 size={13} />{p.stock} u.</Badge>
                           )}
                         </TD>
                       </>

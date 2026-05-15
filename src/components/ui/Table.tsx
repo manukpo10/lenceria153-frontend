@@ -9,7 +9,7 @@ export function THead({ className, ...rest }: HTMLAttributes<HTMLTableSectionEle
   return (
     <thead
       className={cn(
-        "bg-surface-muted text-[11px] uppercase tracking-wide text-ink-muted font-medium",
+        "bg-surface-muted text-xs uppercase tracking-wide text-ink-muted font-medium",
         className
       )}
       {...rest}
