@@ -227,20 +227,20 @@ export default function POSPage() {
                   {isActive && (
                     <span className="absolute left-0 top-2.5 bottom-2.5 w-1 bg-brand-600 rounded-r-full" />
                   )}
-                  <div className="w-12 shrink-0 font-mono text-[11px] text-ink-soft">{p.codigo}</div>
+                  <div className="w-12 shrink-0 font-mono text-sm text-ink-soft">{p.codigo}</div>
                   <div className="flex-1 min-w-0">
-                    <div className="text-sm text-ink truncate">{p.descripcion}</div>
+                    <div className="text-base text-ink truncate">{p.descripcion}</div>
                     <div className="mt-1 flex flex-wrap items-center gap-1.5">
-                      <span className="text-[10px] px-1.5 py-0.5 rounded bg-surface-subtle text-ink-muted">{p.rubro}</span>
+                      <span className="text-xs px-1.5 py-0.5 rounded bg-surface-subtle text-ink-muted">{p.rubro}</span>
                       <Badge tone={stockTone} dot>
                         {p.stock === 0 ? "Sin stock" : `${p.stock}`}
                       </Badge>
                     </div>
                   </div>
                   <div className="text-right shrink-0">
-                    <div className="font-semibold text-ink num text-sm">{p.precioUnidadVenta != null ? fmtARS(p.precioUnidadVenta) : p.precioVenta != null ? fmtARS(p.precioVenta) : fmtARS(p.precio)}</div>
+                    <div className="font-semibold text-ink num text-base">{p.precioUnidadVenta != null ? fmtARS(p.precioUnidadVenta) : p.precioVenta != null ? fmtARS(p.precioVenta) : fmtARS(p.precio)}</div>
                     {p.precioUnidadVenta != null && p.pack > 1 && (
-                      <div className="text-[10px] text-ink-soft num">x{p.pack} · {fmtARS(p.precioUnidadVenta)}/u</div>
+                      <div className="text-xs text-ink-soft num">x{p.pack} · {fmtARS(p.precioUnidadVenta)}/u</div>
                     )}
                   </div>
                   <div className={cn(
@@ -263,8 +263,8 @@ export default function POSPage() {
               <ShoppingCart size={16} className="text-ink-muted" />
             </div>
             <div>
-              <h2 className="text-sm font-semibold text-ink">Carrito</h2>
-              <p className="text-[11px] text-ink-soft">{cantidadTotal} {cantidadTotal === 1 ? "producto" : "productos"}</p>
+              <h2 className="text-base font-semibold text-ink">Carrito</h2>
+              <p className="text-sm text-ink-soft">{cantidadTotal} {cantidadTotal === 1 ? "producto" : "productos"}</p>
             </div>
           </div>
           {items.length > 0 && (
@@ -279,7 +279,7 @@ export default function POSPage() {
             <div className="h-full grid place-items-center p-6 text-center">
               <div>
                 <ShoppingCart size={20} className="text-ink-soft mx-auto mb-2" />
-                <p className="text-xs text-ink-muted">Carrito vacío</p>
+                <p className="text-sm text-ink-muted">Carrito vacío</p>
               </div>
             </div>
           ) : (
@@ -288,8 +288,8 @@ export default function POSPage() {
                 <li key={it.p.id} className="px-4 py-3">
                   <div className="flex justify-between items-start gap-3">
                     <div className="min-w-0 flex-1">
-                      <div className="text-sm text-ink line-clamp-2">{it.p.descripcion}</div>
-                      <div className="text-[11px] text-ink-soft mt-0.5 num">{fmtARS(it.p.precioUnidadVenta ?? it.p.precioVenta ?? it.p.precio)} c/u</div>
+                      <div className="text-base text-ink line-clamp-2">{it.p.descripcion}</div>
+                      <div className="text-sm text-ink-soft mt-0.5 num">{fmtARS(it.p.precioUnidadVenta ?? it.p.precioVenta ?? it.p.precio)} c/u</div>
                     </div>
                     <button onClick={() => setCant(it.p.id, 0)} className="p-1.5 rounded text-ink-soft hover:text-red-600 hover:bg-red-50 shrink-0">
                       <X size={14} />
@@ -332,8 +332,8 @@ export default function POSPage() {
         <div className="p-3 sm:p-4 space-y-3 bg-surface-muted/40 border-t border-line">
           <div>
             <div className="flex items-center justify-between mb-1.5 sm:mb-2">
-              <span className="text-[10px] sm:text-[11px] font-semibold uppercase tracking-wide text-ink-soft">Medio de pago</span>
-              <Wallet size={13} className="text-ink-soft" />
+              <span className="text-xs font-semibold uppercase tracking-wide text-ink-soft">Medio de pago</span>
+              <Wallet size={15} className="text-ink-soft" />
             </div>
             <div className="grid grid-cols-5 gap-1.5">
               {medios.map((m) => (
@@ -341,7 +341,7 @@ export default function POSPage() {
                   key={m.id}
                   onClick={() => setMedio(m.id)}
                   className={cn(
-                    "flex flex-col items-center gap-1 px-1.5 py-2 sm:py-2 rounded-xl border text-[10px] sm:text-[11px] font-medium transition-colors",
+                    "flex flex-col items-center gap-1 px-1.5 py-2 sm:py-2 rounded-xl border text-xs font-medium transition-colors",
                     medio === m.id
                       ? "bg-brand-600 text-white border-brand-600 shadow-brand"
                       : "bg-surface border-line text-ink-muted hover:text-ink hover:border-brand-400"
